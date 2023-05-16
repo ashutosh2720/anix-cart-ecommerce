@@ -104,12 +104,12 @@ export const products = [
     stock: 83,
     brand: "Apple",
     category: "laptops",
-    thumbnail: "https://i.dummyjson.com/data/products/6/thumbnail.png",
+    thumbnail: "https://m.media-amazon.com/images/I/71vFKBpKakL._SX679_.jpg",
     images: [
-      "https://i.dummyjson.com/data/products/6/1.png",
-      "https://i.dummyjson.com/data/products/6/2.jpg",
-      "https://i.dummyjson.com/data/products/6/3.png",
-      "https://i.dummyjson.com/data/products/6/4.jpg"
+      "https://m.media-amazon.com/images/I/71s0pbb7bOL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81JFWbGkeEL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/8134-T9Jf6L._SX679_.jpg",
+
     ]
   },
   {
@@ -122,7 +122,7 @@ export const products = [
     stock: 50,
     brand: "Samsung",
     category: "laptops",
-    thumbnail: "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+    thumbnail: "https://m.media-amazon.com/images/I/61wqYsqU6AL._SX679_.jpg",
     images: [
       "https://i.dummyjson.com/data/products/7/1.jpg",
       "https://i.dummyjson.com/data/products/7/2.jpg",
@@ -140,7 +140,7 @@ export const products = [
     stock: 68,
     brand: "Microsoft Surface",
     category: "laptops",
-    thumbnail: "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+    thumbnail: "https://m.media-amazon.com/images/I/71x8uHbbZpL._SX679_.jpg",
     images: [
       "https://i.dummyjson.com/data/products/8/1.jpg",
       "https://i.dummyjson.com/data/products/8/2.jpg",
@@ -159,7 +159,7 @@ export const products = [
     stock: 96,
     brand: "Infinix",
     category: "laptops",
-    thumbnail: "https://i.dummyjson.com/data/products/9/thumbnail.jpg",
+    thumbnail: "https://m.media-amazon.com/images/I/51DlM6OUjiL._SX679_.jpg",
     images: [
       "https://i.dummyjson.com/data/products/9/1.jpg",
       "https://i.dummyjson.com/data/products/9/2.png",
@@ -662,13 +662,13 @@ export const products = [
     stock: 39,
     brand: "Professional Wear",
     category: "tops",
-    thumbnail: "https://i.dummyjson.com/data/products/36/thumbnail.jpg",
+    thumbnail: "https://dimg.dillards.com/is/image/DillardsZoom/nav2/aventura-seychelle-embroidered-square-neck-short-sleeve-top/00000000_zi_666760dc-9adf-492a-b5f1-740c33422b78.jpg",
     images: [
-      "https://i.dummyjson.com/data/products/36/1.jpg",
-      "https://i.dummyjson.com/data/products/36/2.webp",
-      "https://i.dummyjson.com/data/products/36/3.webp",
-      "https://i.dummyjson.com/data/products/36/4.jpg",
-      "https://i.dummyjson.com/data/products/36/thumbnail.jpg"
+      "https://i5.walmartimages.com/asr/b4322000-7950-423b-95d8-8b83830a6a97.01a4eed12ed9d9d6b25e2010748dc730.jpeg?odnHeight=784&odnWidth=580&odnBg=FFFFFF",
+      "https://n.nordstrommedia.com/id/sr3/6849bbe7-c55b-4899-9693-809f8f2bc3b9.jpeg?h=365&w=240&dpr=2",
+      "https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/12756768_fpx.tif?$2014_BROWSE_FASHION$&fmt=jpeg&op_usm=0.7,1.0,0.5,0&resMode=sharp2&qlt=85,0&wid=280&hei=350",
+      "https://n.nordstrommedia.com/id/sr3/a412ca21-20b7-4774-8333-c85cfec5b2e1.jpeg?h=365&w=240&dpr=2",
+
     ]
   },
   {
@@ -681,13 +681,12 @@ export const products = [
     stock: 107,
     brand: "Soft Cotton",
     category: "tops",
-    thumbnail: "https://i.dummyjson.com/data/products/37/thumbnail.jpg",
+    thumbnail: "https://i5.walmartimages.com/asr/a23a7b8e-6832-4b02-b9da-5d5c0c1445ec.7a84fc3ceb2edfc97697f1e778b0844e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
     images: [
-      "https://i.dummyjson.com/data/products/37/1.jpg",
-      "https://i.dummyjson.com/data/products/37/2.jpg",
-      "https://i.dummyjson.com/data/products/37/3.jpg",
-      "https://i.dummyjson.com/data/products/37/4.jpg",
-      "https://i.dummyjson.com/data/products/37/thumbnail.jpg"
+      "https://m.media-amazon.com/images/I/613+uadCymL._AC_UX466_.jpg",
+      "https://i5.walmartimages.com/asr/f8dcaf84-d079-4e90-92a3-48d8698142b1.1138a10389481adaca2a6dca524729a7.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+      "https://m.media-amazon.com/images/I/71k3ZAECSrL._AC_SX569_.jpg",
+
     ]
   },
   {
@@ -700,12 +699,12 @@ export const products = [
     stock: 20,
     brand: "Soft Cotton",
     category: "tops",
-    thumbnail: "https://i.dummyjson.com/data/products/38/thumbnail.jpg",
+    thumbnail: "https://cdn.shopclues.com/images/thumbnails/82092/320/320/135940704-82092125-1523095632.png",
     images: [
-      "https://i.dummyjson.com/data/products/38/1.png",
-      "https://i.dummyjson.com/data/products/38/2.jpg",
-      "https://i.dummyjson.com/data/products/38/3.jpg",
-      "https://i.dummyjson.com/data/products/38/4.jpg"
+      "https://m.media-amazon.com/images/I/61L73UqmJpL._UX569_.jpg",
+      "https://m.media-amazon.com/images/I/71C5EHfGaFS.__AC_SY445_SX342_QL70_ML2_.jpg",
+      "https://m.media-amazon.com/images/I/61FcPhYfS4L._UL1500_.jpg",
+
     ]
   },
   {
@@ -718,13 +717,12 @@ export const products = [
     stock: 55,
     brand: "Top Sweater",
     category: "tops",
-    thumbnail: "https://i.dummyjson.com/data/products/39/thumbnail.jpg",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMRsiYl6uIqZHiaymSIaep6yTtxKGiR-zkakichsqpvw&usqp=CAU&ec=48665699",
     images: [
-      "https://i.dummyjson.com/data/products/39/1.jpg",
-      "https://i.dummyjson.com/data/products/39/2.jpg",
-      "https://i.dummyjson.com/data/products/39/3.jpg",
-      "https://i.dummyjson.com/data/products/39/4.jpg",
-      "https://i.dummyjson.com/data/products/39/thumbnail.jpg"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGoCPq6JnrdyViHs_MkP7i3jyjlqySTY0OiNvKdrcaJkRUtaoal0rXq8iYO-QrolY7omfpNixXUrY&usqp=CAU&ec=48665699",
+      "https://i5.walmartimages.com/asr/440316ab-bd10-4c52-9c1a-9175e6665d17.618fb895740f1246e7486863c6e5307f.png?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1bfjV5HeCBXwv7JWVHVpU0v0XP8u6C0DAgEMxKqx5q1yyUzQ42DzI9Fc3KfYvdcy3V2jwhZPgDx8&usqp=CAU&ec=48665699",
+
     ]
   },
   {
@@ -737,23 +735,23 @@ export const products = [
     stock: 84,
     brand: "Top Sweater",
     category: "tops",
-    thumbnail: "https://i.dummyjson.com/data/products/40/thumbnail.jpg",
+    thumbnail: "https://n3.sdlcdn.com/imgs/k/b/l/230X258_sharpened/Outflits-Viscose-Shrugs-Off-White-SDL010297348-1-b2e90.jpg",
     images: [
-      "https://i.dummyjson.com/data/products/40/1.jpg",
-      "https://i.dummyjson.com/data/products/40/2.jpg"
+      "https://cdn.shopclues.com/images1/thumbnails/93901/320/320/141742180-93901287-1653062307.jpg",
+      "https://m.media-amazon.com/images/I/81MCDPlJ77L._UY741_.jpg"
     ]
   },
   {
     _id: uuid(),
-    title: "NIGHT SUIT",
+    title: "red saaree",
     description: "NIGHT SUIT RED MICKY MOUSE..  For Girls. Fantastic Suits.",
     price: 55,
     discountPercentage: 15.05,
     rating: 4.65,
     stock: 21,
     brand: "RED MICKY MOUSE..",
-    category: "womens-dresses",
-    thumbnail: "https://i.dummyjson.com/data/products/41/thumbnail.webp",
+    category: "womens-saaree",
+    thumbnail: "https://rukminim1.flixcart.com/image/832/832/k1l1ea80/sari/f/5/w/free-sarees-traditional-sarees-designer-saree-fancy-sarees-party-original-imafh4bwap9gbhak.jpeg?q=70",
     images: [
       "https://i.dummyjson.com/data/products/41/1.jpg",
       "https://i.dummyjson.com/data/products/41/2.webp",
@@ -771,8 +769,8 @@ export const products = [
     rating: 4.05,
     stock: 148,
     brand: "Digital Printed",
-    category: "womens-dresses",
-    thumbnail: "https://i.dummyjson.com/data/products/42/thumbnail.jpg",
+    category: "womens-saaree",
+    thumbnail: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/91JgZ-FWzvL._UL1500_.jpg",
     images: [
       "https://i.dummyjson.com/data/products/42/1.png",
       "https://i.dummyjson.com/data/products/42/2.png",
@@ -790,8 +788,8 @@ export const products = [
     rating: 4.31,
     stock: 150,
     brand: "Ghazi Fabric",
-    category: "womens-dresses",
-    thumbnail: "https://i.dummyjson.com/data/products/43/thumbnail.jpg",
+    category: "womens-saaree",
+    thumbnail: "https://www.clker.com/cliparts/3/3/c/6/1322297805562451340indian-silk-saree_20414.jpg",
     images: [
       "https://i.dummyjson.com/data/products/43/1.jpg",
       "https://i.dummyjson.com/data/products/43/2.jpg",
@@ -809,8 +807,8 @@ export const products = [
     rating: 4.03,
     stock: 2,
     brand: "Ghazi Fabric",
-    category: "womens-dresses",
-    thumbnail: "https://i.dummyjson.com/data/products/44/thumbnail.jpg",
+    category: "womens-saaree",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHM_Ff9EeqMXIWDqvrmPQ025ETk459eG3w64o-m9jvYRGEcQbipGrougiREQUKbFWLoUlmsfe-ygw&usqp=CAU&ec=48665699",
     images: [
       "https://i.dummyjson.com/data/products/44/1.jpg",
       "https://i.dummyjson.com/data/products/44/2.jpg",
@@ -828,8 +826,8 @@ export const products = [
     rating: 4.67,
     stock: 96,
     brand: "IELGY",
-    category: "womens-dresses",
-    thumbnail: "https://i.dummyjson.com/data/products/45/thumbnail.jpg",
+    category: "womens-saaree",
+    thumbnail: "https://5.imimg.com/data5/SELLER/Default/2020/12/PN/TT/DO/29174263/digital-printed-saree-1000x1000.jpg",
     images: [
       "https://i.dummyjson.com/data/products/45/1.jpg",
       "https://i.dummyjson.com/data/products/45/2.webp",
@@ -1033,12 +1031,12 @@ export const products = [
     stock: 6,
     brand: "Sneakers",
     category: "mens-shoes",
-    thumbnail: "https://i.dummyjson.com/data/products/56/thumbnail.jpg",
+    thumbnail: "https://m.media-amazon.com/images/I/71VgSPTxPnL._UL1500_.jpg",
     images: [
-      "https://i.dummyjson.com/data/products/56/1.jpg",
-      "https://i.dummyjson.com/data/products/56/2.jpg",
-      "https://i.dummyjson.com/data/products/56/3.jpg",
-      "https://i.dummyjson.com/data/products/56/4.jpg",
+      "https://cdn.shopify.com/s/files/1/2575/9828/products/2083ffa20fe76cf9cc4023261c9bddac_1904x.progressive_8a775a60-5ac4-40f9-a003-671c72800c3a_grande.jpg?v=1606494245",
+      "https://i.ebayimg.com/images/g/zmMAAOSwgr9jDM6H/s-l1600.jpg",
+      "https://i.ebayimg.com/images/g/4KQAAOSwT9liusn6/s-l500.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMDPr1hGzyDhDUc_NtNw198bfcg0UDV-5TH5VUrFLAq_63YFwPsGCkoMckp1xjz_L4SQHa6tO94oM&usqp=CAU&ec=48665699",
       "https://i.dummyjson.com/data/products/56/5.jpg",
       "https://i.dummyjson.com/data/products/56/thumbnail.jpg"
     ]
@@ -1053,11 +1051,11 @@ export const products = [
     stock: 20,
     brand: "Rubber",
     category: "mens-shoes",
-    thumbnail: "https://i.dummyjson.com/data/products/57/thumbnail.jpg",
+    thumbnail: "https://5.imimg.com/data5/CY/QJ/MY-25539252/leather-shoes-for-men-leather-loafer-shoes-lo33-black-1000x1000.png",
     images: [
-      "https://i.dummyjson.com/data/products/57/1.jpg",
-      "https://i.dummyjson.com/data/products/57/2.jpg",
-      "https://i.dummyjson.com/data/products/57/3.jpg",
+      "https://m.media-amazon.com/images/I/41upWLHyU-L.jpg",
+      "https://m.media-amazon.com/images/I/71adfun8YuL._UY625_.jpg",
+      "https://5.imimg.com/data5/FY/QY/EA/SELLER-51594600/mens-loafers-shoes-1000x1000.jpg",
       "https://i.dummyjson.com/data/products/57/4.jpg",
       "https://i.dummyjson.com/data/products/57/thumbnail.jpg"
     ]
@@ -1091,7 +1089,7 @@ export const products = [
     stock: 137,
     brand: "Sneakers",
     category: "mens-shoes",
-    thumbnail: "https://i.dummyjson.com/data/products/59/thumbnail.jpg",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCIBrrQVElMypFMYl1VnTeUyYhi2xAvX0Hx0K6SSxZY9-yYu2NDI8MjIlDvy3TRYKtzSn10yUUw9E&usqp=CAU&ec=48665699",
     images: [
       "https://i.dummyjson.com/data/products/59/1.jpg",
       "https://i.dummyjson.com/data/products/59/2.jpg",
@@ -1179,12 +1177,12 @@ export const products = [
     stock: 61,
     brand: "Strap Skeleton",
     category: "mens-watches",
-    thumbnail: "https://i.dummyjson.com/data/products/64/thumbnail.jpg",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzKOX3svFY6fPNE1n2kXkBZfmtMhBdcNr0QXij5_tv0WvI5EDB3nnPcAWxKuSpKLhn8ez0YTzp8ho&usqp=CAU&ec=48665699",
     images: [
-      "https://i.dummyjson.com/data/products/64/1.jpg",
-      "https://i.dummyjson.com/data/products/64/2.webp",
-      "https://i.dummyjson.com/data/products/64/3.jpg",
-      "https://i.dummyjson.com/data/products/64/thumbnail.jpg"
+      "https://www.pngitem.com/pimgs/m/490-4909977_cartier-mens-watch-hd-png-download.png",
+      "https://images.squarespace-cdn.com/content/v1/54661df4e4b0c1af99306b69/1521317205943-WPJB1A5469GUFPBG3NNN/Rotary+Rose+Gold+Cambridge+Gents+Chronograph+Quart.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzKOX3svFY6fPNE1n2kXkBZfmtMhBdcNr0QXij5_tv0WvI5EDB3nnPcAWxKuSpKLhn8ez0YTzp8ho&usqp=CAU&ec=48665699",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5LLYhCUQkL15pRDAd4JUerOLgAZjwoQ17OXs0MgNmm3hUQEhiIBDskzcT4tuyofNLFI4e3rrO4Hw&usqp=CAU&ec=48665699"
     ]
   },
   {
@@ -1305,7 +1303,7 @@ export const products = [
     rating: 4.71,
     stock: 17,
     brand: "LouisWill",
-    category: "womens-bags",
+    category: "girls-frock",
     thumbnail: "https://i.dummyjson.com/data/products/71/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/71/1.jpg",
@@ -1323,7 +1321,7 @@ export const products = [
     rating: 4.91,
     stock: 27,
     brand: "LouisWill",
-    category: "womens-bags",
+    category: "girls-frock",
     thumbnail: "https://i.dummyjson.com/data/products/72/thumbnail.webp",
     images: [
       "https://i.dummyjson.com/data/products/72/1.jpg",
@@ -1342,7 +1340,7 @@ export const products = [
     rating: 4.18,
     stock: 101,
     brand: "Bracelet",
-    category: "womens-bags",
+    category: "girls-frock",
     thumbnail: "https://i.dummyjson.com/data/products/73/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/73/1.jpg",
@@ -1360,7 +1358,7 @@ export const products = [
     rating: 4.01,
     stock: 43,
     brand: "Copenhagen Luxe",
-    category: "womens-bags",
+    category: "girls-frock",
     thumbnail: "https://i.dummyjson.com/data/products/74/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/74/1.jpg",
@@ -1379,7 +1377,7 @@ export const products = [
     rating: 4.93,
     stock: 13,
     brand: "Steal Frame",
-    category: "womens-bags",
+    category: "girls-frock",
     thumbnail: "https://i.dummyjson.com/data/products/75/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/75/1.jpg",

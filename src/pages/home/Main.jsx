@@ -50,25 +50,24 @@ export default function Main() {
                 category='tops'
                 title='Tops'
             />
+
             <Product
-                category='skincare'
-                title='Skincare'
+                category='womens-saaree'
+                title='womens-saaree'
             />
+
             <Product
-                category='groceries'
-                title='Groceries'
-            />
-            <Product
-                category='mens-shirts'
-                title='Mens Shirts'
-            />
-            <Product
-                category='womens-dresses'
-                title='Womens Dresses'
+                category='mens-shoes'
+                title='mens Shoes'
             />
             <Product
                 category='mens-watches'
                 title='Mens Watches'
+            />
+
+            <Product
+                category='laptops'
+                title='laptops'
             />
 
 

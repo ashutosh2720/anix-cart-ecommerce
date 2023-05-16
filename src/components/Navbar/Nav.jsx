@@ -9,6 +9,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import MenuIcon from '@mui/icons-material/Menu';
 import Man2Icon from '@mui/icons-material/Man2';
 import Woman2Icon from '@mui/icons-material/Woman2';
+import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import logo from '../../Images/anix4.png'
 import { NavLink } from 'react-router-dom';
 function Navbar() {
@@ -104,7 +105,8 @@ function Navbar() {
                     {/* <NavLink to='/Decoration'> */}
 
 
-                    <ChairIcon fontSize="medium" /> Decoration
+                    <LaptopMacIcon fontSize="medium" />
+                    Electronics
 
 
                     {/* </NavLink> */}
