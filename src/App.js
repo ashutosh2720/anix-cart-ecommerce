@@ -1,43 +1,40 @@
-import "./App.css";
-import logo from "./logo.png";
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+import './CSS/App.css'
+import './CSS/sign.css'
+import './CSS/index.css'
+
+
+
+
+import Mockman from 'mockman-js'
+import Navbar from './components/Navbar/Nav';
+import Footer from './components/footer/Footer'
+import Main from './pages/home/Main'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} alt="mockBee logo" width="180" height="180" />
-        <h1 className="brand-title">
-          Welcome to <span>mockBee!</span>
-        </h1>
-        <p className="brand-description">
-          Get started by editing <code>src/App.js</code>
-        </p>
-        <div className="links">
-          <a
-            href="https://mockbee.netlify.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Explore mockBee
-          </a>
-          <a
-            href="https://mockbee.netlify.app/docs/api/introduction"
-            target="_blank"
-            rel="noreferrer"
-          >
-            API Documentation
-          </a>
-          <a
-            href="https://github.com/neogcamp/mockBee"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Contribute
-          </a>
-        </div>
-      </header>
-    </div>
+    <>
+      {/* <Mockman /> */}
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Main />} />
+        {/* <Route path='/mockman' element={<Mockman />} /> */}
+        {/* <Route path='/Sign' element={<Sign />} /> */}
+        {/* <Route path='/Mens' element={<Mens />} /> */}
+        {/* <Route path='/Womens' element={<Womens />} /> */}
+        {/* <Route path='/Decoration' element={<Decoration />} /> */}
+        {/* <Route path='/Cart' element={<Cart />} /> */}
+        {/* <Route path='/Empty' element={<Empty />} /> */}
+        {/* <Route path='/single-product/:id' element={<Discription />} /> */}
+      </Routes >
+      <Footer />
+
+
+    </>
   );
+
 }
 
 export default App;

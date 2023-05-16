@@ -12,6 +12,7 @@ import {
 import {
   getAllCategoriesHandler,
   getCategoryHandler,
+  getCategoryProductHandler,
 } from "./backend/controllers/CategoryController";
 import {
   getAllProductsHandler,
@@ -68,6 +69,7 @@ export function makeServer({ environment = "development" } = {}) {
       // categories routes (public)
       this.get("/categories", getAllCategoriesHandler.bind(this));
       this.get("/categories/:categoryId", getCategoryHandler.bind(this));
+      this.get("/category/:categoryname", getCategoryProductHandler.bind(this));
 
       // cart routes (private)
       this.get("/user/cart", getCartItemsHandler.bind(this));
