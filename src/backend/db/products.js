@@ -16,11 +16,11 @@ export const products = [
     stock: 94,
     brand: "Apple",
     category: "smartphones",
-    thumbnail: "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+    thumbnail: "https://i.dummyjson.com/data/products/1/3.jpg",
     images: [
+      "https://i.dummyjson.com/data/products/1/3.jpg",
       "https://i.dummyjson.com/data/products/1/1.jpg",
       "https://i.dummyjson.com/data/products/1/2.jpg",
-      "https://i.dummyjson.com/data/products/1/3.jpg",
       "https://i.dummyjson.com/data/products/1/4.jpg",
       "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
     ]
@@ -35,7 +35,7 @@ export const products = [
     stock: 34,
     brand: "Apple",
     category: "smartphones",
-    thumbnail: "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+    thumbnail: "https://i.dummyjson.com/data/products/2/1.jpg",
     images: [
       "https://i.dummyjson.com/data/products/2/1.jpg",
       "https://i.dummyjson.com/data/products/2/2.jpg",
@@ -68,7 +68,7 @@ export const products = [
     stock: 123,
     brand: "OPPO",
     category: "smartphones",
-    thumbnail: "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+    thumbnail: "https://i.dummyjson.com/data/products/4/2.jpg",
     images: [
       "https://i.dummyjson.com/data/products/4/1.jpg",
       "https://i.dummyjson.com/data/products/4/2.jpg",
@@ -87,7 +87,7 @@ export const products = [
     stock: 32,
     brand: "Huawei",
     category: "smartphones",
-    thumbnail: "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+    thumbnail: "https://i.dummyjson.com/data/products/5/3.jpg",
     images: [
       "https://i.dummyjson.com/data/products/5/1.jpg",
       "https://i.dummyjson.com/data/products/5/2.jpg",
@@ -104,30 +104,34 @@ export const products = [
     stock: 83,
     brand: "Apple",
     category: "laptops",
-    thumbnail: "https://m.media-amazon.com/images/I/71vFKBpKakL._SX679_.jpg",
+    thumbnail: "https://i.postimg.cc/yddH62tW/mac-1.jpg",
     images: [
-      "https://m.media-amazon.com/images/I/71s0pbb7bOL._SX679_.jpg",
-      "https://m.media-amazon.com/images/I/81JFWbGkeEL._SX679_.jpg",
-      "https://m.media-amazon.com/images/I/8134-T9Jf6L._SX679_.jpg",
+      'https://i.postimg.cc/yddH62tW/mac-1.jpg',
+      'https://i.postimg.cc/z3mZjvBR/mack-2.jpg',
+      'https://i.postimg.cc/kM22fHGn/mack-3.jpg',
+      'https://i.postimg.cc/HWFVKt8b/mack-4.jpg',
+      'https://i.postimg.cc/Y0LBYYpH/mack-5.jpg'
 
     ]
   },
   {
     _id: uuid(),
-    title: "Samsung Galaxy Book",
-    description: "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+    title: "Asus Tuf Gaming",
+    description: "Asus Tuf Gaming (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
     price: 1499,
     discountPercentage: 4.15,
     rating: 4.25,
     stock: 50,
     brand: "Samsung",
     category: "laptops",
-    thumbnail: "https://m.media-amazon.com/images/I/61wqYsqU6AL._SX679_.jpg",
+    thumbnail: "https://i.postimg.cc/T3z03bsb/asus-1.jpg",
     images: [
-      "https://i.dummyjson.com/data/products/7/1.jpg",
-      "https://i.dummyjson.com/data/products/7/2.jpg",
-      "https://i.dummyjson.com/data/products/7/3.jpg",
-      "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+      'https://i.postimg.cc/T3z03bsb/asus-1.jpg',
+      'https://i.postimg.cc/d3Vmxjhb/asus-2.jpg',
+      'https://i.postimg.cc/Gh9xPzwY/asus-3.jpg',
+      'https://i.postimg.cc/d3NmPZdL/asus-4.jpg',
+      'https://i.postimg.cc/Y2dxmZVM/asus-5.jpg'
+
     ]
   },
   {
@@ -140,13 +144,14 @@ export const products = [
     stock: 68,
     brand: "Microsoft Surface",
     category: "laptops",
-    thumbnail: "https://m.media-amazon.com/images/I/71x8uHbbZpL._SX679_.jpg",
+    thumbnail: "https://i.postimg.cc/6QThc0GF/dell-1.webp",
     images: [
-      "https://i.dummyjson.com/data/products/8/1.jpg",
-      "https://i.dummyjson.com/data/products/8/2.jpg",
-      "https://i.dummyjson.com/data/products/8/3.jpg",
-      "https://i.dummyjson.com/data/products/8/4.jpg",
-      "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+      'https://i.postimg.cc/6QThc0GF/dell-1.webp',
+      'https://i.postimg.cc/SRb7ybtp/dell-2.jpg',
+      'https://i.postimg.cc/2yddy9PL/dell-3.jpg',
+      'https://i.postimg.cc/mrqy5HYk/dell-4.jpg',
+      'https://i.postimg.cc/RFHL5ZdR/dell-5.jpg'
+
     ]
   },
   {
@@ -662,12 +667,12 @@ export const products = [
     stock: 39,
     brand: "Professional Wear",
     category: "tops",
-    thumbnail: "https://m.media-amazon.com/images/I/71sm8MRnZ2L._UX679_.jpg",
+    thumbnail: "https://i.postimg.cc/rp72Z66X/red-top-1.jpg",
     images: [
-      "https://m.media-amazon.com/images/I/914DUwyWe+L._UY741_.jpg",
-      "https://m.media-amazon.com/images/I/91HAY27TPkL._UY741_.jpg",
-      "https://m.media-amazon.com/images/I/71suVzGIRwL._UY741_.jpg",
-      "https://m.media-amazon.com/images/I/81UtFEt8ubL._UY741_.jpg",
+      "https://i.postimg.cc/3rXQ1bnV/red-top-2.jpg",
+      "https://i.postimg.cc/xT9D4yZC/red-top-3.jpg",
+      "https://i.postimg.cc/L6vKKgdV/red-top-4.jpg",
+      "https://i.postimg.cc/7hnvLf5w/red-top-5.jpg",
 
     ]
   },
@@ -681,11 +686,13 @@ export const products = [
     stock: 107,
     brand: "Soft Cotton",
     category: "tops",
-    thumbnail: "https://m.media-amazon.com/images/I/81KtAJ495-L._UY879_.jpg",
+    thumbnail: "https://i.postimg.cc/sgpWgzcK/pink-top-1.jpg",
     images: [
-      "https://m.media-amazon.com/images/I/81IJzTVWlTL._UY741_.jpg",
-      "https://m.media-amazon.com/images/I/81g1S7BmE3L._UY741_.jpg",
-      "https://m.media-amazon.com/images/I/81ZrnavO38L._UY741_.jpg",
+      "https://i.postimg.cc/sgpWgzcK/pink-top-1.jpg",
+      "https://i.postimg.cc/s2shBLHz/pink-top-2.jpg",
+      "https://i.postimg.cc/cJh8fcPn/pink-top-3.jpg",
+      "https://i.postimg.cc/LXsgD1M0/pink-top-4.jpg",
+      "https://i.postimg.cc/wvbyGjqx/pink-top-5.jpg"
 
     ]
   },
@@ -699,11 +706,11 @@ export const products = [
     stock: 20,
     brand: "Soft Cotton",
     category: "tops",
-    thumbnail: "https://m.media-amazon.com/images/I/91HpVq5WjeS._UY741_.jpg",
+    thumbnail: "https://i.postimg.cc/T3jmQxBF/blue-top-1.jpg",
     images: [
-      "https://m.media-amazon.com/images/I/91-vO8bW10S._UY741_.jpg",
-      "https://m.media-amazon.com/images/I/A1CSR5dNrPS._UY741_.jpg",
-      "https://m.media-amazon.com/images/I/9154iX94sQS._UY741_.jpg",
+      "https://i.postimg.cc/SKy9v5hs/blue-top-2.jpg",
+      "https://i.postimg.cc/GpqDwQLj/blue-top-3.jpg",
+      "https://i.postimg.cc/KzjMZM4h/blue-top-4.jpg",
 
     ]
   },
@@ -717,12 +724,13 @@ export const products = [
     stock: 55,
     brand: "Top Sweater",
     category: "tops",
-    thumbnail: "https://m.media-amazon.com/images/I/91QALxYHvDL._UY741_.jpg",
+    thumbnail: "https://i.postimg.cc/jdjtMYC2/orange-top-1.jpg",
     images: [
-      "https://m.media-amazon.com/images/I/91h0foiONgL._UY741_.jpg",
-      "https://m.media-amazon.com/images/I/91LepLp4o2L._UY741_.jpg",
-      "https://m.media-amazon.com/images/I/91bFYi6RbvL._UY741_.jpg",
-
+      "https://i.postimg.cc/jdjtMYC2/orange-top-1.jpg",
+      "https://i.postimg.cc/y8MK6Jj3/orange-top-2.jpg",
+      "https://i.postimg.cc/t4ZyHd3H/orange-top-3.jpg",
+      "https://i.postimg.cc/HLbgrpvZ/orange-top-4.jpg",
+      "https://i.postimg.cc/Y9kwgJJp/orange-top-5.jpg",
     ]
   },
   {
@@ -735,10 +743,13 @@ export const products = [
     stock: 84,
     brand: "Top Sweater",
     category: "tops",
-    thumbnail: "https://m.media-amazon.com/images/I/712HeyuPFNL._UX679_.jpg",
+    thumbnail: "https://i.postimg.cc/VNmswrDs/yellow-top-1.jpg",
     images: [
-      "https://m.media-amazon.com/images/I/71e-zS9UQoL._UX679_.jpg",
-      "https://m.media-amazon.com/images/I/71jpPtI2O0L._UX679_.jpg"
+      'https://i.postimg.cc/VNmswrDs/yellow-top-1.jpg',
+      'https://i.postimg.cc/3Rb32L7W/yellow-top-2.jpg',
+      'https://i.postimg.cc/sxQsmpDm/yellow-top-3.jpg',
+      'https://i.postimg.cc/W342DBBQ/yellow-top-4.jpg'
+
     ]
   },
   {
@@ -751,13 +762,14 @@ export const products = [
     stock: 21,
     brand: "RED MICKY MOUSE..",
     category: "womens-saaree",
-    thumbnail: "https://m.media-amazon.com/images/I/51vVb5cmgwL._UX569_.jpg",
+    thumbnail: "https://i.postimg.cc/Kztd8Jzd/red-saaree-1.jpg",
     images: [
-      "https://m.media-amazon.com/images/I/61zVuHpL4kL._UX569_.jpg",
-      "https://m.media-amazon.com/images/I/616J3M1vvoL._UX569_.jpg",
-      "https://m.media-amazon.com/images/I/611chrrTmaL._UX569_.jpg",
-      "https://m.media-amazon.com/images/I/616J3M1vvoL._UX569_.jpg",
-      "https://i.dummyjson.com/data/products/41/thumbnail.webp"
+      'https://i.postimg.cc/Kztd8Jzd/red-saaree-1.jpg',
+      'https://i.postimg.cc/Hn2RQnbz/red-saaree-2.jpg',
+      'https://i.postimg.cc/vZDkVQT7/red-saaree-3.jpg',
+      'https://i.postimg.cc/J4pS0yr4/red-saaree-4.jpg',
+      'https://i.postimg.cc/rFVvqGLP/red-saaree-5.jpg'
+
     ]
   },
   {
@@ -770,13 +782,14 @@ export const products = [
     stock: 148,
     brand: "Digital Printed",
     category: "womens-saaree",
-    thumbnail: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/91JgZ-FWzvL._UL1500_.jpg",
+    thumbnail: "https://i.postimg.cc/wBp5dVCt/black-saaaree-5.jpg",
     images: [
-      "https://i.dummyjson.com/data/products/42/1.png",
-      "https://i.dummyjson.com/data/products/42/2.png",
-      "https://i.dummyjson.com/data/products/42/3.png",
-      "https://i.dummyjson.com/data/products/42/4.jpg",
-      "https://i.dummyjson.com/data/products/42/thumbnail.jpg"
+      'https://i.postimg.cc/wBp5dVCt/black-saaaree-5.jpg',
+      'https://i.postimg.cc/d1Q8h0tw/black-saaree-1.jpg',
+      'https://i.postimg.cc/Y2s1SMcB/black-saaree-3.jpg',
+      'https://i.postimg.cc/kGBKyhbH/black-saree-2.jpg',
+      'https://i.postimg.cc/qqSnDXcv/blacksaaree-4.jpg'
+
     ]
   },
   {
@@ -789,13 +802,13 @@ export const products = [
     stock: 150,
     brand: "Ghazi Fabric",
     category: "womens-saaree",
-    thumbnail: "https://www.clker.com/cliparts/3/3/c/6/1322297805562451340indian-silk-saree_20414.jpg",
+    thumbnail: "https://i.postimg.cc/dtR8vXY8/blue-saaree-1.jpg",
     images: [
-      "https://i.dummyjson.com/data/products/43/1.jpg",
-      "https://i.dummyjson.com/data/products/43/2.jpg",
-      "https://i.dummyjson.com/data/products/43/3.jpg",
-      "https://i.dummyjson.com/data/products/43/4.jpg",
-      "https://i.dummyjson.com/data/products/43/thumbnail.jpg"
+      'https://i.postimg.cc/dtR8vXY8/blue-saaree-1.jpg',
+      'https://i.postimg.cc/vZ3fxVDT/blue-saaree-2.jpg',
+      'https://i.postimg.cc/N0FT6jr4/blue-saaree-3.jpg',
+      'https://i.postimg.cc/bwz1vTy4/blue-saaree-4.jpg'
+
     ]
   },
   {
@@ -808,13 +821,14 @@ export const products = [
     stock: 2,
     brand: "Ghazi Fabric",
     category: "womens-saaree",
-    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHM_Ff9EeqMXIWDqvrmPQ025ETk459eG3w64o-m9jvYRGEcQbipGrougiREQUKbFWLoUlmsfe-ygw&usqp=CAU&ec=48665699",
+    thumbnail: "https://i.postimg.cc/bwy3BH0h/graan-saaree-1.jpg",
     images: [
-      "https://i.dummyjson.com/data/products/44/1.jpg",
-      "https://i.dummyjson.com/data/products/44/2.jpg",
-      "https://i.dummyjson.com/data/products/44/3.jpg",
-      "https://i.dummyjson.com/data/products/44/4.jpg",
-      "https://i.dummyjson.com/data/products/44/thumbnail.jpg"
+      'https://i.postimg.cc/bwy3BH0h/graan-saaree-1.jpg', ,
+      'https://i.postimg.cc/ZnzLFrYX/green-saaree-2.jpg',
+      'https://i.postimg.cc/jj9c2ppx/green-saaree-3.jpg',
+      'https://i.postimg.cc/wjw08yFs/green-saaree-4.jpg',
+      'https://i.postimg.cc/k4bcbjCx/green-saaree-5.jpg'
+
     ]
   },
   {
@@ -827,13 +841,13 @@ export const products = [
     stock: 96,
     brand: "IELGY",
     category: "womens-saaree",
-    thumbnail: "https://5.imimg.com/data5/SELLER/Default/2020/12/PN/TT/DO/29174263/digital-printed-saree-1000x1000.jpg",
+    thumbnail: "https://i.postimg.cc/htS3qTHt/light-blue-saaree-1.jpg",
     images: [
-      "https://i.dummyjson.com/data/products/45/1.jpg",
-      "https://i.dummyjson.com/data/products/45/2.webp",
-      "https://i.dummyjson.com/data/products/45/3.jpg",
-      "https://i.dummyjson.com/data/products/45/4.jpg",
-      "https://i.dummyjson.com/data/products/45/thumbnail.jpg"
+      'https://i.postimg.cc/htS3qTHt/light-blue-saaree-1.jpg',
+      'https://i.postimg.cc/LsWyf7hJ/light-blue-saaree-2.jpg',
+      'https://i.postimg.cc/Gpt74r30/light-blue-saaree-3.jpg',
+      'https://i.postimg.cc/tTVBz5V2/light-blue-saaree-4.jpg'
+
     ]
   },
   {
@@ -846,7 +860,7 @@ export const products = [
     stock: 72,
     brand: "IELGY fashion",
     category: "womens-shoes",
-    thumbnail: "https://i.dummyjson.com/data/products/46/thumbnail.jpg",
+    thumbnail: "https://i.dummyjson.com/data/products/46/1.webp",
     images: [
       "https://i.dummyjson.com/data/products/46/1.webp",
       "https://i.dummyjson.com/data/products/46/2.jpg",
@@ -883,7 +897,7 @@ export const products = [
     stock: 25,
     brand: "Sandals Flip Flops",
     category: "womens-shoes",
-    thumbnail: "https://i.dummyjson.com/data/products/48/thumbnail.jpg",
+    thumbnail: "https://m.media-amazon.com/images/I/61GdGz90MhL._UY695_.jpg",
     images: [
       "https://i.dummyjson.com/data/products/48/1.jpg",
       "https://i.dummyjson.com/data/products/48/2.jpg",
@@ -920,7 +934,7 @@ export const products = [
     stock: 46,
     brand: "Arrivals Genuine",
     category: "womens-shoes",
-    thumbnail: "https://i.dummyjson.com/data/products/50/thumbnail.jpg",
+    thumbnail: "https://m.media-amazon.com/images/I/61Y5dnHCkiL._UY695_.jpg",
     images: [
       "https://i.dummyjson.com/data/products/50/1.jpeg",
       "https://i.dummyjson.com/data/products/50/2.jpg",
@@ -937,7 +951,7 @@ export const products = [
     stock: 132,
     brand: "Vintage Apparel",
     category: "mens-shirts",
-    thumbnail: "https://i.dummyjson.com/data/products/51/thumbnail.jpg",
+    thumbnail: "https://i.dummyjson.com/data/products/51/2.jpg",
     images: [
       "https://i.dummyjson.com/data/products/51/1.png",
       "https://i.dummyjson.com/data/products/51/2.jpg",
@@ -955,7 +969,7 @@ export const products = [
     stock: 128,
     brand: "FREE FIRE",
     category: "mens-shirts",
-    thumbnail: "https://i.dummyjson.com/data/products/52/thumbnail.jpg",
+    thumbnail: "https://i.dummyjson.com/data/products/52/3.jpg",
     images: [
       "https://i.dummyjson.com/data/products/52/1.png",
       "https://i.dummyjson.com/data/products/52/2.png",
@@ -1012,7 +1026,7 @@ export const products = [
     stock: 122,
     brand: "The Warehouse",
     category: "mens-shirts",
-    thumbnail: "https://i.dummyjson.com/data/products/55/thumbnail.jpg",
+    thumbnail: "https://i.dummyjson.com/data/products/55/4.jpg",
     images: [
       "https://i.dummyjson.com/data/products/55/1.jpg",
       "https://i.dummyjson.com/data/products/55/2.webp",
@@ -1089,7 +1103,7 @@ export const products = [
     stock: 137,
     brand: "Sneakers",
     category: "mens-shoes",
-    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCIBrrQVElMypFMYl1VnTeUyYhi2xAvX0Hx0K6SSxZY9-yYu2NDI8MjIlDvy3TRYKtzSn10yUUw9E&usqp=CAU&ec=48665699",
+    thumbnail: "https://i.dummyjson.com/data/products/59/3.jpg",
     images: [
       "https://i.dummyjson.com/data/products/59/1.jpg",
       "https://i.dummyjson.com/data/products/59/2.jpg",
