@@ -662,12 +662,12 @@ export const products = [
     stock: 39,
     brand: "Professional Wear",
     category: "tops",
-    thumbnail: "https://dimg.dillards.com/is/image/DillardsZoom/nav2/aventura-seychelle-embroidered-square-neck-short-sleeve-top/00000000_zi_666760dc-9adf-492a-b5f1-740c33422b78.jpg",
+    thumbnail: "https://m.media-amazon.com/images/I/71sm8MRnZ2L._UX679_.jpg",
     images: [
-      "https://i5.walmartimages.com/asr/b4322000-7950-423b-95d8-8b83830a6a97.01a4eed12ed9d9d6b25e2010748dc730.jpeg?odnHeight=784&odnWidth=580&odnBg=FFFFFF",
-      "https://n.nordstrommedia.com/id/sr3/6849bbe7-c55b-4899-9693-809f8f2bc3b9.jpeg?h=365&w=240&dpr=2",
-      "https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/12756768_fpx.tif?$2014_BROWSE_FASHION$&fmt=jpeg&op_usm=0.7,1.0,0.5,0&resMode=sharp2&qlt=85,0&wid=280&hei=350",
-      "https://n.nordstrommedia.com/id/sr3/a412ca21-20b7-4774-8333-c85cfec5b2e1.jpeg?h=365&w=240&dpr=2",
+      "https://m.media-amazon.com/images/I/914DUwyWe+L._UY741_.jpg",
+      "https://m.media-amazon.com/images/I/91HAY27TPkL._UY741_.jpg",
+      "https://m.media-amazon.com/images/I/71suVzGIRwL._UY741_.jpg",
+      "https://m.media-amazon.com/images/I/81UtFEt8ubL._UY741_.jpg",
 
     ]
   },
@@ -681,11 +681,11 @@ export const products = [
     stock: 107,
     brand: "Soft Cotton",
     category: "tops",
-    thumbnail: "https://i5.walmartimages.com/asr/a23a7b8e-6832-4b02-b9da-5d5c0c1445ec.7a84fc3ceb2edfc97697f1e778b0844e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+    thumbnail: "https://m.media-amazon.com/images/I/81KtAJ495-L._UY879_.jpg",
     images: [
-      "https://m.media-amazon.com/images/I/613+uadCymL._AC_UX466_.jpg",
-      "https://i5.walmartimages.com/asr/f8dcaf84-d079-4e90-92a3-48d8698142b1.1138a10389481adaca2a6dca524729a7.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
-      "https://m.media-amazon.com/images/I/71k3ZAECSrL._AC_SX569_.jpg",
+      "https://m.media-amazon.com/images/I/81IJzTVWlTL._UY741_.jpg",
+      "https://m.media-amazon.com/images/I/81g1S7BmE3L._UY741_.jpg",
+      "https://m.media-amazon.com/images/I/81ZrnavO38L._UY741_.jpg",
 
     ]
   },
@@ -699,11 +699,11 @@ export const products = [
     stock: 20,
     brand: "Soft Cotton",
     category: "tops",
-    thumbnail: "https://cdn.shopclues.com/images/thumbnails/82092/320/320/135940704-82092125-1523095632.png",
+    thumbnail: "https://m.media-amazon.com/images/I/91HpVq5WjeS._UY741_.jpg",
     images: [
-      "https://m.media-amazon.com/images/I/61L73UqmJpL._UX569_.jpg",
-      "https://m.media-amazon.com/images/I/71C5EHfGaFS.__AC_SY445_SX342_QL70_ML2_.jpg",
-      "https://m.media-amazon.com/images/I/61FcPhYfS4L._UL1500_.jpg",
+      "https://m.media-amazon.com/images/I/91-vO8bW10S._UY741_.jpg",
+      "https://m.media-amazon.com/images/I/A1CSR5dNrPS._UY741_.jpg",
+      "https://m.media-amazon.com/images/I/9154iX94sQS._UY741_.jpg",
 
     ]
   },
@@ -717,11 +717,11 @@ export const products = [
     stock: 55,
     brand: "Top Sweater",
     category: "tops",
-    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMRsiYl6uIqZHiaymSIaep6yTtxKGiR-zkakichsqpvw&usqp=CAU&ec=48665699",
+    thumbnail: "https://m.media-amazon.com/images/I/91QALxYHvDL._UY741_.jpg",
     images: [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGoCPq6JnrdyViHs_MkP7i3jyjlqySTY0OiNvKdrcaJkRUtaoal0rXq8iYO-QrolY7omfpNixXUrY&usqp=CAU&ec=48665699",
-      "https://i5.walmartimages.com/asr/440316ab-bd10-4c52-9c1a-9175e6665d17.618fb895740f1246e7486863c6e5307f.png?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1bfjV5HeCBXwv7JWVHVpU0v0XP8u6C0DAgEMxKqx5q1yyUzQ42DzI9Fc3KfYvdcy3V2jwhZPgDx8&usqp=CAU&ec=48665699",
+      "https://m.media-amazon.com/images/I/91h0foiONgL._UY741_.jpg",
+      "https://m.media-amazon.com/images/I/91LepLp4o2L._UY741_.jpg",
+      "https://m.media-amazon.com/images/I/91bFYi6RbvL._UY741_.jpg",
 
     ]
   },
@@ -735,10 +735,10 @@ export const products = [
     stock: 84,
     brand: "Top Sweater",
     category: "tops",
-    thumbnail: "https://n3.sdlcdn.com/imgs/k/b/l/230X258_sharpened/Outflits-Viscose-Shrugs-Off-White-SDL010297348-1-b2e90.jpg",
+    thumbnail: "https://m.media-amazon.com/images/I/712HeyuPFNL._UX679_.jpg",
     images: [
-      "https://cdn.shopclues.com/images1/thumbnails/93901/320/320/141742180-93901287-1653062307.jpg",
-      "https://m.media-amazon.com/images/I/81MCDPlJ77L._UY741_.jpg"
+      "https://m.media-amazon.com/images/I/71e-zS9UQoL._UX679_.jpg",
+      "https://m.media-amazon.com/images/I/71jpPtI2O0L._UX679_.jpg"
     ]
   },
   {
@@ -751,12 +751,12 @@ export const products = [
     stock: 21,
     brand: "RED MICKY MOUSE..",
     category: "womens-saaree",
-    thumbnail: "https://rukminim1.flixcart.com/image/832/832/k1l1ea80/sari/f/5/w/free-sarees-traditional-sarees-designer-saree-fancy-sarees-party-original-imafh4bwap9gbhak.jpeg?q=70",
+    thumbnail: "https://m.media-amazon.com/images/I/51vVb5cmgwL._UX569_.jpg",
     images: [
-      "https://i.dummyjson.com/data/products/41/1.jpg",
-      "https://i.dummyjson.com/data/products/41/2.webp",
-      "https://i.dummyjson.com/data/products/41/3.jpg",
-      "https://i.dummyjson.com/data/products/41/4.jpg",
+      "https://m.media-amazon.com/images/I/61zVuHpL4kL._UX569_.jpg",
+      "https://m.media-amazon.com/images/I/616J3M1vvoL._UX569_.jpg",
+      "https://m.media-amazon.com/images/I/611chrrTmaL._UX569_.jpg",
+      "https://m.media-amazon.com/images/I/616J3M1vvoL._UX569_.jpg",
       "https://i.dummyjson.com/data/products/41/thumbnail.webp"
     ]
   },

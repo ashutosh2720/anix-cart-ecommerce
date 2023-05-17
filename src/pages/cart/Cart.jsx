@@ -1,8 +1,8 @@
 import React from 'react'
 
 import './cart.css'
-import Cartitem from '../Components/cart/Cartitem';
-import { useGlobalCart } from '../context/cart-context';
+import Cartitem from '../../components/cart/Cartitem';
+import { useGlobalCart } from '../../contexts/cart-context';
 
 
 export default function Cart() {

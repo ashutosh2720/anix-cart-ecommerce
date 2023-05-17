@@ -10,9 +10,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Man2Icon from '@mui/icons-material/Man2';
 import Woman2Icon from '@mui/icons-material/Woman2';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
+import Badge from '@mui/material/Badge';
 import logo from '../../Images/anix4.png'
 import { NavLink } from 'react-router-dom';
+import { useGlobalCart } from "../../contexts/cart-context";
 function Navbar() {
+    const { cartArray } = useGlobalCart()
     return <>
 
         <nav>
@@ -34,23 +37,27 @@ function Navbar() {
 
 
                     <div className="img4" >
-                        {/* <NavLink to='/sign'> */}
-                        <PersonAddAltSharpIcon />
-                        {/* </NavLink> */}
+                        <NavLink to='/sign'>
+                            <PersonAddAltSharpIcon />
+                        </NavLink>
 
                     </div>
 
 
                     <div className="img4">
-                        {/* <NavLink to='/Error'> */}
+                        <NavLink to='/Error'>
 
-                        <FavoriteSharpIcon />
+                            <FavoriteSharpIcon />
 
-                        {/* </NavLink> */}
+                        </NavLink>
                     </div>
 
                     <div className="img3">
-                        <ShoppingCartIcon />
+                        <NavLink to='/Cart'>
+                            <Badge badgeContent={cartArray.length} color="success">
+                                <ShoppingCartIcon className="cart-icon" />
+                            </Badge>
+                        </NavLink>
                     </div>
                 </div>
 
@@ -69,19 +76,19 @@ function Navbar() {
                 </div>
                 <div className="home"><li>
 
-                    {/* <NavLink to='/'> */}
+                    <NavLink to='/'>
 
 
-                    <HomeIcon />Home
-                    {/* </NavLink> */}
+                        <HomeIcon />Home
+                    </NavLink>
 
                 </li></div>
                 <div className="ments-wear"><li>
 
-                    {/* <NavLink to='/Mens'> */}
-                    <Man2Icon />Mens
+                    <NavLink to='/Mens'>
+                        <Man2Icon />Mens
 
-                    {/* </NavLink> */}
+                    </NavLink>
 
 
                 </li></div>
@@ -89,27 +96,27 @@ function Navbar() {
                 <div className="womens-saare"><li>
 
 
-                    {/* <NavLink to='/Womens ' className={isActive =>
-                    !isActive ? " active" : "inactive"
-                }> */}
+                    <NavLink to='/Womens ' className={isActive =>
+                        !isActive ? " active" : "inactive"
+                    }>
 
-                    <Woman2Icon fontSize="medium" />Womens
-                    {/*                     
-                    </NavLink> */}
+                        <Woman2Icon fontSize="medium" />Womens
+
+                    </NavLink>
 
 
                 </li></div>
                 <div className="home-appliance"> <li>
 
 
-                    {/* <NavLink to='/Decoration'> */}
+                    <NavLink to='/electronics'>
 
 
-                    <LaptopMacIcon fontSize="medium" />
-                    Electronics
+                        <LaptopMacIcon fontSize="medium" />
+                        Electronics
 
 
-                    {/* </NavLink> */}
+                    </NavLink>
 
 
 

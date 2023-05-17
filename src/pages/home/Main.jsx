@@ -18,11 +18,11 @@ export default function Main() {
 
             <Carousel autoPlay={true} infiniteLoop={true} interval='3000' emulateTouch={true}>
                 <div>
-                    <img src="https://www.winkart.in/wp-content/uploads/2020/12/section09-slider1.jpg" />
+                    <img src="https://www.liamjmoore.com/images/liam-moore-portfolio-john-lewis-9.jpg" />
                     <p className="legend">Legend 3</p>
                 </div>
                 <div>
-                    <img src="https://www.kindpng.com/picc/m/491-4913062_nike-adidas-shoes-slider-nike-concept-slider-concept.png" />
+                    <img src="https://www.insightssuccess.in/wp-content/uploads/2020/12/785054-ecommerce-istock-020119.jpg" />
                     <p className="legend">Legend 2</p>
                 </div>
                 <div>
@@ -31,7 +31,7 @@ export default function Main() {
                 </div>
 
                 <div>
-                    <img src="https://www.ta-hifi.de/wp-content/uploads/solitaire_t_slider_home._2jpg-scaled.jpg" />
+                    <img src="https://trisvaraa.files.wordpress.com/2019/05/exclusive-features-that-makes-banarasi-sarees-special.jpg?w=656&h=290&crop=1" />
                     <p className="legend">Legend 3</p>
                 </div>
                 <div>

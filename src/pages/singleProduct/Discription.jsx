@@ -2,14 +2,14 @@ import { LineAxisOutlined } from '@mui/icons-material';
 import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
-import '../CSS/Discription.css'
+import '../singleProduct/Discription.css'
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 import PercentIcon from '@mui/icons-material/Percent';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import DiscountIcon from '@mui/icons-material/Discount';
-import { useGlobalCart } from '../context/cart-context';
+import { useGlobalCart } from '../../contexts/cart-context'
 
 
 export default function Discription() {
@@ -24,9 +24,10 @@ export default function Discription() {
 
 
     const getProductDetail = async (id) => {
-        let res = await fetch(`https://dummyjson.com/products/${id}`)
+        let res = await fetch(`/api/products/${id}`)
         let data = await res.json();
-        setProductDetail(data);
+        setProductDetail(data.product);
+        console.log(productDetail)
     }
 
     useEffect(() => {

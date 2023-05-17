@@ -30,9 +30,9 @@ const Product = ({ category, title }) => {
             <div className="items">
                 {
                     Items ?
-                        Items.map((val) => {
+                        Items?.map((val) => {
                             return (
-                                <NavLink to={'/single-product/' + val.id}>
+                                <NavLink to={'/single-product/' + val._id}>
                                     <div className="img-details">
                                         <div className="product-img">
                                             <img src={val.thumbnail} alt="" />
