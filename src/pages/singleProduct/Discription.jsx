@@ -5,9 +5,11 @@ import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import '../singleProduct/Discription.css'
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 import PercentIcon from '@mui/icons-material/Percent';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import Rating from '@mui/material/Rating';
 import DiscountIcon from '@mui/icons-material/Discount';
 import { useGlobalCart } from '../../contexts/cart-context'
 
@@ -15,6 +17,7 @@ import { useGlobalCart } from '../../contexts/cart-context'
 export default function Discription() {
 
     const [productDetail, setProductDetail] = useState();
+    const [mainImage, setMainImage] = useState(null)
 
     const { cartArray, addToCart } = useGlobalCart();
 
@@ -27,6 +30,7 @@ export default function Discription() {
         let res = await fetch(`/api/products/${id}`)
         let data = await res.json();
         setProductDetail(data.product);
+        setMainImage(data?.product?.thumbnail)
         console.log(productDetail)
     }
 
@@ -47,11 +51,12 @@ export default function Discription() {
 
             <div className="main-dis">
                 <div className="left-dis">
+                    <FavoriteIcon className='des-fav' />
                     <div className="left">
                         {
                             productDetail.images.map((img) => {
                                 return (
-                                    <img src={img} alt="" />
+                                    <img onMouseOver={() => setMainImage(img)} src={img} alt="" className='prev-img' />
                                 )
 
                             })
@@ -60,7 +65,7 @@ export default function Discription() {
                     </div>
 
                     <div className="main-img">
-                        <img src={productDetail.thumbnail} alt="" />
+                        <img src={mainImage} alt="" />
 
                     </div>
 
@@ -74,10 +79,16 @@ export default function Discription() {
                         <div className='title'>
 
                             <h1>{productDetail.title}</h1>
-                            <h3><b>Brand </b>:  {productDetail.brand}</h3>
-                            <h4><b>Description</b>     :   {productDetail.description}</h4>
+                            <p><b>Brand </b>:  {productDetail.brand}</p>
+                            <p><b>Description</b>     :   {productDetail.description}</p>
+                            <p> <Rating name="read-only" value={productDetail.rating} readOnly precision={0.1} className='rating' /></p>
                             <h2>Deal of the day</h2>
-                            <span><s><h3>1167</h3></s><h1>&#x20B9;1{productDetail.price}/-</h1></span>
+                            <span style={{ color: 'red' }}> <s><h3>1167</h3></s></span>
+
+
+                            <h1 style={{ color: 'green' }} >&#x20B9;1{productDetail.price}/-</h1>
+
+
 
 
                         </div>
@@ -86,17 +97,17 @@ export default function Discription() {
                             <div>
 
                                 <h2><DiscountIcon className='percent' />Offers</h2>
-                                <h4> <LocalOfferIcon className='off' />Bank Offer
+                                <p> <LocalOfferIcon className='off' />Bank Offer
                                     5% Cashback on Flipkart Axis Bank Card
-                                    T&C</h4>
-                                <h4><LocalOfferIcon className='off' />Buy this Product and Get Extra ₹500 Off on Two-Wheelers
-                                    T&C</h4>
-                                <h4><LocalOfferIcon className='off' />Partner Offer
+                                    T&C</p>
+                                <p><LocalOfferIcon className='off' />Buy this Product and Get Extra ₹500 Off on Two-Wheelers
+                                    T&C</p>
+                                <p><LocalOfferIcon className='off' />Partner Offer
                                     Purchase now & get a surprise cashback coupon for January / February 2023
-                                    Know More</h4>
-                                <h4 ><LocalOfferIcon className='off' />Partner Offer
+                                    Know More</p>
+                                <p ><LocalOfferIcon className='off' />Partner Offer
                                     Sign up for Flipkart Pay Later and get Flipkart Gift Card worth up to ₹1000*
-                                    Know More</h4>
+                                    Know More</p>
                             </div>
 
                         </div>

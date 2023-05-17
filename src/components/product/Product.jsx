@@ -1,21 +1,31 @@
 import React, { useEffect, useState } from 'react';
 import '../../pages/home/main.css';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 import Rating from '@mui/material/Rating';
 import { NavLink } from 'react-router-dom';
 
 const Product = ({ category, title }) => {
 
     const [Items, setItems] = useState([]);
+    const [loading, setLoading] = useState(false)
 
 
 
 
     const getApiData = async () => {
-        let response = await fetch(`/api/category/${category}`);
-        let data = await response.json();
-        setItems(data.products);
-        console.log(Items)
+        setLoading(true)
+        try {
+            let response = await fetch(`/api/category/${category}`);
+            let data = await response.json();
+            setItems(data.products);
+
+        }
+        catch (err) {
+            console.log(err)
+        }
+        setLoading(false)
+
     }
 
 
@@ -26,36 +36,46 @@ const Product = ({ category, title }) => {
 
     return (
         <>
-            {/* <div className="deal"><h1>{title}</h1></div> */}
 
-            <div className="items">
-                {
-                    Items ?
-                        Items?.map((val) => {
-                            return (
+
+
+
+            {
+                loading ? (<div>loading</div>) : (<div className="items">
+                    {Items?.map((val) => {
+                        return (
+
+                            <div  >
+                                <FavoriteIcon className='fav' />
+
                                 <NavLink to={'/single-product/' + val._id}>
                                     <div className="img-details">
+
                                         <div className="product-img">
                                             <img src={val.thumbnail} alt="" />
                                         </div>
                                         <div className="ind-item">
-                                            <h4>{val.title.slice(0, 25)}...</h4>
+                                            <p>{val.title.slice(0, 25)}...</p>
                                             <h3>&#8377;1{val.price}/-</h3>
                                             <Rating name="read-only" value={val.rating} readOnly precision={0.1} />
 
                                         </div>
                                     </div>
                                 </NavLink>
-                            )
-                        }) :
-                        <div className="">Loading</div>
+                            </div>
+                        )
+                    })
 
-                }
-                {/* <div className="all"><h4>view all</h4></div> */}
-            </div>
+
+                    }
+
+                </div>)
+
+            }
 
         </>
     )
+
 }
 
 export default Product;
