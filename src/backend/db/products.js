@@ -663,7 +663,7 @@ export const products = [
     description: "Cotton Solid Color Professional Wear Sleeve Shirt Womens Work Blouses Wholesale Clothing Casual Plain Custom Top OEM Customized",
     price: 90,
     discountPercentage: 10.89,
-    rating: 4.26,
+    rating: 3.26,
     stock: 39,
     brand: "Professional Wear",
     category: "tops",

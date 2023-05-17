@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../../pages/home/main.css';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import Rating from '@mui/material/Rating';
 import { NavLink } from 'react-router-dom';
 
 const Product = ({ category, title }) => {
@@ -40,6 +41,7 @@ const Product = ({ category, title }) => {
                                         <div className="ind-item">
                                             <h4>{val.title.slice(0, 25)}...</h4>
                                             <h3>&#8377;1{val.price}/-</h3>
+                                            <Rating name="read-only" value={val.rating} readOnly precision={0.1} />
 
                                         </div>
                                     </div>
