@@ -1,5 +1,7 @@
 // import { NavLink } from "react-router-dom";
 import './Nav.css'
+import Menu from '../../components/menu/Menu'
+import Sign from '../../pages/signin/Sign'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import PersonAddAltSharpIcon from '@mui/icons-material/PersonAddAltSharp';
 import FavoriteSharpIcon from '@mui/icons-material/FavoriteSharp';
@@ -14,9 +16,38 @@ import Badge from '@mui/material/Badge';
 import logo from '../../Images/anix4.png'
 import { NavLink } from 'react-router-dom';
 import { useGlobalCart } from "../../contexts/cart-context";
+import { useState } from 'react';
 function Navbar() {
     const { cartArray } = useGlobalCart()
+
+    const [showMenu, setShowMenu] = useState(false);
+    const [showLog, setLog] = useState(false);
+
+
+
+    const menuFunction = () => {
+        setShowMenu(!showMenu)
+    }
+
+
+    const logFunction = () => {
+        setLog(!showLog)
+    }
     return <>
+        {
+            showMenu
+            &&
+            <Menu menuFunction={menuFunction} />
+        }
+
+        {
+            showLog
+            &&
+            <div onClick={logFunction}>
+                <Sign />
+            </div>
+
+        }
 
         <nav>
 
@@ -70,7 +101,7 @@ function Navbar() {
         <div className="navigation">
             <ul>
 
-                <div className="img-name" >
+                <div className="img-name" onClick={menuFunction} >
                     <MenuIcon />
                     Menu
                 </div>
