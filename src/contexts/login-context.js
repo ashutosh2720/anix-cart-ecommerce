@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState, createContext, useContext, useEffect } from "react";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -9,7 +10,7 @@ const LoginProvider = ({ children }) => {
     const [userToken, setUserToken] = useState();
     const [userDetail, setUserDetail] = useState();
     const [input, setInput] = useState({
-        userName: '',
+        email: '',
         password: ''
     })
 
@@ -31,42 +32,29 @@ const LoginProvider = ({ children }) => {
     const notifyError = (content) => toast.error(content, toastify);
 
 
-    const getUserDetails = async (userId) => {
-        let res = await fetch(`https://dummyjson.com/users/${userId}`);
-        let data = await res.json()
-        setUserDetail(data)
-        console.log(data)
-    }
-
     useEffect(() => {
         let token = localStorage.getItem('anixCartUserToken');
         if (token) {
             setUserToken(token);
             let userId = localStorage.getItem('userId');
-            getUserDetails(userId);
+
         }
     }, [userToken])
 
     const dummyData = {
-        userName: 'kminchelle',
-        password: '0lelplR'
+        email: 'ashutosh@gmail.com',
+        password: 'ashutosh'
     }
 
     const userLogin = async () => {
-        let res = await fetch('https://dummyjson.com/auth/login', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                username: 'kminchelle',
-                password: '0lelplR'
-            })
+        let { data } = await axios.post('/api/auth/login', {
+
+            "email": "ashutosh@gmail.com",
+            "password": "ashutosh"
         })
-        let data = await res.json()
-        console.log(data.token);
-        localStorage.setItem('anixCartUserToken', data.token);
-        localStorage.setItem('userId', data.id);
-        setUserToken(data.token);
-        setUserDetail(data);
+
+        localStorage.setItem('anixCartUserToken', JSON.stringify(data.encodedToken));
+        setUserToken(data.encodedToken)
         notifySuccess("LOGIN SUCCESSFULL");
     }
 

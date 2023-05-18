@@ -1,6 +1,7 @@
 
 
 import React, { createContext, useContext, useState } from "react";
+import axios from 'axios'
 
 const cartContext = createContext();
 
@@ -9,15 +10,15 @@ const CartProvider = ({ children }) => {
     const [cartArray, setCartArray] = useState([]);
 
 
-    const addToCart = (id) => {
-        if (cartArray.includes(id)) {
+    const addToCart = async (product) => {
+        const encodedToken = localStorage.getItem("anixCartUserToken")
+        try {
+            const { data } = await axios.post(`/api/user/cart`, { product }, { headers: { authorization: encodedToken } })
+            console.log(data)
+        }
+        catch (err) {
 
         }
-        else
-            setCartArray((oldData) => {
-                return [id, ...oldData]
-            }
-            )
     }
 
 

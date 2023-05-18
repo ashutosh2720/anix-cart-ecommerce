@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../../pages/home/main.css';
+// import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import Skeleton from '@mui/material/Skeleton';
 import FavoriteIcon from '@mui/icons-material/Favorite';
@@ -94,7 +95,7 @@ const Product = ({ category, title }) => {
 
                                         </div>
                                     </NavLink>
-                                    <button className='add-to-cart' ><b><p>add to cart</p></b></button>
+                                    <button className='add-to-cart' ><AddShoppingCartIcon /><b><p style={{ display: 'inline', position: 'relative', bottom: '5px' }} >add to cart</p></b></button>
                                 </div>
 
                             </div>

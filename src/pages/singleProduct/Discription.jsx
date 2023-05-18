@@ -114,7 +114,7 @@ export default function Discription() {
                         <div className="btn-1"> {
                             cartArray.includes(productDetail.id) ?
                                 <button className='button-52' onClick={() => { navigate('/Cart') }} > <ShoppingCartCheckoutIcon fontSize='large' /> Go To Cart</button> :
-                                <button className='button-52' onClick={() => addToCart(productDetail.id)}> <AddShoppingCartIcon fontSize='large' />  <b>Add To Cart</b></button>
+                                <button className='button-52' onClick={() => addToCart(productDetail)}> <AddShoppingCartIcon fontSize='large' />  <b>Add To Cart</b></button>
 
                         }
                             <button className='button-52'> <FavoriteBorderIcon fontSize='large' /> Add to wishlist</button>

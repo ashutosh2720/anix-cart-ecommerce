@@ -108,11 +108,12 @@ body::-webkit-scrollbar {
 
 .add-to-cart{
     background-color: rgb(27, 41, 118);
-    padding: 5px;
     border-radius: 5px;
     cursor: pointer;
   margin-left: 50px;
   color: white;
+  text-align: center;
+  display: inline;
 }
 
 .collection {

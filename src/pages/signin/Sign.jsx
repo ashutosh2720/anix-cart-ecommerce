@@ -25,11 +25,11 @@ export default function Sign() {
     }
 
     const setInputUsername = (event) => {
-        setInput({ userName: event.target.value })
+        setInput((prev) => ({ ...prev, email: event.target.value }))
     }
 
     const setInputPassword = (event) => {
-        setInput({ password: event.target.value })
+        setInput((prev) => ({ ...prev, password: event.target.value }))
     }
 
 
@@ -39,7 +39,7 @@ export default function Sign() {
                 <div className="sign">
                     <img src="https://icons8.com/icon/117562/microsoft-outlook-2019" alt="" />
                     <label htmlFor="">Username</label>
-                    <input type="text" placeholder="Enter username" value={input.userName} onChange={setInputUsername} />
+                    <input type="text" placeholder="Enter username" value={input.email} onChange={setInputUsername} />
                     <label htmlFor="">Password</label>
                     <input type="password" placeholder="Enter password" value={input.password} onChange={setInputPassword} /><br />
                     <h5>Forget Password <a href=""> -&gt;click here</a></h5><br />
