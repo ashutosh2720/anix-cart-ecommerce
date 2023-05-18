@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import '../../pages/home/main.css';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import Skeleton from '@mui/material/Skeleton';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import Rating from '@mui/material/Rating';
 import { NavLink } from 'react-router-dom';
+
 
 const Product = ({ category, title }) => {
 
@@ -41,15 +43,45 @@ const Product = ({ category, title }) => {
 
 
             {
-                loading ? (<div>loading</div>) : (<div className="items">
+                loading ? (<div className='loading' >
+                    <div> <Skeleton variant="rectangular" width={250} height={170} />
+                        <Skeleton width="90%" />
+                        <Skeleton width="70%" />
+                        <Skeleton width="20%" />
+
+                    </div>
+                    <div>  <Skeleton variant="rectangular" width={250} height={170} />
+                        <Skeleton width="90%" />
+                        <Skeleton width="70%" />
+                        <Skeleton width="20%" />
+                    </div>
+                    <div> <Skeleton variant="rectangular" width={250} height={170} />
+                        <Skeleton width="90%" />
+                        <Skeleton width="70%" />
+                        <Skeleton width="20%" />
+                    </div>
+                    <div>  <Skeleton variant="rectangular" width={250} height={170} />
+                        <Skeleton width="90%" />
+                        <Skeleton width="70%" />
+                        <Skeleton width="20%" />
+                    </div>
+                    <div>  <Skeleton variant="rectangular" width={250} height={170} />
+                        <Skeleton width="90%" />
+                        <Skeleton width="70%" />
+                        <Skeleton width="20%" />
+                    </div>
+
+
+
+                </div>) : (<div className="items">
                     {Items?.map((val) => {
                         return (
 
                             <div  >
                                 <FavoriteIcon className='fav' />
 
-                                <NavLink to={'/single-product/' + val._id}>
-                                    <div className="img-details">
+                                <div className="img-details">
+                                    <NavLink to={'/single-product/' + val._id}>
 
                                         <div className="product-img">
                                             <img src={val.thumbnail} alt="" />
@@ -59,9 +91,12 @@ const Product = ({ category, title }) => {
                                             <h3>&#8377;1{val.price}/-</h3>
                                             <Rating name="read-only" value={val.rating} readOnly precision={0.1} />
 
+
                                         </div>
-                                    </div>
-                                </NavLink>
+                                    </NavLink>
+                                    <button className='add-to-cart' ><b><p>add to cart</p></b></button>
+                                </div>
+
                             </div>
                         )
                     })
