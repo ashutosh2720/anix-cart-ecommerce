@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './CSS/App.css'
-import './CSS/sign.css'
+
 import './CSS/index.css'
 import Mockman from 'mockman-js'
 import Navbar from './components/Navbar/Nav';
@@ -15,6 +15,7 @@ import Sign from './pages/signin/Sign'
 import Cart from './pages/cart/Cart'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import WishlistPage from './pages/wishlist/Wishlist';
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
         <Route path='/Womens' element={<Womens />} />
         <Route path='/electronics' element={<Electronics />} />
         <Route path='/Cart' element={<Cart />} />
-        {/* <Route path='/Empty' element={<Empty />} /> */}
+        <Route path='/wishlist' element={<WishlistPage />} />
+
         <Route path='/single-product/:id' element={<Discription />} />
       </Routes >
       <Footer />

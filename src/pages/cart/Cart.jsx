@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './cart.css'
-import Cartitem from '../../components/cart/Cartitem';
+import Cartitem from '../../components/cartItem/Cartitem';
 import { useGlobalCart } from '../../contexts/cart-context';
 
 
@@ -19,8 +19,8 @@ export default function Cart() {
                 <div className="main-cart-item">
 
                     {
-                        cartArray.map((cartId) => {
-                            return <Cartitem cartId={cartId} />
+                        cartArray.map((_id) => {
+                            return <Cartitem _id={_id} />
                         })
                     }
 

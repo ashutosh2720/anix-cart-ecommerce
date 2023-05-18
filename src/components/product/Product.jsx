@@ -6,6 +6,7 @@ import Skeleton from '@mui/material/Skeleton';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import Rating from '@mui/material/Rating';
 import { NavLink } from 'react-router-dom';
+import Loading from '../skelton/Loading';
 
 
 const Product = ({ category, title }) => {
@@ -44,37 +45,9 @@ const Product = ({ category, title }) => {
 
 
             {
-                loading ? (<div className='loading' >
-                    <div> <Skeleton variant="rectangular" width={250} height={170} />
-                        <Skeleton width="90%" />
-                        <Skeleton width="70%" />
-                        <Skeleton width="20%" />
-
-                    </div>
-                    <div>  <Skeleton variant="rectangular" width={250} height={170} />
-                        <Skeleton width="90%" />
-                        <Skeleton width="70%" />
-                        <Skeleton width="20%" />
-                    </div>
-                    <div> <Skeleton variant="rectangular" width={250} height={170} />
-                        <Skeleton width="90%" />
-                        <Skeleton width="70%" />
-                        <Skeleton width="20%" />
-                    </div>
-                    <div>  <Skeleton variant="rectangular" width={250} height={170} />
-                        <Skeleton width="90%" />
-                        <Skeleton width="70%" />
-                        <Skeleton width="20%" />
-                    </div>
-                    <div>  <Skeleton variant="rectangular" width={250} height={170} />
-                        <Skeleton width="90%" />
-                        <Skeleton width="70%" />
-                        <Skeleton width="20%" />
-                    </div>
-
-
-
-                </div>) : (<div className="items">
+                loading ? (
+                    <Loading />
+                ) : (<div className="items">
                     {Items?.map((val) => {
                         return (
 

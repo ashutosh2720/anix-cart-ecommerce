@@ -76,7 +76,7 @@ function Navbar() {
 
 
                     <div className="img4">
-                        <NavLink to='/Error'>
+                        <NavLink to='/wishlist'>
 
                             <FavoriteSharpIcon />
 

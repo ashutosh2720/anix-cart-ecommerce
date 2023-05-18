@@ -14,10 +14,11 @@ const CartProvider = ({ children }) => {
         const encodedToken = localStorage.getItem("anixCartUserToken")
         try {
             const { data } = await axios.post(`/api/user/cart`, { product }, { headers: { authorization: encodedToken } })
+            setCartArray((prev) => [...prev, data])
             console.log(data)
         }
         catch (err) {
-
+            console.log(err)
         }
     }
 

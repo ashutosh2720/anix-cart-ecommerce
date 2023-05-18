@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react'
+import './CartItem.css'
 import DeleteIcon from '@mui/icons-material/Delete';
 import { useGlobalCart } from '../../contexts/cart-context';
+import axios from 'axios';
 
 
-const Cartitem = ({ cartId }) => {
+const Cartitem = ({ _id }) => {
 
 
     const [cartProduct, setCartProduct] = useState();
@@ -11,11 +13,16 @@ const Cartitem = ({ cartId }) => {
     const { cartArray, deleteCart } = useGlobalCart();
 
 
-    const getProductDetail = async (id) => {
-        let res = await fetch(`https://dummyjson.com/products/${id}`)
-        let data = await res.json();
-        setCartProduct(data);
-        console.log(data);
+    const getCartItems = async (_id) => {
+        const encodedToken = localStorage.getItem("anixCartUserToken")
+        try {
+            const { data } = await axios.get(`/api/user/cart`, _id, { headers: { authorization: encodedToken } })
+            setCartProduct((prev) => [...prev, data])
+            console.log(cartProduct)
+        }
+        catch (err) {
+            console.log(err)
+        }
     }
 
     // useEffect(() => {
@@ -23,14 +30,14 @@ const Cartitem = ({ cartId }) => {
     // }, [])
 
     useEffect(() => {
-        getProductDetail(cartId);
+        getCartItems(_id);
     }, [cartArray])
 
 
 
     return (
 
-        cartProduct &&
+        cartArray &&
         <>
             <div className="cart-item">
                 {/* <div className="item1">
