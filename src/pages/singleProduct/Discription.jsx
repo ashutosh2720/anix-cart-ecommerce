@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import '../singleProduct/Discription.css'
+import Button from '@mui/material/Button';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
@@ -116,14 +117,14 @@ export default function Discription() {
                         <div className="btn-1"> {
                             cartArray.find((item) => item._id === productDetail._id)
                                 ?
-                                <button className='button-52' onClick={() => { navigate('/Cart') }} >
-                                    <ShoppingCartCheckoutIcon fontSize='large' /> Go To Cart
-                                </button> :
-                                <button className='button-52' onClick={() => addToCart(productDetail)}> <AddShoppingCartIcon fontSize='large' />  <b>Add To Cart</b>
-                                </button>
+                                <Button className='add-to-cart' onClick={() => { navigate('/Cart') }} >
+                                    <ShoppingCartCheckoutIcon fontSize='large' /> <b>Go To Cart</b>
+                                </Button> :
+                                <Button className='add-to-cart' onClick={() => addToCart(productDetail)}> <AddShoppingCartIcon fontSize='large' />  <b>Add To Cart</b>
+                                </Button>
 
                         }
-                            <button className='button-52'> <FavoriteBorderIcon fontSize='large' /> Add to wishlist</button>
+                            <Button className='add-to-cart'> <FavoriteBorderIcon fontSize='large' /> <b>Add to wishlist</b></Button>
                         </div>
 
                     </div>

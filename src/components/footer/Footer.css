@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kaushan+Script&family=Lato:ital,wght@1,900&family=Playfair+Display:ital@0;1&family=Rubik+Spray+Paint&family=Rubik+Vinyl&display=swap');
 
 .footer {
-   
+
     margin-top: 0px;
     padding-top: 0px;
     padding-bottom: 70px;
@@ -23,6 +23,10 @@
 }
 
 .footer ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     text-decoration: none;
     color: white;
     transition: .5s ease-in-out;
@@ -36,6 +40,7 @@
 
 .footer h2 {
     color: white;
+    text-align: center;
     border-bottom: 2px solid white;
     padding: 1px;
     border-width: 1px;
@@ -48,7 +53,7 @@
 .copy {
     background-color: #0C2340;
     margin-top: 3px;
-    padding: 0px;
+    padding-bottom: 15px;
     display: flex;
     justify-content: center;
     align-items: center;

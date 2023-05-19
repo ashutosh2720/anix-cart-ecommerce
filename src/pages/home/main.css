@@ -102,22 +102,25 @@ body::-webkit-scrollbar {
     cursor: pointer;
 
 
+
 }
 
-.add-to-cart {
-    background-color: rgb(27, 41, 118);
-    border-radius: 5px;
-    cursor: pointer;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 50px;
-    color: white;
-    text-align: center;
-    display: inline;
+
+Button.add-to-cart {
+    margin-left: 32px;
+    background-color: rgb(25, 53, 88);
 }
+
+
+Button.add-to-cart:hover {
+    margin-left: 32px;
+    background-color: rgb(240, 201, 5);
+    color: rgb(12, 35, 64);
+}
+
 
 .collection {
-    background-color: #0C2340;
+    background-color: rgb(12, 35, 64);
     display: flex;
     padding: 20px;
     flex-wrap: wrap;
@@ -135,7 +138,7 @@ body::-webkit-scrollbar {
     padding: 1px;
     width: 130px;
     height: 90px;
-    border-radius: 50%;
+    border-radius: 10%;
     background-color: white
 }
 

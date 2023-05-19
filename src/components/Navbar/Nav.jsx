@@ -6,6 +6,7 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import PersonAddAltSharpIcon from '@mui/icons-material/PersonAddAltSharp';
 import FavoriteSharpIcon from '@mui/icons-material/FavoriteSharp';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import ChairIcon from '@mui/icons-material/Chair';
 import HomeIcon from '@mui/icons-material/Home';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -106,18 +107,22 @@ function Navbar() {
                     Menu
                 </div>
                 <div className="home"><li>
-
                     <NavLink to='/'>
+                        <HomeIcon />
+                    </NavLink>
 
-
-                        <HomeIcon />Home
+                </li></div>
+                <div className="Shop"><li>
+                    <NavLink to='/shop'>
+                        <ShoppingBagIcon />Shop
                     </NavLink>
 
                 </li></div>
                 <div className="ments-wear"><li>
 
                     <NavLink to='/Mens'>
-                        <Man2Icon />Mens
+                        <Man2Icon />
+                        Mens
 
                     </NavLink>
 
@@ -131,7 +136,8 @@ function Navbar() {
                         !isActive ? " active" : "inactive"
                     }>
 
-                        <Woman2Icon fontSize="medium" />Womens
+                        <Woman2Icon fontSize="medium" />
+                        Womens
 
                     </NavLink>
 

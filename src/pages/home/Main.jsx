@@ -7,6 +7,7 @@ import { Carousel } from 'react-responsive-carousel';
 // import Sign from './Sign'
 import { useState } from "react";
 import Product from "../../components/product/Product";
+import Topdeals from "../../components/topdeals/Topdeals";
 // import Mens from "./Mens";
 
 
@@ -48,26 +49,26 @@ export default function Main() {
             </Carousel>
             <br />
 
-            <Product
+            <Topdeals
                 category='tops'
                 title='Tops'
             />
 
-            <Product
+            <Topdeals
                 category='womens-saaree'
                 title='womens-saaree'
             />
 
-            <Product
+            <Topdeals
                 category='mens-shoes'
                 title='mens Shoes'
             />
-            <Product
+            <Topdeals
                 category='mens-watches'
                 title='Mens Watches'
             />
 
-            <Product
+            <Topdeals
                 category='laptops'
                 title='laptops'
             />
@@ -80,12 +81,12 @@ export default function Main() {
 
             <div className="collection">
                 <div className="Mens-jacket col">
-                    <img src="https://www.pngarts.com/files/3/Men-Jacket-PNG-Free-Download.png" alt="" />
-                    <div className="txt">jacket</div>
+                    <img src="https://i.postimg.cc/rp72Z66X/red-top-1.jpg" alt="" />
+                    <div className="txt"></div>
 
                 </div>
                 <div className="Womens-saree col">
-                    <img src="https://th.bing.com/th/id/R.c065f741320873055400b4a8f5b43201?rik=tyUE5lyoZkboKw&riu=http%3a%2f%2fwww.pngimagesfree.com%2fPeople%2fSaree%2fSaree-2%2fSilk-Saree-PNG-wearing-model_pngimagesfree.com.png&ehk=P21TJx2eJwbp6GyxN2qfEGBkI7JjapZQTEmlCgGITT0%3d&risl=&pid=ImgRaw&r=0" alt="" />
+                    <img src="https://i.postimg.cc/bwy3BH0h/graan-saaree-1.jpg" alt="" />
 
                 </div>
                 <div className="Mens-shoes col">
@@ -97,11 +98,11 @@ export default function Main() {
 
                 </div>
                 <div className="Mens-shoes col">
-                    <img src="https://pluspng.com/img-png/mens-shoes-hd-png-download-clothes-mens-shoes-2000.png" alt="" />
+                    <img src="https://i.dummyjson.com/data/products/61/thumbnail.jpg" alt="" />
 
                 </div>
                 <div className="girls-lahenga col">
-                    <img src="https://cdn.shopify.com/s/files/1/1768/0827/products/MG_9675_grande.png?v=1509561488" alt="" />
+                    <img src="https://i.postimg.cc/T3z03bsb/asus-1.jpg" alt="" />
 
                 </div>
 

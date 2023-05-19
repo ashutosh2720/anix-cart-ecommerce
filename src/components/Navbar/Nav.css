@@ -116,6 +116,9 @@ nav {
 }
 
 .navigation ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 100px;
   padding: 1px;
   text-decoration: none;

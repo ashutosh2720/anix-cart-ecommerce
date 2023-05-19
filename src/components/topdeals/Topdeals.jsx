@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import '../../pages/home/main.css';
 // import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-import Button from '@mui/material/Button';
 import Skeleton from '@mui/material/Skeleton';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import Rating from '@mui/material/Rating';
@@ -11,7 +10,7 @@ import Loading from '../skelton/Loading';
 import { useGlobalCart } from '../../contexts/cart-context';
 
 
-const Product = ({ category, title }) => {
+const Topdeals = ({ category, title }) => {
 
     const [Items, setItems] = useState([]);
     const [loading, setLoading] = useState(false)
@@ -71,10 +70,7 @@ const Product = ({ category, title }) => {
 
                                         </div>
                                     </NavLink>
-                                    <Button variant="contained" className='add-to-cart' onClick={() => addToCart(val)}  > <AddShoppingCartIcon /><p  > add to cart</p></Button>
-
-
-
+                                    {/* <button className='add-to-cart' onClick={() => addToCart(val)} ><AddShoppingCartIcon /><b><p style={{ display: 'inline', position: 'relative', bottom: '5px' }} >add to cart</p></b></button> */}
                                 </div>
 
                             </div>
@@ -93,4 +89,4 @@ const Product = ({ category, title }) => {
 
 }
 
-export default Product;
+export default Topdeals;
