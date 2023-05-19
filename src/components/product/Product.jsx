@@ -44,17 +44,22 @@ const Product = ({ category, title }) => {
     return (
         <>
 
-
-
+            {loading ? '' :
+                <div className="product-title">
+                    <p><b>{title}</b></p>
+                </div>}
 
             {
                 loading ? (
                     <Loading />
                 ) : (<div className="items">
+
                     {Items?.map((val) => {
                         return (
 
+
                             <div  >
+
                                 <FavoriteIcon className='fav' />
 
                                 <div className="img-details">
