@@ -3,6 +3,7 @@ import './Nav.css'
 import Menu from '../../components/menu/Menu'
 import Sign from '../../pages/signin/Sign'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import Avatar from '@mui/material/Avatar';
 import PersonAddAltSharpIcon from '@mui/icons-material/PersonAddAltSharp';
 import FavoriteSharpIcon from '@mui/icons-material/FavoriteSharp';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
@@ -18,6 +19,7 @@ import logo from '../../Images/anix4.png'
 import { NavLink } from 'react-router-dom';
 import { useGlobalCart } from "../../contexts/cart-context";
 import { useState } from 'react';
+import AccountMenu from '../acountMenu/AccountMenu';
 function Navbar() {
     const { cartArray } = useGlobalCart()
 
@@ -70,7 +72,8 @@ function Navbar() {
 
                     <div className="img4" >
                         <NavLink to='/sign'>
-                            <PersonAddAltSharpIcon />
+                            {/* <PersonAddAltSharpIcon /> */}
+                            <AccountMenu />
                         </NavLink>
 
                     </div>
