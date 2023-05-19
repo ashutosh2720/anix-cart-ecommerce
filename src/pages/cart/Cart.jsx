@@ -19,8 +19,8 @@ export default function Cart() {
                 <div className="main-cart-item">
 
                     {
-                        cartArray.map((_id) => {
-                            return <Cartitem _id={_id} />
+                        cartArray.map((item) => {
+                            return <Cartitem item={item} />
                         })
                     }
 

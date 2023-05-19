@@ -5,52 +5,17 @@ import { useGlobalCart } from '../../contexts/cart-context';
 import axios from 'axios';
 
 
-const Cartitem = ({ _id }) => {
+const Cartitem = ({ item }) => {
 
-
-    const [cartProduct, setCartProduct] = useState();
-
-    const { cartArray, deleteCart } = useGlobalCart();
-
-
-    const getCartItems = async (_id) => {
-        const encodedToken = localStorage.getItem("anixCartUserToken")
-        try {
-            const { data } = await axios.get(`/api/user/cart`, _id, { headers: { authorization: encodedToken } })
-            setCartProduct((prev) => [...prev, data])
-            console.log(cartProduct)
-        }
-        catch (err) {
-            console.log(err)
-        }
-    }
-
-    // useEffect(() => {
-    //     getProductDetail(cartId);
-    // }, [])
-
-    useEffect(() => {
-        getCartItems(_id);
-    }, [cartArray])
-
-
+    const { deleteCart } = useGlobalCart();
 
     return (
-
-        cartArray &&
+        item &&
         <>
             <div className="cart-item">
-                {/* <div className="item1">
-                    <div className="img ">Price</div>
-                    <div className="tile ">Title</div>
-                    <div className="quantity ">Quantity</div>
-                    <div className="price">Price</div>
-                    <div className="delete ">Delete</div>
-                </div> */}
-
                 <div className="item2">
-                    <div className="img "><img src={cartProduct.thumbnail} alt="" /></div>
-                    <div className="tile ">{cartProduct.title}</div>
+                    <div className="img "><img src={item.thumbnail} alt="" /></div>
+                    <div className="tile ">{item.title}</div>
                     <div className="quantity"><select name="" id="">
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -59,9 +24,9 @@ const Cartitem = ({ _id }) => {
                         <option value="5">5</option>
                         <option value="6">6</option>
                     </select></div>
-                    <div className="price ">&#8377;1{cartProduct.price}</div>
+                    <div className="price ">&#8377;1{item.price}</div>
 
-                    <div className="delete" onClick={() => deleteCart(cartProduct.id)}><DeleteIcon /></div>
+                    <div className="delete" onClick={() => deleteCart(item.id)}><DeleteIcon /></div>
                 </div>
 
 

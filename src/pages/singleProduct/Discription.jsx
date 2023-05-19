@@ -26,6 +26,8 @@ export default function Discription() {
     const { id } = useParams();
 
 
+
+
     const getProductDetail = async (id) => {
         let res = await fetch(`/api/products/${id}`)
         let data = await res.json();
@@ -112,9 +114,13 @@ export default function Discription() {
 
                         </div>
                         <div className="btn-1"> {
-                            cartArray.includes(productDetail.id) ?
-                                <button className='button-52' onClick={() => { navigate('/Cart') }} > <ShoppingCartCheckoutIcon fontSize='large' /> Go To Cart</button> :
-                                <button className='button-52' onClick={() => addToCart(productDetail)}> <AddShoppingCartIcon fontSize='large' />  <b>Add To Cart</b></button>
+                            cartArray.find((item) => item._id === productDetail._id)
+                                ?
+                                <button className='button-52' onClick={() => { navigate('/Cart') }} >
+                                    <ShoppingCartCheckoutIcon fontSize='large' /> Go To Cart
+                                </button> :
+                                <button className='button-52' onClick={() => addToCart(productDetail)}> <AddShoppingCartIcon fontSize='large' />  <b>Add To Cart</b>
+                                </button>
 
                         }
                             <button className='button-52'> <FavoriteBorderIcon fontSize='large' /> Add to wishlist</button>

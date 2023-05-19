@@ -7,12 +7,14 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import Rating from '@mui/material/Rating';
 import { NavLink } from 'react-router-dom';
 import Loading from '../skelton/Loading';
+import { useGlobalCart } from '../../contexts/cart-context';
 
 
 const Product = ({ category, title }) => {
 
     const [Items, setItems] = useState([]);
     const [loading, setLoading] = useState(false)
+    const { addToCart } = useGlobalCart()
 
 
 
@@ -68,7 +70,7 @@ const Product = ({ category, title }) => {
 
                                         </div>
                                     </NavLink>
-                                    <button className='add-to-cart' ><AddShoppingCartIcon /><b><p style={{ display: 'inline', position: 'relative', bottom: '5px' }} >add to cart</p></b></button>
+                                    <button className='add-to-cart' onClick={() => addToCart(val)} ><AddShoppingCartIcon /><b><p style={{ display: 'inline', position: 'relative', bottom: '5px' }} >add to cart</p></b></button>
                                 </div>
 
                             </div>
