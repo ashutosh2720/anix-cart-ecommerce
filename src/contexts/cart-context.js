@@ -1,5 +1,3 @@
-
-
 import React, { createContext, useContext, useState } from "react";
 import axios from 'axios'
 
@@ -24,17 +22,12 @@ const CartProvider = ({ children }) => {
     console.log(cartArray)
 
     const deleteCart = (id) => {
-
         setCartArray(
             cartArray.filter((val) => {
                 return val !== id
             })
         )
     }
-
-
-
-
 
     return (
         <cartContext.Provider value={{ cartArray, setCartArray, addToCart, deleteCart }}>

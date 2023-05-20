@@ -1,20 +1,20 @@
 import React from 'react'
-import Product from '../../components/product/Product'
+import CategoryProducts from '../../components/categoryProducts/CategoryProducts';
 import '../home/main.css';
 
 
 const Electronics = () => {
     return (
         <>
-            <Product
+            <CategoryProducts
                 category='laptops'
                 title='laptops'
             />
-            <Product
+            <CategoryProducts
                 category='smartphones'
                 title='smartphones'
             />
-            <Product
+            <CategoryProducts
                 category='lighting'
                 title='lighting'
             />

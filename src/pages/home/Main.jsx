@@ -73,10 +73,6 @@ export default function Main() {
                 title='laptops'
             />
 
-
-
-
-
             <div className="cole"> <h2>Our Collections</h2></div>
 
             <div className="collection">
@@ -105,8 +101,6 @@ export default function Main() {
                     <img src="https://i.postimg.cc/T3z03bsb/asus-1.jpg" alt="" />
 
                 </div>
-
-
             </div>
         </>
     )

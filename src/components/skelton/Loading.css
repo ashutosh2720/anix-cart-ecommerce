@@ -1,7 +1,9 @@
-.skelton{
+.skelton {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     width: 100vw;
     min-height: 30vh;
+    margin: 20px;
 }

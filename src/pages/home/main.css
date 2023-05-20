@@ -38,7 +38,7 @@ body::-webkit-scrollbar {
 .product-title p {
     position: relative;
     width: 100vw;
-    top: 80px;
+    top: 30px;
     background-color: #0c0c4b;
     padding: 3px;
     border-radius: 5px;

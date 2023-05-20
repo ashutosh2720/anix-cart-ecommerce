@@ -10,19 +10,43 @@ import { NavLink } from 'react-router-dom';
 import Loading from '../skelton/Loading';
 import { useGlobalCart } from '../../contexts/cart-context';
 
-
-const Product = ({ products, productLoading }) => {
+const CategoryProducts = ({ category, title }) => {
+    const [Items, setItems] = useState([]);
+    const [loading, setLoading] = useState(true)
     const { addToCart } = useGlobalCart()
+
+    const getApiData = async () => {
+        try {
+            let response = await fetch(`/api/category/${category}`);
+            let data = await response.json();
+            setItems(data.products);
+        }
+        catch (err) {
+            console.log(err)
+        } finally {
+            setLoading(false)
+        }
+    }
+
+    useEffect(() => {
+        getApiData()
+    }, [])
 
     return (
         <>
             {
-                productLoading ? (
+                loading ? '' :
+                    <div className="product-title">
+                        <p><b>{title}</b></p>
+                    </div>
+            }
+            {
+                loading ? (
                     <Loading />
                 ) : (
                     <div className="items">
                         {
-                            products?.map((val) => {
+                            Items?.map((val) => {
                                 return (
                                     <div>
                                         <FavoriteIcon className='fav' />
@@ -53,4 +77,4 @@ const Product = ({ products, productLoading }) => {
 
 }
 
-export default Product;
+export default CategoryProducts;
