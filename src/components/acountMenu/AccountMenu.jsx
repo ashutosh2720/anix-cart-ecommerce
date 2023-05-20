@@ -12,8 +12,19 @@ import PersonAdd from '@mui/icons-material/PersonAdd';
 
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
+import { useGlobalLogin } from "../../contexts/login-context";
+import { NavLink } from 'react-router-dom';
 
 export default function AccountMenu() {
+
+  const { userToken, logoutUser, userDetail } = useGlobalLogin()
+
+
+
+  const logoutAction = () => {
+    logoutUser()
+
+  }
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -95,13 +106,25 @@ export default function AccountMenu() {
           </ListItemIcon>
           Settings
         </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon style={{ color: '#0C2340' }}  >
-            <Logout fontSize="small" />
-          </ListItemIcon>
-          Logout
-        </MenuItem>
+
+        {userToken ?
+          (<MenuItem onClick={logoutAction}>
+            <ListItemIcon style={{ color: '#0C2340' }}  >
+              <Logout fontSize="small" />
+            </ListItemIcon>
+            Logout
+          </MenuItem>)
+          :
+          (<NavLink to='/sign' >
+            <MenuItem onClick={handleClose}>
+              <ListItemIcon style={{ color: '#0C2340' }}  >
+                <Logout fontSize="small" />
+              </ListItemIcon>
+              sign
+            </MenuItem>
+          </NavLink>)}
       </Menu>
     </React.Fragment>
   );
 }
+

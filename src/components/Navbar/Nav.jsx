@@ -3,6 +3,8 @@ import './Nav.css'
 import Menu from '../../components/menu/Menu'
 import Sign from '../../pages/signin/Sign'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import Button from '@mui/material/Button';
+
 import Avatar from '@mui/material/Avatar';
 import PersonAddAltSharpIcon from '@mui/icons-material/PersonAddAltSharp';
 import FavoriteSharpIcon from '@mui/icons-material/FavoriteSharp';
@@ -20,8 +22,10 @@ import { NavLink } from 'react-router-dom';
 import { useGlobalCart } from "../../contexts/cart-context";
 import { useState } from 'react';
 import AccountMenu from '../acountMenu/AccountMenu';
+import { useGlobalLogin } from '../../contexts/login-context';
 function Navbar() {
     const { cartArray } = useGlobalCart()
+    const { userToken } = useGlobalLogin()
 
     const [showMenu, setShowMenu] = useState(false);
     const [showLog, setLog] = useState(false);
@@ -71,10 +75,14 @@ function Navbar() {
 
 
                     <div className="img4" >
-                        <NavLink to='/sign'>
-                            {/* <PersonAddAltSharpIcon /> */}
-                            <AccountMenu />
-                        </NavLink>
+                        {userToken ? <AccountMenu /> :
+                            <NavLink to='/sign'>
+                                {/* <PersonAddAltSharpIcon /> */}
+
+                                <Button variant="contained" size="small" style={{ backgroundColor: 'white', color: 'black', padding: '2px' }}>
+                                    <p>login</p>
+                                </Button>
+                            </NavLink>}
 
                     </div>
 
