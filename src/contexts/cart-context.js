@@ -19,8 +19,6 @@ const CartProvider = ({ children }) => {
         }
     }
 
-    console.log(cartArray)
-
     const deleteCart = (id) => {
         setCartArray(
             cartArray.filter((val) => {

@@ -54,7 +54,6 @@ export const getCategoryHandler = function (schema, request) {
  * */
 
 export const getCategoryProductHandler = function (schema, request) {
-  console.log(request)
   const categoryName = request.params.categoryname;
   try {
     const productOfCategory = schema.db._collections[0]._records.filter((product) => product.category === categoryName);

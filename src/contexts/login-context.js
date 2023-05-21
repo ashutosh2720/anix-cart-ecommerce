@@ -45,18 +45,28 @@ const LoginProvider = ({ children }) => {
         email: 'ashutosh@gmail.com',
         password: 'ashutosh'
     }
-
     const userLogin = async () => {
-        let { data } = await axios.post('/api/auth/login', {
-
-            "email": "ashutosh@gmail.com",
-            "password": "ashutosh"
-        })
-
-        localStorage.setItem('anixCartUserToken', JSON.stringify(data.encodedToken));
-        setUserToken(data.encodedToken)
-        notifySuccess("LOGIN SUCCESSFULL");
-    }
+        try {
+            let { data, status } = await axios.post('/api/auth/login', {
+                "email": input.email,
+                "password": input.password
+            })
+            if (status === 200) {
+                localStorage.setItem("anixCartUserToken", JSON.stringify(data.encodedToken));
+                localStorage.setItem("foundUser", JSON.stringify(data.foundUser));
+                setUserToken(data.encodedToken);
+                setUserDetail(data.foundUser)
+                notifySuccess('Login Successfully');
+            }
+        } catch (err) {
+            console.log(err);
+            if (err.response.status === 404) {
+                notifyError('User not found')
+            } else if (err.response.status === 401) {
+                notifyError('Invalid Credential')
+            }
+        }
+    };
 
     const loginAction = (event) => {
         event.preventDefault();
