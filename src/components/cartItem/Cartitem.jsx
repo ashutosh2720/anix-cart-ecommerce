@@ -7,7 +7,7 @@ import axios from 'axios';
 
 const Cartitem = ({ item }) => {
 
-    const { deleteCart } = useGlobalCart();
+    const { deleteFromCart } = useGlobalCart();
 
     return (
         item &&
@@ -26,7 +26,7 @@ const Cartitem = ({ item }) => {
                     </select></div>
                     <div className="price ">&#8377;1{item.price}</div>
 
-                    <div className="delete" onClick={() => deleteCart(item.id)}><DeleteIcon /></div>
+                    <div className="delete" onClick={() => deleteFromCart(item._id)}><DeleteIcon /></div>
                 </div>
 
 

@@ -21,7 +21,6 @@ ReactDOM.render(
           </CartProvider>
         </WishlistProvider>
       </LoginProvider>
-
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

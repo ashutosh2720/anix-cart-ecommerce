@@ -1,18 +1,17 @@
 import axios from "axios";
 import React, { useState, createContext, useContext, useEffect } from "react";
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const loginContext = createContext();
 
 const LoginProvider = ({ children }) => {
-
     const [userToken, setUserToken] = useState();
     const [userDetail, setUserDetail] = useState();
     const [input, setInput] = useState({
-        email: '',
-        password: ''
-    })
+        email: "",
+        password: "",
+    });
 
     const toastify = {
         position: "top-right",
@@ -23,47 +22,47 @@ const LoginProvider = ({ children }) => {
         draggable: true,
         progress: undefined,
         theme: "light",
-
-    }
+    };
 
     const notifyInfo = (content) => toast.info(content, toastify);
     const notifySuccess = (content) => toast.success(content, toastify);
     const notifyWarn = (content) => toast.warn(content, toastify);
     const notifyError = (content) => toast.error(content, toastify);
 
-
     useEffect(() => {
-        let token = localStorage.getItem('anixCartUserToken');
+        let token = localStorage.getItem("anixCartUserToken");
         if (token) {
             setUserToken(token);
-            let userId = localStorage.getItem('userId');
-
+            let userId = localStorage.getItem("userId");
         }
-    }, [userToken])
+    }, [userToken]);
 
     const dummyData = {
-        email: 'ashutosh@gmail.com',
-        password: 'ashutosh'
-    }
+        email: "ashutosh@gmail.com",
+        password: "ashutosh",
+    };
     const userLogin = async () => {
         try {
-            let { data, status } = await axios.post('/api/auth/login', {
-                "email": input.email,
-                "password": input.password
-            })
+            let { data, status } = await axios.post("/api/auth/login", {
+                email: input.email,
+                password: input.password,
+            });
             if (status === 200) {
-                localStorage.setItem("anixCartUserToken", JSON.stringify(data.encodedToken));
+                localStorage.setItem(
+                    "anixCartUserToken",
+                    JSON.stringify(data.encodedToken)
+                );
                 localStorage.setItem("foundUser", JSON.stringify(data.foundUser));
                 setUserToken(data.encodedToken);
-                setUserDetail(data.foundUser)
-                notifySuccess('Login Successfully');
+                setUserDetail(data.foundUser);
+                notifySuccess("Login Successfully");
             }
         } catch (err) {
             console.log(err);
             if (err.response.status === 404) {
-                notifyError('User not found')
+                notifyError("User not found");
             } else if (err.response.status === 401) {
-                notifyError('Invalid Credential')
+                notifyError("Invalid Credential");
             }
         }
     };
@@ -72,26 +71,40 @@ const LoginProvider = ({ children }) => {
         event.preventDefault();
         userLogin();
         setInput({
-            userName: '',
-            password: ''
-        })
-    }
+            userName: "",
+            password: "",
+        });
+    };
 
     const logoutUser = () => {
-        localStorage.removeItem('anixCartUserToken')
-        localStorage.removeItem('userId')
-        setUserToken('')
-        setUserDetail('')
-        notifyInfo('Logout Successfull!')
-    }
+        localStorage.removeItem("anixCartUserToken");
+        localStorage.removeItem("userId");
+        setUserToken("");
+        setUserDetail("");
+        notifyInfo("Logout Successfull!");
+    };
 
     return (
-        <loginContext.Provider value={{ input, setInput, dummyData, loginAction, userToken, logoutUser, userDetail }}>
+        <loginContext.Provider
+            value={{
+                input,
+                setInput,
+                dummyData,
+                loginAction,
+                userToken,
+                logoutUser,
+                userDetail,
+                notifyInfo,
+                notifySuccess,
+                notifyWarn,
+                notifyError
+            }}
+        >
             {children}
         </loginContext.Provider>
-    )
-}
+    );
+};
 
-const useGlobalLogin = () => useContext(loginContext)
+const useGlobalLogin = () => useContext(loginContext);
 
 export { LoginProvider, useGlobalLogin };

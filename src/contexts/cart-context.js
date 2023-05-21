@@ -19,16 +19,21 @@ const CartProvider = ({ children }) => {
         }
     }
 
-    const deleteCart = (id) => {
-        setCartArray(
-            cartArray.filter((val) => {
-                return val !== id
+    const deleteFromCart = async (id) => {
+        const encodedToken = localStorage.getItem('anixCartUserToken')
+        try {
+            const { data } = await axios.delete(`/api/user/cart/${id}`, {
+                headers: { authorization: encodedToken }
             })
-        )
+
+            setCartArray(data.cart)
+        } catch (err) {
+            console.log(err)
+        }
     }
 
     return (
-        <cartContext.Provider value={{ cartArray, setCartArray, addToCart, deleteCart }}>
+        <cartContext.Provider value={{ cartArray, setCartArray, addToCart, deleteFromCart }}>
             {children}
         </cartContext.Provider>
     )

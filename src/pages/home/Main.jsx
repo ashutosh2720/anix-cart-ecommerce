@@ -1,25 +1,24 @@
 import React, { useEffect } from "react";
-import './main.css';
+import "./main.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
-
-import { Carousel } from 'react-responsive-carousel';
+import { Carousel } from "react-responsive-carousel";
 // import Sign from './Sign'
 import { useState } from "react";
 import Product from "../../components/product/Product";
 import Topdeals from "../../components/topdeals/Topdeals";
+import { useGlobalWishlist } from "../../contexts/wishlist-context";
 // import Mens from "./Mens";
-
 
 export default function Main() {
 
-
-
-
     return (
         <>
-
-            <Carousel autoPlay={true} infiniteLoop={true} interval='3000' emulateTouch={true}>
+            <Carousel
+                autoPlay={true}
+                infiniteLoop={true}
+                interval="3000"
+                emulateTouch={true}
+            >
                 <div>
                     <img src="https://www.liamjmoore.com/images/liam-moore-portfolio-john-lewis-9.jpg" />
                     <p className="legend">Legend 3</p>
@@ -45,63 +44,50 @@ export default function Main() {
                     <img src="https://uk.yamaha.com/en/files/tw-e3b-purple-slider_5292a53b94567c3c40d65d5595c4c3ae.jpg?impolicy=resize&imwid=1200&imhei=480" />
                     <p className="legend">Legend 3</p>
                 </div>
-
             </Carousel>
             <br />
 
-            <Topdeals
-                category='tops'
-                title='Tops'
-            />
+            <Topdeals category="tops" title="Tops" />
+            <Topdeals category="womens-saaree" title="womens-saaree" />
+            <Topdeals category="mens-shoes" title="mens Shoes" />
+            <Topdeals category="mens-watches" title="Mens Watches" />
+            <Topdeals category="laptops" title="laptops" />
 
-            <Topdeals
-                category='womens-saaree'
-                title='womens-saaree'
-            />
-
-            <Topdeals
-                category='mens-shoes'
-                title='mens Shoes'
-            />
-            <Topdeals
-                category='mens-watches'
-                title='Mens Watches'
-            />
-
-            <Topdeals
-                category='laptops'
-                title='laptops'
-            />
-
-            <div className="cole"> <h2>Our Collections</h2></div>
+            <div className="cole">
+                {" "}
+                <h2>Our Collections</h2>
+            </div>
 
             <div className="collection">
                 <div className="Mens-jacket col">
                     <img src="https://i.postimg.cc/rp72Z66X/red-top-1.jpg" alt="" />
                     <div className="txt"></div>
-
                 </div>
                 <div className="Womens-saree col">
                     <img src="https://i.postimg.cc/bwy3BH0h/graan-saaree-1.jpg" alt="" />
-
                 </div>
                 <div className="Mens-shoes col">
-                    <img src="https://pluspng.com/img-png/mens-shoes-hd-png-download-clothes-mens-shoes-2000.png" alt="" />
-
+                    <img
+                        src="https://pluspng.com/img-png/mens-shoes-hd-png-download-clothes-mens-shoes-2000.png"
+                        alt=""
+                    />
                 </div>
                 <div className="girls-lahenga col">
-                    <img src="https://cdn.shopify.com/s/files/1/1768/0827/products/MG_9675_grande.png?v=1509561488" alt="" />
-
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/1768/0827/products/MG_9675_grande.png?v=1509561488"
+                        alt=""
+                    />
                 </div>
                 <div className="Mens-shoes col">
-                    <img src="https://i.dummyjson.com/data/products/61/thumbnail.jpg" alt="" />
-
+                    <img
+                        src="https://i.dummyjson.com/data/products/61/thumbnail.jpg"
+                        alt=""
+                    />
                 </div>
                 <div className="girls-lahenga col">
                     <img src="https://i.postimg.cc/T3z03bsb/asus-1.jpg" alt="" />
-
                 </div>
             </div>
         </>
-    )
+    );
 }
