@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap");
 
 body {
     background-color: white;
-    font-family: 'Merienda', cursive;
+    font-family: "Merienda", cursive;
     font-size: 1rem;
     font-weight: lighter;
-
 }
 
 body::-webkit-scrollbar {
@@ -22,17 +19,14 @@ body::-webkit-scrollbar {
 
 .deal {
     display: flex;
-
-
 }
 
 .product-title {
-
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: rgb(252, 245, 245)
+    color: rgb(252, 245, 245);
 }
 
 .product-title p {
@@ -46,14 +40,7 @@ body::-webkit-scrollbar {
 
 .deal h1 {
     background-color: red;
-    /* background-color: #0C2340;
-    color: white;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 10px;
-    font-size: 1.3rem; */
 }
-
 
 .items {
     box-shadow: rgb(23, 4, 4) 0px 3px 8px;
@@ -65,7 +52,6 @@ body::-webkit-scrollbar {
     margin-top: 30px;
     padding: 30px 0px;
     position: relative;
-
 }
 
 .fav {
@@ -74,7 +60,7 @@ body::-webkit-scrollbar {
     top: 33px;
     left: 3px;
     cursor: pointer;
-    z-index: 10;
+    z-index: 1;
 }
 
 .items h3 {
@@ -82,7 +68,6 @@ body::-webkit-scrollbar {
 }
 
 .img-details {
-
     box-shadow: rgba(0, 0, 0, 0.45) 0px 15px 20px -20px;
 }
 
@@ -94,10 +79,7 @@ body::-webkit-scrollbar {
     gap: 1px;
     padding-top: 20px;
     padding-bottom: 10px;
-    color: #0C2340;
-
-
-
+    color: #0c2340;
 }
 
 .product-img {
@@ -121,24 +103,18 @@ body::-webkit-scrollbar {
     transform: scale(1.1);
     transition: 1s;
     cursor: pointer;
-
-
-
 }
-
 
 Button.add-to-cart {
     margin-left: 32px;
     background-color: rgb(25, 53, 88);
 }
 
-
 Button.add-to-cart:hover {
     margin-left: 32px;
     background-color: rgb(240, 201, 5);
     color: rgb(12, 35, 64);
 }
-
 
 .collection {
     background-color: rgb(12, 35, 64);
@@ -152,7 +128,6 @@ Button.add-to-cart:hover {
 }
 
 .col {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,7 +135,7 @@ Button.add-to-cart:hover {
     width: 130px;
     height: 90px;
     border-radius: 10%;
-    background-color: white
+    background-color: white;
 }
 
 .collection img {
@@ -168,12 +143,9 @@ Button.add-to-cart:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .cole {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,7 +166,7 @@ Button.add-to-cart:hover {
 }
 
 .carousel-root:hover {
-    background-color: #0C2340 !important;
+    background-color: #0c2340 !important;
     opacity: 90% !important;
 }
 
@@ -202,7 +174,7 @@ Button.add-to-cart:hover {
     position: absolute;
     top: 2px;
     right: 10px;
-    background-color: #0C2340;
+    background-color: #0c2340;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
@@ -217,7 +189,6 @@ Button.add-to-cart:hover {
     height: 80vh;
     width: 100vw;
     background-size: cover;
-
 }
 
 .error img {
@@ -230,18 +201,14 @@ Button.add-to-cart:hover {
     align-items: center;
     width: 100vw;
     min-height: 30vh;
-
 }
 
 .loading img {
     width: 100%;
     height: 50vh;
-
 }
 
-
 @media screen and (max-width: 600px) {
-
     html {
         font-size: 10px;
     }
@@ -257,7 +224,6 @@ Button.add-to-cart:hover {
         display: flex;
         justify-content: space-around;
         align-items: center;
-
     }
 
     .product-img img {
@@ -267,9 +233,5 @@ Button.add-to-cart:hover {
         justify-content: space-around;
         align-items: center;
         padding-left: 10px;
-
     }
-
-
-
 }

@@ -24,13 +24,14 @@ import { useState } from "react";
 import AccountMenu from "../acountMenu/AccountMenu";
 import { useGlobalLogin } from "../../contexts/login-context";
 import { useGlobalWishlist } from "../../contexts/wishlist-context";
+import SearchBox from "../searchBox/SearchBox";
 function Navbar() {
     const { cartArray } = useGlobalCart();
     const { wishlistArray } = useGlobalWishlist();
     const { userToken } = useGlobalLogin();
-
     const [showMenu, setShowMenu] = useState(false);
     const [showLog, setLog] = useState(false);
+    const [searchInput, setSearchInput] = useState('')
 
     const menuFunction = () => {
         setShowMenu(!showMenu);
@@ -56,7 +57,8 @@ function Navbar() {
                 </div>
 
                 <div className="search">
-                    <input type="search" name="" id="" placeholder="search here..." />
+                    <input type="search" name="" id="" placeholder="search here..." onChange={(e) => setSearchInput(e.target.value)} value={searchInput} />
+                    <SearchBox searchInput={searchInput} setSearchInput={setSearchInput} />
                 </div>
 
                 <div className="nav-right">

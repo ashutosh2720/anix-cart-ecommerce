@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kaushan+Script&family=Lato:ital,wght@1,900&family=Playfair+Display:ital@0;1&family=Rubik+Spray+Paint&family=Rubik+Vinyl&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kaushan+Script&family=Lato:ital,wght@1,900&family=Playfair+Display:ital@0;1&family=Rubik+Spray+Paint&family=Rubik+Vinyl&display=swap");
 
 nav {
   width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #0C2340;
+  background-color: #0c2340;
   position: sticky;
   padding-left: 10px;
   padding-right: 10px;
   border-bottom: 2px solid black;
-  z-index: 3;
-  font-family: 'Playfair Display', serif;
+  z-index: 2;
+  font-family: "Playfair Display", serif;
   position: sticky;
   top: -60px;
   gap: 20px;
@@ -23,7 +23,6 @@ nav {
   align-items: center;
   color: white;
   flex-direction: column;
-
 }
 
 .img-name {
@@ -65,7 +64,6 @@ nav {
   width: 7rem;
 }
 
-
 .nav-right {
   color: white;
   cursor: pointer;
@@ -75,13 +73,16 @@ nav {
   display: flex;
   gap: 20px;
   cursor: pointer;
+}
 
+.search {
+  position: relative;
 }
 
 .search input {
   width: 350px;
   height: 40px;
-
+  padding: 10px;
 }
 
 .search-2 input {
@@ -89,7 +90,7 @@ nav {
 }
 
 .nav-right .hamburger {
-  display: contents
+  display: contents;
 }
 
 .cart-icon {
@@ -98,10 +99,10 @@ nav {
 
 .navigation {
   position: sticky;
-  top: 0px;
-  background-color: #0C2340;
+  top: 0;
+  background-color: #0c2340;
   padding-top: 0px;
-  z-index: 15;
+  z-index: 1;
 }
 
 .menu-icon,
@@ -124,10 +125,9 @@ nav {
   text-decoration: none;
   color: white;
   font-size: 1rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bolder;
-  transition: .2s ease-in-out;
-
+  transition: 0.2s ease-in-out;
 }
 
 .navigation ul li {
@@ -136,38 +136,26 @@ nav {
   align-items: center;
   list-style: none;
   color: white;
-
-
 }
 
 .navigation ul li a:hover {
-
   color: gold;
-
-
 }
 
 .img4 a,
 .img3 a {
   color: white;
-
-
 }
 
 .active a {
   color: goldenrod;
-
 }
 
 .inactive {
   color: white;
 }
 
-
-
-
 @media screen and (max-width: 600px) {
-
   html {
     font-size: 10px;
   }
@@ -183,13 +171,9 @@ nav {
 
   .nav-right .img1 {
     display: contents;
-
   }
-
 
   .nav-right img {
-    gap: 30px
+    gap: 30px;
   }
-
-
 }

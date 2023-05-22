@@ -32,12 +32,11 @@ export default function Discription() {
         let data = await res.json();
         setProductDetail(data.product);
         setMainImage(data?.product?.thumbnail);
-        console.log(productDetail);
     };
 
     useEffect(() => {
         getProductDetail(id);
-    }, []);
+    }, [id]);
 
     return (
         productDetail && (

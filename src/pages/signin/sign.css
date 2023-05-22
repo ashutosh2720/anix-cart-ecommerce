@@ -1,59 +1,30 @@
 form {
-
-    display: flex;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    /* position: fixed;
-    top: 0; */
-    width: 100vw;
-    height: 80vh;
-    background-color: rgb(9, 35, 67, .9);
-    opacity: 100%;
-    z-index: 10000000;
-    color: black
-}
-
-.sign {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    color: black;
-    height: 80vh;
-    width: 100vw;
-    box-shadow: rgb(93, 129, 160) 3px 3px 700px 0px inset, rgba(219, 202, 202, 0.5) -3px -3px 6px 1px inset;
-    border-radius: 10px;
-    gap: 2px;
-    font-size: 1.1rem;
-    font-weight: bolder;
-    opacity: 100%;
+    gap: '10px';
+    padding: 30px;
+
+
 }
 
-.sign a {
-    text-decoration: none;
-    color: goldenrod
-}
-
-input {
-    border: 3px solid #0C2340;
-    padding: 10px;
-    padding-left: 15px;
-    width: 240px;
-    border-radius: 70px;
-}
-
-.log-with {
+.form-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-
+    width: 100vw;
+    height: 70vh;
 
 }
 
-.log-with img {
-    width: 30px;
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 30%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 10px;
 
 }

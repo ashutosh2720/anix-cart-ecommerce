@@ -1,9 +1,7 @@
 import React from "react";
 import "./Wishlist.css";
-import Cartitem from "../../components/cartItem/Cartitem";
-import { useGlobalCart } from "../../contexts/cart-context";
 import { useGlobalWishlist } from "../../contexts/wishlist-context";
-import WishlistItem from "../../components/WishlistItem/WishlistItem";
+import ProductCard from "../../components/productCard/ProductCard";
 
 function WishlistPage() {
     const { wishlistArray } = useGlobalWishlist()
@@ -17,7 +15,7 @@ function WishlistPage() {
 
                 <div className="main-wishlist-item">
                     {wishlistArray.map((product) => {
-                        return <WishlistItem product={product} />;
+                        return <ProductCard product={product} />;
                     })}
                 </div>
             </div>
