@@ -36,7 +36,7 @@ export default function AccountMenu() {
     <React.Fragment>
       <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
 
-        <Tooltip title="Account settings">
+        <Tooltip title="Account">
           <IconButton
             onClick={handleClick}
             size="small"
@@ -45,7 +45,7 @@ export default function AccountMenu() {
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
           >
-            <Avatar sx={{ width: 28, height: 28, position: 'relative', top: '-5px' }}> <img style={{ height: '30px', width: '30px' }} src="https://easydrawingguides.com/wp-content/uploads/2017/05/how-to-draw-naruto-featured-image-1200-772x1024.png" alt="" /> </Avatar>
+            <Avatar sx={{ width: 28, height: 28, position: 'relative', top: '-5px' }}> <img style={{ height: '30px', width: '30px' }} src='https://avatars.githubusercontent.com/u/109720375?v=4' alt="" /> </Avatar>
           </IconButton>
         </Tooltip>
       </Box>
@@ -89,7 +89,7 @@ export default function AccountMenu() {
 
         <NavLink to='/profile'  >
           <MenuItem onClick={handleClose}>
-            <Avatar /> My account
+            <img src="https://avatars.githubusercontent.com/u/109720375?v=4" alt="" style={{ height: '50px', borderRadius: '100%', margin: '10px' }} /> My account
           </MenuItem>
         </NavLink>
         <Divider />

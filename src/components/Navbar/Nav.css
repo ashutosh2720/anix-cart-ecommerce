@@ -80,9 +80,10 @@ nav {
 }
 
 .search input {
-  width: 350px;
+  width: 300px;
   height: 40px;
   padding: 10px;
+  border-radius: 10px;
 }
 
 .search-2 input {

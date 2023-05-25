@@ -4,6 +4,7 @@ import Menu from "../../components/menu/Menu";
 import Sign from "../../pages/signin/Sign";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import Button from "@mui/material/Button";
+import Tooltip from '@mui/material/Tooltip';
 
 import Avatar from "@mui/material/Avatar";
 import PersonAddAltSharpIcon from "@mui/icons-material/PersonAddAltSharp";
@@ -57,7 +58,7 @@ function Navbar() {
                 </div>
 
                 <div className="search">
-                    <input type="search" name="" id="" placeholder="search here..." onChange={(e) => setSearchInput(e.target.value)} value={searchInput} />
+                    <input type="search" name="" className="search" placeholder="search here..." onChange={(e) => setSearchInput(e.target.value)} value={searchInput} />
                     <SearchBox searchInput={searchInput} setSearchInput={setSearchInput} />
                 </div>
 
@@ -85,17 +86,24 @@ function Navbar() {
 
                         <div className="img4">
                             <NavLink to="/wishlist">
-                                <Badge badgeContent={wishlistArray.length} color="success">
-                                    <FavoriteSharpIcon className="cart-icon" />
-                                </Badge>
+                                <Tooltip title="Wishlist">
+
+
+                                    <Badge badgeContent={wishlistArray.length} color="success">
+
+                                        <FavoriteSharpIcon className="cart-icon" />
+                                    </Badge>
+                                </Tooltip>
                             </NavLink>
                         </div>
 
                         <div className="img3">
                             <NavLink to="/Cart">
-                                <Badge badgeContent={cartArray.length} color="success">
-                                    <ShoppingCartIcon className="cart-icon" />
-                                </Badge>
+                                <Tooltip title='Cart'>
+                                    <Badge badgeContent={cartArray.length} color="success">
+                                        <ShoppingCartIcon className="cart-icon" />
+                                    </Badge>
+                                </Tooltip>
                             </NavLink>
                         </div>
                     </div>
