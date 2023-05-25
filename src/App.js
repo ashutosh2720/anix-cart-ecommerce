@@ -17,6 +17,7 @@ import "react-toastify/dist/ReactToastify.css";
 import WishlistPage from "./pages/wishlist/Wishlist";
 import Shop from "./pages/shop/Shop";
 import Profile from "./pages/profile/Profile";
+import Addresses from "./addresses/Addresses";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/single-product/:id" element={<Discription />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/addresses" element={<Addresses />} />
       </Routes>
       <Footer />
       <ToastContainer />

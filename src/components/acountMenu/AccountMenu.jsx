@@ -9,6 +9,7 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Tooltip from '@mui/material/Tooltip';
 import PersonAdd from '@mui/icons-material/PersonAdd';
+import HouseIcon from '@mui/icons-material/House';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 import { useGlobalLogin } from "../../contexts/login-context";
@@ -36,7 +37,7 @@ export default function AccountMenu() {
     <React.Fragment>
       <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
 
-        <Tooltip title="Account">
+        <Tooltip title="Account"   >
           <IconButton
             onClick={handleClick}
             size="small"
@@ -87,7 +88,7 @@ export default function AccountMenu() {
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
 
-        <NavLink to='/profile'  >
+        <NavLink to='/profile' style={{ color: 'black' }} >
           <MenuItem onClick={handleClose}>
             <img src="https://avatars.githubusercontent.com/u/109720375?v=4" alt="" style={{ height: '50px', borderRadius: '100%', margin: '10px' }} /> My account
           </MenuItem>
@@ -99,12 +100,14 @@ export default function AccountMenu() {
           </ListItemIcon>
           Add another account
         </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon style={{ color: '#0C2340' }}  >
-            <Settings fontSize="small" />
-          </ListItemIcon>
-          Settings
-        </MenuItem>
+        <NavLink to='/addresses' style={{ color: 'black' }}   >
+          <MenuItem onClick={handleClose}>
+            <ListItemIcon style={{ color: '#0C2340' }}  >
+              <HouseIcon fontSize="small" />
+            </ListItemIcon>
+            Address
+          </MenuItem>
+        </NavLink>
 
         {userToken ?
           (<MenuItem onClick={logoutAction}>
