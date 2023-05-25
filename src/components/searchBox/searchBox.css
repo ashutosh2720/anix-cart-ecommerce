@@ -6,13 +6,29 @@
     box-shadow: 4px 4px 20px -8px rgba(0, 0, 0, 1);
     border-radius: 5px;
     z-index: 300;
+    overflow-y: auto;
 }
+
+.search-model .search-data::-webkit-scrollbar {
+    width: 10px;
+}
+
+.search-model .search-data::-webkit-scrollbar-thumb {
+    border-radius: 80px;
+    background-color: #0C2340;
+}
+
+
+
+
 
 .search-model .search-data {
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    max-height: 50vh;
+    overflow-y: auto;
 }
 
 .search-model .search-data .ind-search-product {
@@ -21,6 +37,15 @@
     color: black;
     text-decoration: none;
 }
+
+.search-model .search-data .ind-search-product .seacrh-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
 
 .no-data-found {
     padding: 20px;

@@ -35,7 +35,7 @@ export default function Menu({ menuFunction }) {
                         <HighlightOffIcon />
                     </div>
                     <div className="welcome">
-                        <h1><AccountCircleIcon className="user" />Welcome,{userDetail ? userDetail.firstName : "user"}</h1>
+                        <h1><AccountCircleIcon className="user" />hello👋{userDetail ? userDetail.firstName : "user"}</h1>
                     </div>
                     <div className="order">
                         <ul>
@@ -63,9 +63,9 @@ export default function Menu({ menuFunction }) {
                             <li onClick={menuFunction}><SupportAgentIcon />Costumer Support</li>
                             {
                                 userToken ?
-                                    <li onClick={logoutAction}><LogoutIcon /> Sign Out</li> :
+                                    <li onClick={logoutAction}><LogoutIcon /> Log Out</li> :
                                     <NavLink to='/sign'>
-                                        <li onClick={menuFunction}><LoginIcon />Sign In</li>
+                                        <li onClick={menuFunction}><LoginIcon />Log In</li>
                                     </NavLink>
                             }
                         </ul>

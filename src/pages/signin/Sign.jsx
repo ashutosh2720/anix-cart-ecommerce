@@ -39,12 +39,12 @@ export default function Sign() {
         <div className="form">
           <form action="">
             <label htmlFor="">Username</label>
-            <input type="text" placeholder="Enter username" value={input.email} onChange={setInputUsername} />
+            <input type="text" className="forminput" placeholder="Enter username" value={input.email} onChange={setInputUsername} />
             <label htmlFor="">Password</label>
-            <input type="password" placeholder="Enter password" value={input.password} onChange={setInputPassword} /><br />
+            <input type="password" className="forminput" placeholder="Enter password" value={input.password} onChange={setInputPassword} /><br />
             <h5>Forget Password <a href=""> -&gt;click here</a></h5><br />
-            <button className="button-66" onClick={setDummyData}>Apply Dummy</button><br />
-            <button className="button-66" onClick={loginAction}>Login</button><br />
+            <button className="apply-dummy" onClick={setDummyData}>Apply Dummy login</button><br />
+            <button className="login" onClick={loginAction}>Login</button><br />
             <h5>Create new acount <a href=""> -&gt;click here</a></h5><br /><br />
 
           </form>

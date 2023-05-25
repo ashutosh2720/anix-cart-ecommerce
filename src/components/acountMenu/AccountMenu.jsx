@@ -9,11 +9,10 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Tooltip from '@mui/material/Tooltip';
 import PersonAdd from '@mui/icons-material/PersonAdd';
-
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 import { useGlobalLogin } from "../../contexts/login-context";
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 export default function AccountMenu() {
 
@@ -52,7 +51,7 @@ export default function AccountMenu() {
       </Box>
       <Menu
         anchorEl={anchorEl}
-
+        className='menu'
         id="account-menu"
         open={open}
         onClose={handleClose}
@@ -87,12 +86,12 @@ export default function AccountMenu() {
         transformOrigin={{ horizontal: 'right', vertical: 'top' }}
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
-        <MenuItem onClick={handleClose}>
-          <Avatar /> Profile
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <Avatar /> My account
-        </MenuItem>
+
+        <NavLink to='/profile'  >
+          <MenuItem onClick={handleClose}>
+            <Avatar /> My account
+          </MenuItem>
+        </NavLink>
         <Divider />
         <MenuItem onClick={handleClose}>
           <ListItemIcon style={{ color: '#0C2340' }} >

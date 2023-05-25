@@ -19,9 +19,13 @@ const SearchBox = ({ searchInput, setSearchInput }) => {
                     searchData.length !== 0 ?
                         <div className="search-data">
                             {
-                                searchData.map(({ _id, title }) => (
+                                searchData.map(({ _id, title, thumbnail, price }) => (
                                     <Link to={`/single-product/${_id}`} className='ind-search-product' onClick={() => setSearchInput('')}>
-                                        {title}
+                                        <div className="seacrh-item">
+                                            <img src={thumbnail} alt="" style={{ height: '100px', width: '100px' }} />
+                                            <p>{title.slice(0, 25)}</p>
+
+                                        </div>
                                     </Link>
                                 ))
                             }

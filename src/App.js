@@ -16,6 +16,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import WishlistPage from "./pages/wishlist/Wishlist";
 import Shop from "./pages/shop/Shop";
+import Profile from "./pages/profile/Profile";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/wishlist" element={<WishlistPage />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/single-product/:id" element={<Discription />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
       <Footer />
       <ToastContainer />
