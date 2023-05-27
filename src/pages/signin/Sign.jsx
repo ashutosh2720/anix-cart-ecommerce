@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import './sign.css'
 
 import { useGlobalLogin } from "../../contexts/login-context";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 
@@ -36,8 +36,12 @@ export default function Sign() {
   return (
     <>
       <div className="form-container">
+
         <div className="form">
+
           <form action="">
+            <h2>signin</h2>
+            <br />
             <label htmlFor="">Username</label>
             <input type="text" className="forminput" placeholder="Enter username" value={input.email} onChange={setInputUsername} />
             <label htmlFor="">Password</label>
@@ -45,8 +49,7 @@ export default function Sign() {
             <h5>Forget Password <a href=""> -&gt;click here</a></h5><br />
             <button className="apply-dummy" onClick={setDummyData}>Apply Dummy login</button><br />
             <button className="login" onClick={loginAction}>Login</button><br />
-            <h5>Create new acount <a href=""> -&gt;click here</a></h5><br /><br />
-
+            <p> Don't have an account ➡️<Link to={'/signup'}>Signup</Link></p>
           </form>
         </div>
       </div>

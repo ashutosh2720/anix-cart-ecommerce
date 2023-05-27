@@ -22,11 +22,12 @@
 
 }
 
-.footer ul li a {
+.footer ul li {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
+    cursor: pointer;
     text-decoration: none;
     color: white;
     transition: .5s ease-in-out;

@@ -18,6 +18,7 @@ import WishlistPage from "./pages/wishlist/Wishlist";
 import Shop from "./pages/shop/Shop";
 import Profile from "./pages/profile/Profile";
 import Addresses from "./addresses/Addresses";
+import Signup from "./pages/signup/Signup";
 
 function App() {
   return (
@@ -36,6 +37,8 @@ function App() {
         <Route path="/single-product/:id" element={<Discription />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/addresses" element={<Addresses />} />
+        <Route path="/signup" element={<Signup />} />
+
       </Routes>
       <Footer />
       <ToastContainer />

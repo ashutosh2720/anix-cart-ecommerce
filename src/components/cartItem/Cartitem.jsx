@@ -6,10 +6,13 @@ import { useGlobalCart } from "../../contexts/cart-context";
 import { NavLink } from "react-router-dom";
 import axios from "axios";
 import { useGlobalWishlist } from "../../contexts/wishlist-context";
+import Counter from "./Counter";
 
 const Cartitem = ({ product }) => {
     const { deleteFromCart, cartArray } = useGlobalCart();
     const { addToWishlist, wishlistArray, deleteFromWishlist } = useGlobalWishlist();
+
+
 
     return (
         product && (
@@ -30,7 +33,7 @@ const Cartitem = ({ product }) => {
                             </p>
                             <p> Price : {product.price}</p>
                             <p>Stock : {product.stock}</p>
-                            <p>quantity : </p>
+                            Quantity :<Counter />
                             <button className="remove-cart" onClick={() => deleteFromCart(product._id)} ><DeleteIcon /><b style={{ position: 'relative', bottom: '5px' }} >Remove</b></button>
                         </div>
 

@@ -3,6 +3,8 @@ import "./cart.css";
 import { useGlobalCart } from "../../contexts/cart-context";
 import ProductCard from "../../components/productCard/ProductCard";
 import Cartitem from "../../components/cartItem/Cartitem";
+import { Link } from "react-router-dom";
+
 
 function WishlistPage() {
     const { cartArray } = useGlobalCart()
@@ -19,7 +21,14 @@ function WishlistPage() {
                     cartArray.length === 0 ? <div className="empty-cart"  >
                         <img src="https://cdni.iconscout.com/illustration/premium/thumb/empty-cart-2130356-1800917.png" alt="" />
 
-                        <button>shop now </button>
+
+                        <Link to={'/shop'}>
+                            <button><h3>Shop now</h3></button>
+                        </Link>
+
+
+
+
                     </div> : <h2>{cartArray.length} items in cart </h2>
                 }
 
@@ -30,8 +39,7 @@ function WishlistPage() {
 
                     {cartArray.length !== 0 && <div className="checkout">
                         <h3>cart price detail</h3>
-                        <p>total price : </p>
-                        <p>cost</p>
+                        <p>total price : 0</p>
                     </div>}
                 </div>
             </div>

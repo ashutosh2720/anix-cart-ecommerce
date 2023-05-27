@@ -23,7 +23,8 @@
 }
 
 .empty-cart button:hover {
-    background-color: rgb(4, 4, 30);
+    background-color: #0c2340;
+    ;
     color: white;
 }
 

@@ -7,7 +7,15 @@ const CartProvider = ({ children }) => {
 
     const [cartArray, setCartArray] = useState([]);
     const { notifySuccess } = useGlobalLogin()
+    const [count, setCount] = useState(0);
 
+    const increment = () => {
+        setCount(count + 1);
+    };
+
+    const decrement = () => {
+        setCount(count - 1);
+    }
 
     const addToCart = async (product) => {
         const encodedToken = localStorage.getItem("anixCartUserToken")
@@ -36,7 +44,7 @@ const CartProvider = ({ children }) => {
     }
 
     return (
-        <cartContext.Provider value={{ cartArray, setCartArray, addToCart, deleteFromCart }}>
+        <cartContext.Provider value={{ cartArray, count, increment, decrement, setCount, setCartArray, addToCart, deleteFromCart }}>
             {children}
         </cartContext.Provider>
     )

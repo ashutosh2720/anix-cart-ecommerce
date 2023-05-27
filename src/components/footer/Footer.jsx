@@ -27,9 +27,9 @@ export default function Footer() {
 
                     <ul>
                         <li><h2>About</h2></li>
-                        <li><a href=""> <AddIcCallOutlinedIcon /> Contact Us</a></li>
-                        <li><a href=""> <InfoOutlinedIcon /> About Us</a></li>
-                        <li><a href=""> <MenuBookOutlinedIcon /> Anix Stories</a></li>
+                        <li> <AddIcCallOutlinedIcon /> Contact Us</li>
+                        <li> <InfoOutlinedIcon /> About Us</li>
+                        <li> <MenuBookOutlinedIcon /> Anix Stories</li>
 
 
 
@@ -38,28 +38,28 @@ export default function Footer() {
                 <div className="help">
                     <ul>
                         <li><h2>Help</h2></li>
-                        <li><a href="" > <AccountBalanceWalletOutlinedIcon /> Payment</a></li>
-                        <li><a href=""> <LocalShippingOutlinedIcon /> Shipping</a></li>
-                        <li><a href=""> <CancelScheduleSendOutlinedIcon /> Cancellation & Return</a></li>
-                        <li><a href=""> <KeyboardReturnOutlinedIcon /> Return</a></li>
+                        <li> <AccountBalanceWalletOutlinedIcon /> Payment</li>
+                        <li> <LocalShippingOutlinedIcon /> Shipping</li>
+                        <li> <CancelScheduleSendOutlinedIcon /> Cancellation & Return</li>
+                        <li> <KeyboardReturnOutlinedIcon /> Return</li>
                     </ul>
                 </div>
                 <div className="policy">
                     <ul>
                         <li><h2>Policy</h2></li>
-                        <li><a href=""> <KeyboardReturnOutlinedIcon />  Return Policy</a></li>
-                        <li><a href=""> <GavelOutlinedIcon /> Terms & Use</a></li>
-                        <li><a href=""> <SecurityOutlinedIcon />  Privecy</a></li>
-                        <li><a href=""> <VpnKeyOutlinedIcon /> Security</a></li>
+                        <li> <KeyboardReturnOutlinedIcon />  Return Policy</li>
+                        <li> <GavelOutlinedIcon /> Terms & Use</li>
+                        <li> <SecurityOutlinedIcon />  Privecy</li>
+                        <li> <VpnKeyOutlinedIcon /> Security</li>
                     </ul>
                 </div>
                 <div className="social">
                     <ul>
                         <li><h2>Social</h2></li>
-                        <li><a href=""> <FacebookIcon /> Facebook</a></li>
-                        <li><a href=""> <TwitterIcon /> Twitter</a></li>
-                        <li><a href=""> <InstagramIcon /> Instagram</a></li>
-                        <li><a href=""> <GitHubIcon /> Github</a></li>
+                        <li> <FacebookIcon /> Facebook</li>
+                        <li> <TwitterIcon /> Twitter</li>
+                        <li> <InstagramIcon /> Instagram</li>
+                        <li> <GitHubIcon /> Github</li>
                     </ul>
                 </div>
 
