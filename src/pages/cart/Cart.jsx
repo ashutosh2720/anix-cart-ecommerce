@@ -11,6 +11,7 @@ function WishlistPage() {
         <>
             <div className="main">
                 <div className="header">
+                    <h2>My cart</h2>
 
 
                 </div>

@@ -108,7 +108,7 @@ export default function Discription() {
                                     <p>
 
                                         <LocalOfferIcon className="off" />
-                                        Bank Offer 5% Cashback on Flipkart Axis Bank Card T&C
+                                        Bank Offer {productDetail.discountPercentage}% Cashback on Anix-cart Axis Bank Card T&C
                                     </p>
                                     <p>
                                         <LocalOfferIcon className="off" />
@@ -121,8 +121,8 @@ export default function Discription() {
                                     </p>
                                     <p>
                                         <LocalOfferIcon className="off" />
-                                        Partner Offer Sign up for Flipkart Pay Later and get
-                                        Flipkart Gift Card worth up to ₹1000* Know More
+                                        Partner Offer Sign up for Anix-cart Pay Later and get
+                                        Anix-cart Gift Card worth up to ₹1000* Know More
                                     </p>
                                 </div>
                             </div>
