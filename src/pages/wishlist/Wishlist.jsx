@@ -10,14 +10,16 @@ function WishlistPage() {
         <>
             <div className="main">
                 <div className="header">
-                    <h2>Wishlist Page</h2>
+                    <h2> My Wishlist</h2>
                 </div>
 
-                <div className="main-wishlist-item">
+                {wishlistArray.length !== 0 ? <div className="main-wishlist-item">
                     {wishlistArray.map((product) => {
                         return <ProductCard product={product} />;
                     })}
-                </div>
+                </div> : <div className="empty-wishlist">
+                    <img src="https://www.divinestuff.co.in/images/wishlist-empty.png" alt="" style={{ height: '500px', width: '600px', marginBottom: '20px' }} />
+                </div>}
             </div>
         </>
     );

@@ -1,11 +1,12 @@
 import React, { createContext, useContext, useState } from "react";
 import axios from 'axios'
-
+import { useGlobalLogin } from "./login-context";
 const cartContext = createContext();
 
 const CartProvider = ({ children }) => {
 
     const [cartArray, setCartArray] = useState([]);
+    const { notifySuccess } = useGlobalLogin()
 
 
     const addToCart = async (product) => {
@@ -13,6 +14,7 @@ const CartProvider = ({ children }) => {
         try {
             const { data } = await axios.post(`/api/user/cart`, { product }, { headers: { authorization: encodedToken } })
             setCartArray(data.cart)
+            notifySuccess('Item added to cart')
         }
         catch (err) {
             console.log(err)
@@ -27,6 +29,7 @@ const CartProvider = ({ children }) => {
             })
 
             setCartArray(data.cart)
+            notifySuccess(' Item deleted from cart')
         } catch (err) {
             console.log(err)
         }
