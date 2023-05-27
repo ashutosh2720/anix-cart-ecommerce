@@ -2,6 +2,7 @@ import React from "react";
 import "./cart.css";
 import { useGlobalCart } from "../../contexts/cart-context";
 import ProductCard from "../../components/productCard/ProductCard";
+import Cartitem from "../../components/cartItem/Cartitem";
 
 function WishlistPage() {
     const { cartArray } = useGlobalCart()
@@ -14,9 +15,15 @@ function WishlistPage() {
                 </div>
 
                 <div className="main-cart-item">
-                    {cartArray.map((product) => {
-                        return <ProductCard product={product} />;
-                    })}
+                    <div> {cartArray.map((product) => {
+                        return <Cartitem product={product} />;
+                    })}</div>
+
+                    <div className="checkout">
+                        <h3>cart price detail</h3>
+                        <p>total price : </p>
+                        <p>cost</p>
+                    </div>
                 </div>
             </div>
         </>

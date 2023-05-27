@@ -3,14 +3,18 @@ import { useGlobalWishlist } from '../../contexts/wishlist-context';
 import { useGlobalCart } from '../../contexts/cart-context';
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import Button from "@mui/material/Button";
+import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 import Skeleton from "@mui/material/Skeleton";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import Rating from "@mui/material/Rating";
 import { NavLink } from "react-router-dom";
 
 const ProductCard = ({ product }) => {
-    const { addToCart } = useGlobalCart();
+    const { addToCart, cartArray } = useGlobalCart();
     const { addToWishlist, wishlistArray, deleteFromWishlist } = useGlobalWishlist();
+
+    const navigate = useNavigate();
 
     return (
         <div className='product-card'>
@@ -40,15 +44,25 @@ const ProductCard = ({ product }) => {
                         />
                     </div>
                 </NavLink>
-                <Button
-                    variant="contained"
-                    className="add-to-cart"
-                    onClick={() => addToCart(product)}
-                >
-                    {" "}
-                    <AddShoppingCartIcon />
-                    <p> add to cart</p>
-                </Button>
+                {cartArray.find((item) => item._id === product._id) ? (
+                    <Button
+                        className="add-to-cart"
+                        onClick={() => {
+                            navigate("/Cart");
+                        }}
+                    >
+                        <ShoppingCartCheckoutIcon fontSize="small" />
+                        <b>Go To Cart</b>
+                    </Button>
+                ) : (
+                    <Button
+                        className="add-to-cart"
+                        onClick={() => addToCart(product)}
+                    >
+
+                        <AddShoppingCartIcon fontSize="small" /> <b>Add To Cart</b>
+                    </Button>
+                )}
             </div>
         </div>
     )

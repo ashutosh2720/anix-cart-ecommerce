@@ -1,28 +1,31 @@
 import React, { useState, useEffect } from "react";
 import "./CartItem.css";
 import DeleteIcon from "@mui/icons-material/Delete";
+import FavoriteIcon from '@mui/icons-material/Favorite';
 import { useGlobalCart } from "../../contexts/cart-context";
 import axios from "axios";
 
-const Cartitem = ({ item }) => {
+const Cartitem = ({ product }) => {
     const { deleteFromCart } = useGlobalCart();
 
     return (
-        item && (
+        product && (
             <>
                 <div className="cart">
                     <div className="cart-item">
-                        <img src={item.thumbnail} alt="" style={{ height: '100px' }} />
+                        <FavoriteIcon style={{ position: 'relative', top: '-80px', cursor: 'pointer' }} />
+                        <img src={product.thumbnail} alt="" style={{ height: '180px' }} />
                         <div className="cart-item-detail">
-                            <p>{item.title}</p>
-                            <p> Price : {item.price}</p>
-                            <p>Stock : {item.stock}</p>
+                            <p><b>{product.title.slice(0, 12)}...</b>
+                            </p>
+                            <p> Price : {product.price}</p>
+                            <p>Stock : {product.stock}</p>
+                            <p>quantity : </p>
+                            <button className="remove-cart" ><DeleteIcon /><b style={{ position: 'relative', bottom: '5px' }} >Remove</b></button>
                         </div>
 
                     </div>
-                    <div className="checkout">
 
-                    </div>
                 </div>
             </>
         )

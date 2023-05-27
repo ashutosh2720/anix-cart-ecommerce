@@ -823,7 +823,7 @@ export const products = [
     category: "womens-saaree",
     thumbnail: "https://i.postimg.cc/bwy3BH0h/graan-saaree-1.jpg",
     images: [
-      'https://i.postimg.cc/bwy3BH0h/graan-saaree-1.jpg', ,
+      'https://i.postimg.cc/bwy3BH0h/graan-saaree-1.jpg',
       'https://i.postimg.cc/ZnzLFrYX/green-saaree-2.jpg',
       'https://i.postimg.cc/jj9c2ppx/green-saaree-3.jpg',
       'https://i.postimg.cc/wjw08yFs/green-saaree-4.jpg',
