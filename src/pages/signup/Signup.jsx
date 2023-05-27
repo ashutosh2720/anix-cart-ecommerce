@@ -57,7 +57,7 @@ const Signup = () => {
                             required
                         />
                     </div>
-                    <button type="submit">Sign Up</button>
+                    <button type="submit"><h3>Sign Up</h3></button>
                 </form>
 
                 <p >  Already have an account ➡️<Link to={'/sign'}>

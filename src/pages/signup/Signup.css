@@ -44,21 +44,24 @@
 .signup-form-container input[type='text'],
 .signup-form-container input[type='email'],
 .signup-form-container input[type='password'] {
-    width: 200px;
+    width: 300px;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    margin: 10px;
+    border-radius: 5px;
 }
 
 .signup-form-container button[type='submit'] {
     padding: 10px;
+    width: 100%;
     background-color: #0C2340;
     color: white;
     border: none;
-    border-radius: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 .signup-form-container button[type='submit']:hover {
-    background-color: #45a049;
+    background-color: gold;
+    color: black;
 }

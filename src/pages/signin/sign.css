@@ -4,16 +4,16 @@ form {
     justify-content: space-around;
     align-items: center;
     gap: '10px';
-    padding: 30px;
+
 
 
 }
 
 .form input.forminput {
-    width: 200px;
+    width: 300px;
     padding: 10px;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .form-container {
@@ -30,9 +30,20 @@ form {
     background-color: #0C2340;
     color: white;
     padding: 5px;
+    width: 100%;
     cursor: pointer;
     border-radius: 5px;
 
+}
+
+button.login:hover {
+    background-color: gold;
+    color: black;
+}
+
+button.apply-dummy:hover {
+    background-color: gold;
+    color: black;
 }
 
 
