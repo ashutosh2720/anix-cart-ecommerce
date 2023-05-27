@@ -66,7 +66,7 @@ export default function Footer() {
 
             </div>
             <div className="copy">
-                <h4> &#169;Copyright {date}</h4>  <ShoppingCartOutlinedIcon fontSize="large" />  <img src={logo} alt="" />
+                <h4> &#169;Copyright {date}</h4>   <img src={logo} alt="" />
             </div>
 
         </>
