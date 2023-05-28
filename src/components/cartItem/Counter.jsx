@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 import { useGlobalCart } from '../../contexts/cart-context';
+import ControlPointIcon from '@mui/icons-material/ControlPoint';
+import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 
-const Counter = () => {
+const Counter = ({ qty, id }) => {
 
-    const { count, increment, decrement } = useGlobalCart()
+    const { updateQuantity } = useGlobalCart()
 
     return (
-        <div>
-            <button onClick={decrement}>-</button>
-            {count}
-            <button onClick={increment}>+</button>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '5px' }}>
+            <p>quantity:</p>
+            <RemoveCircleOutlineIcon style={{ cursor: 'pointer' }} onClick={() => updateQuantity('decrement', id)} />
+            <p>{qty}</p>
+            <ControlPointIcon style={{ cursor: 'pointer' }} onClick={() => updateQuantity('increment', id)} />
+
         </div>
     );
 };

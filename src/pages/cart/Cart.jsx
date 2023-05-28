@@ -7,7 +7,8 @@ import { Link } from "react-router-dom";
 
 
 function WishlistPage() {
-    const { cartArray } = useGlobalCart()
+    const { cartArray, } = useGlobalCart()
+    const totalPrice = cartArray.length > 0 ? cartArray.reduce((acc, cur) => acc + cur.price * cur.qty, 0) : null
 
     return (
         <>
@@ -39,7 +40,7 @@ function WishlistPage() {
 
                     {cartArray.length !== 0 && <div className="checkout">
                         <h3>cart price detail</h3>
-                        <p>total price : 0</p>
+                        <p>total price : {totalPrice}</p>
                     </div>}
                 </div>
             </div>

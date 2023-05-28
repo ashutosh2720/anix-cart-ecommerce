@@ -1,10 +1,13 @@
 import React from "react";
 import "./Wishlist.css";
 import { useGlobalWishlist } from "../../contexts/wishlist-context";
+import { useGlobalCart } from "../../contexts/cart-context";
 import ProductCard from "../../components/productCard/ProductCard";
 
 function WishlistPage() {
     const { wishlistArray } = useGlobalWishlist()
+    const { cartArray } = useGlobalCart();
+
 
     return (
         <>

@@ -9,7 +9,7 @@ import { useGlobalWishlist } from "../../contexts/wishlist-context";
 import Counter from "./Counter";
 
 const Cartitem = ({ product }) => {
-    const { deleteFromCart, cartArray } = useGlobalCart();
+    const { deleteFromCart, cartArray, quantity } = useGlobalCart();
     const { addToWishlist, wishlistArray, deleteFromWishlist } = useGlobalWishlist();
 
 
@@ -33,7 +33,7 @@ const Cartitem = ({ product }) => {
                             </p>
                             <p> Price : {product.price}</p>
                             <p>Stock : {product.stock}</p>
-                            Quantity :<Counter />
+                            <Counter qty={product.qty} id={product._id} />
                             <button className="remove-cart" onClick={() => deleteFromCart(product._id)} ><DeleteIcon /><b style={{ position: 'relative', bottom: '5px' }} >Remove</b></button>
                         </div>
 
