@@ -35,7 +35,7 @@ const ProductCard = ({ product }) => {
                     </div>
                     <div className="ind-item">
                         <p>{product.title.slice(0, 25)}...</p>
-                        <h3>&#8377;1{product.price}/-</h3>
+                        <h3>&#8377;{product.price}/-</h3>
                         <Rating
                             name="read-only"
                             value={product.rating}
