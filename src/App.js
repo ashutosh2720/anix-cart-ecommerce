@@ -17,7 +17,7 @@ import "react-toastify/dist/ReactToastify.css";
 import WishlistPage from "./pages/wishlist/Wishlist";
 import Shop from "./pages/shop/Shop";
 import Profile from "./pages/profile/Profile";
-import Addresses from "./addresses/Addresses";
+import Addresses from "./components/addresses/Addresses";
 import Signup from "./pages/signup/Signup";
 
 function App() {
