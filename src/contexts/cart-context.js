@@ -44,7 +44,6 @@ const CartProvider = ({ children }) => {
         console.log(id);
         try {
 
-
             const { data } = await axios.post(
                 `/api/user/cart/${id}`,
                 {

@@ -46,15 +46,29 @@
 
 .checkout {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-    max-height: 300px;
-    min-width: 300px;
+    min-width: 250px;
+    min-height: 50px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
     align-items: center;
-    position: sticky;
-    /* right: 10px; */
+    position: fixed;
     border-radius: 10px;
-    top: 150px;
+    top: 100px;
+    right: 250px;
 
+
+
+}
+
+button.check {
+    background-color: #0c2340;
+    width: 70%;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
 
 }

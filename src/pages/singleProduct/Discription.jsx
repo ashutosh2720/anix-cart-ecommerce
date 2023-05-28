@@ -95,7 +95,7 @@ export default function Discription() {
                                 </span>
 
                                 <h1 style={{ color: "green" }}>
-                                    &#x20B9;1{productDetail.price}/-
+                                    &#x20B9;{productDetail.price}/-
                                 </h1>
                             </div>
 

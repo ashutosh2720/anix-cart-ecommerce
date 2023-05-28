@@ -40,8 +40,16 @@ function WishlistPage() {
 
                     {cartArray.length !== 0 && <div className="checkout">
                         <h3>cart price detail</h3>
-                        <p>total price : {totalPrice}</p>
-                    </div>}
+                        <hr style={{ width: '100%' }} />
+
+                        {cartArray.map((item) =>
+                            <p>{item.title.slice(0, 20)} ({item.qty})</p>)}
+                        <hr style={{ width: '100%' }} />
+                        <h3>total price : {totalPrice}</h3>
+                        <button className="check"><h4>checkout</h4></button>
+                    </div>
+
+                    }
                 </div>
             </div>
         </>
