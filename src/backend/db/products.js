@@ -14,7 +14,7 @@ export const products = [
     discountPercentage: 15.05,
     rating: 4.65,
     stock: 21,
-    brand: "RED MICKY MOUSE..",
+    brand: "RED SAAREE",
     category: "womens-saaree",
     thumbnail: "https://i.postimg.cc/Kztd8Jzd/red-saaree-1.jpg",
     images: [
@@ -28,7 +28,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    title: "Stiched Kurta plus trouser",
+    title: "Black stylish saaree",
     description: "FABRIC: LILEIN CHEST: 21 LENGHT: 37 TROUSER: (38) :ARABIC LILEIN",
     price: 80,
     discountPercentage: 15.37,
@@ -48,7 +48,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    title: "frock gold printed",
+    title: "brown saaree",
     description: "Ghazi fabric long frock gold printed ready to wear stitched collection (G992)",
     price: 600,
     discountPercentage: 15.55,
@@ -68,7 +68,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    title: "Ladies Multicolored Dress",
+    title: "Ladies Multicolored saaree",
     description: "This classy shirt for women gives you a gorgeous look on everyday wear and specially for semi-casual wears.",
     price: 79,
     discountPercentage: 16.88,

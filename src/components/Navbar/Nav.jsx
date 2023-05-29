@@ -34,6 +34,11 @@ function Navbar() {
     const [showLog, setLog] = useState(false);
     const [searchInput, setSearchInput] = useState('')
 
+    const active = ({ isActive }) => ({
+        fontWeight: isActive ? "800" : "200",
+        color: isActive ? "gold" : ""
+    });
+
     const menuFunction = () => {
         setShowMenu(!showMenu);
     };
@@ -68,7 +73,7 @@ function Navbar() {
                             {userToken ? (
                                 <AccountMenu />
                             ) : (
-                                <NavLink to="/sign">
+                                <NavLink to="/sign" style={active}>
                                     <Button
                                         variant="contained"
                                         size="small"
@@ -85,7 +90,7 @@ function Navbar() {
                         </div>
 
                         <div className="img4">
-                            <NavLink to="/wishlist">
+                            <NavLink to="/wishlist" style={active}>
                                 <Tooltip title="Wishlist">
 
 
@@ -98,7 +103,7 @@ function Navbar() {
                         </div>
 
                         <div className="img3">
-                            <NavLink to="/Cart">
+                            <NavLink to="/Cart" style={active}>
                                 <Tooltip title='Cart'>
                                     <Badge badgeContent={cartArray.length} color="success">
                                         <ShoppingCartIcon className="cart-icon" />
@@ -118,14 +123,14 @@ function Navbar() {
                     </div>
                     <div className="home">
                         <li>
-                            <NavLink to="/">
+                            <NavLink to="/" style={active}>
                                 <HomeIcon />
                             </NavLink>
                         </li>
                     </div>
                     <div className="Shop">
                         <li>
-                            <NavLink to="/shop">
+                            <NavLink to="/shop" style={active}>
                                 <ShoppingBagIcon />
                                 Shop
                             </NavLink>
@@ -133,7 +138,7 @@ function Navbar() {
                     </div>
                     <div className="ments-wear">
                         <li>
-                            <NavLink to="/Mens">
+                            <NavLink to="/Mens" style={active}>
                                 <Man2Icon />
                                 Mens
                             </NavLink>
@@ -144,7 +149,7 @@ function Navbar() {
                         <li>
                             <NavLink
                                 to="/Womens "
-                                className={(isActive) => (!isActive ? " active" : "inactive")}
+                                style={active}
                             >
                                 <Woman2Icon fontSize="medium" />
                                 Womens
@@ -154,7 +159,7 @@ function Navbar() {
                     <div className="home-appliance">
                         {" "}
                         <li>
-                            <NavLink to="/electronics">
+                            <NavLink to="/electronics" style={active}>
                                 <LaptopMacIcon fontSize="medium" />
                                 Electronics
                             </NavLink>
