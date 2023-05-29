@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './Addresses.css'
+import { useGlobalCart } from '../../contexts/cart-context';
 
 const Addresses = () => {
-    const [addresses, setAddresses] = useState([]);
+    const { addresses, setAddresses } = useGlobalCart()
     const [formData, setFormData] = useState({
         name: '',
         mobile: '',
@@ -121,8 +122,8 @@ const Addresses = () => {
                     <p>Pin Code : {address.pinCode}</p>
                     <p>City : {address.city}</p>
                     <p>Address : {address.address}</p>
-                    <button onClick={() => editAddress(index)}>Edit</button>
-                    <button style={{ backgroundColor: 'red' }} onClick={() => deleteAddress(index)}>delete</button>
+                    <button className='edit' onClick={() => editAddress(index)}>Edit</button>
+                    <button className='delete' style={{ backgroundColor: 'red' }} onClick={() => deleteAddress(index)}>delete</button>
                 </div>
             ))}
         </div>

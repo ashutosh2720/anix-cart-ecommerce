@@ -3,6 +3,7 @@ import "../../pages/home/main.css";
 // import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import Button from "@mui/material/Button";
+import NewReleasesIcon from '@mui/icons-material/NewReleases';
 import Skeleton from "@mui/material/Skeleton";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import Rating from "@mui/material/Rating";
@@ -65,6 +66,7 @@ const CategoryProducts = ({ category, title }) => {
                                     }}
                                 />
                                 <div className="img-details">
+
                                     <NavLink to={"/single-product/" + val._id}>
                                         <div className="product-img">
                                             <img src={val.thumbnail} alt="" />

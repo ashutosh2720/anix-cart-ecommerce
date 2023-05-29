@@ -6,6 +6,7 @@ const cartContext = createContext();
 const CartProvider = ({ children }) => {
     const [cartArray, setCartArray] = useState([]);
     const { notifySuccess } = useGlobalLogin();
+    const [addresses, setAddresses] = useState([]);
     // const [count, setCount] = useState(0);
 
     const addToCart = async (product) => {
@@ -64,6 +65,8 @@ const CartProvider = ({ children }) => {
         <cartContext.Provider
             value={{
                 cartArray,
+                addresses,
+                setAddresses,
                 updateQuantity,
                 setCartArray,
                 addToCart,
