@@ -21,7 +21,7 @@ const Shop = () => {
 
                     <div className="filter-by-price">
                         <h3>price</h3>
-                        <input type="range" name="" id="" max="2000" min="0" style={{ width: "200px" }} />
+                        <input type="range" name="" id="" max="2000" min="0" style={{ width: "100%" }} />
                     </div>
                     <hr style={{ width: '100%' }} />
 

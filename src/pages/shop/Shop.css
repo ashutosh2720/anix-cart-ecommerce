@@ -123,7 +123,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 120px;
+    gap: 50px;
 }
 
 .product .filter .filter-header button.clear {
