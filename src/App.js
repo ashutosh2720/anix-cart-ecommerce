@@ -19,6 +19,8 @@ import Shop from "./pages/shop/Shop";
 import Profile from "./pages/profile/Profile";
 import Addresses from "./components/addresses/Addresses";
 import Signup from "./pages/signup/Signup";
+import Checkout from "./pages/checkout/Checkout";
+
 
 function App() {
   return (
@@ -38,6 +40,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/addresses" element={<Addresses />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/checkout" element={<Checkout />} />
 
       </Routes>
       <Footer />

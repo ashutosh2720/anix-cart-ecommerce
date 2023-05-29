@@ -1,6 +1,6 @@
-import React from 'react'
-import { useGlobalWishlist } from '../../contexts/wishlist-context';
-import { useGlobalCart } from '../../contexts/cart-context';
+import React from "react";
+import { useGlobalWishlist } from "../../contexts/wishlist-context";
+import { useGlobalCart } from "../../contexts/cart-context";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import Button from "@mui/material/Button";
 import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
@@ -12,16 +12,21 @@ import { NavLink } from "react-router-dom";
 
 const ProductCard = ({ product }) => {
     const { addToCart, cartArray } = useGlobalCart();
-    const { addToWishlist, wishlistArray, deleteFromWishlist } = useGlobalWishlist();
+    const { addToWishlist, wishlistArray, deleteFromWishlist } =
+        useGlobalWishlist();
 
     const navigate = useNavigate();
 
     return (
-        <div className='product-card'>
+
+        <div className="product-card">
             <FavoriteIcon
                 className="fav"
-                onClick={() => wishlistArray.find(({ _id }) => _id === product._id) ? deleteFromWishlist(product._id) : addToWishlist(product)}
-
+                onClick={() =>
+                    wishlistArray.find(({ _id }) => _id === product._id)
+                        ? deleteFromWishlist(product._id)
+                        : addToWishlist(product)
+                }
                 style={{
                     color: wishlistArray.find(({ _id }) => _id === product._id)
                         ? "red"
@@ -55,17 +60,13 @@ const ProductCard = ({ product }) => {
                         <b>Go To Cart</b>
                     </Button>
                 ) : (
-                    <Button
-                        className="add-to-cart"
-                        onClick={() => addToCart(product)}
-                    >
-
+                    <Button className="add-to-cart" onClick={() => addToCart(product)}>
                         <AddShoppingCartIcon fontSize="small" /> <b>Add To Cart</b>
                     </Button>
                 )}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ProductCard
+export default ProductCard;

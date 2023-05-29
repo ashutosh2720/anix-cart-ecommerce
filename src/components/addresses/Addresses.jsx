@@ -122,7 +122,7 @@ const Addresses = () => {
                     <p>City : {address.city}</p>
                     <p>Address : {address.address}</p>
                     <button onClick={() => editAddress(index)}>Edit</button>
-                    <button onClick={() => deleteAddress(index)}>delete</button>
+                    <button style={{ backgroundColor: 'red' }} onClick={() => deleteAddress(index)}>delete</button>
                 </div>
             ))}
         </div>

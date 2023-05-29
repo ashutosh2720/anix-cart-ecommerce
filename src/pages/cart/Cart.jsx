@@ -46,7 +46,9 @@ function WishlistPage() {
                             <p>{item.title.slice(0, 20)} ({item.qty})</p>)}
                         <hr style={{ width: '100%' }} />
                         <h3>total price : {totalPrice}</h3>
-                        <button className="check"><h4>checkout</h4></button>
+                        <Link to={'/checkout'}>
+                            <button className="check"><h4>checkout</h4></button>
+                        </Link>
                     </div>
 
                     }

@@ -1,6 +1,6 @@
 .address-container {
     min-height: 70vh;
-    width: 100vw;
+    width: 70vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -10,7 +10,7 @@
 }
 
 .form {
-    width: 70vw;
+    width: 30vw;
     padding: 20px;
     min-height: 200px;
     margin: 20px;
@@ -22,9 +22,10 @@
 
 .addresses {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    width: 100%;
+    width: 30%;
     border: 1px solid black;
     padding: 20px;
     font-weight: lighter;

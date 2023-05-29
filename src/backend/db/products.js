@@ -8,21 +8,570 @@ import { v4 as uuid } from "uuid";
 export const products = [
   {
     _id: uuid(),
-    title: "iPhone 9",
-    description: "An apple mobile which is nothing like apple",
-    price: 549,
-    discountPercentage: 12.96,
-    rating: 4.69,
-    stock: 94,
-    brand: "Apple",
-    category: "smartphones",
-    thumbnail: "https://i.dummyjson.com/data/products/1/3.jpg",
+    title: "red saaree",
+    description: "NIGHT SUIT RED MICKY MOUSE..  For Girls. Fantastic Suits.",
+    price: 55,
+    discountPercentage: 15.05,
+    rating: 4.65,
+    stock: 21,
+    brand: "RED MICKY MOUSE..",
+    category: "womens-saaree",
+    thumbnail: "https://i.postimg.cc/Kztd8Jzd/red-saaree-1.jpg",
     images: [
-      "https://i.dummyjson.com/data/products/1/3.jpg",
-      "https://i.dummyjson.com/data/products/1/1.jpg",
-      "https://i.dummyjson.com/data/products/1/2.jpg",
-      "https://i.dummyjson.com/data/products/1/4.jpg",
-      "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+      'https://i.postimg.cc/Kztd8Jzd/red-saaree-1.jpg',
+      'https://i.postimg.cc/Hn2RQnbz/red-saaree-2.jpg',
+      'https://i.postimg.cc/vZDkVQT7/red-saaree-3.jpg',
+      'https://i.postimg.cc/J4pS0yr4/red-saaree-4.jpg',
+      'https://i.postimg.cc/rFVvqGLP/red-saaree-5.jpg'
+
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "Stiched Kurta plus trouser",
+    description: "FABRIC: LILEIN CHEST: 21 LENGHT: 37 TROUSER: (38) :ARABIC LILEIN",
+    price: 80,
+    discountPercentage: 15.37,
+    rating: 4.05,
+    stock: 148,
+    brand: "Digital Printed",
+    category: "womens-saaree",
+    thumbnail: "https://i.postimg.cc/wBp5dVCt/black-saaaree-5.jpg",
+    images: [
+      'https://i.postimg.cc/wBp5dVCt/black-saaaree-5.jpg',
+      'https://i.postimg.cc/d1Q8h0tw/black-saaree-1.jpg',
+      'https://i.postimg.cc/Y2s1SMcB/black-saaree-3.jpg',
+      'https://i.postimg.cc/kGBKyhbH/black-saree-2.jpg',
+      'https://i.postimg.cc/qqSnDXcv/blacksaaree-4.jpg'
+
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "frock gold printed",
+    description: "Ghazi fabric long frock gold printed ready to wear stitched collection (G992)",
+    price: 600,
+    discountPercentage: 15.55,
+    rating: 4.31,
+    stock: 150,
+    brand: "Ghazi Fabric",
+    category: "womens-saaree",
+    thumbnail: "https://i.postimg.cc/BQ3fTmCw/brown-1.jpg",
+    images: [
+      "https://i.postimg.cc/BQ3fTmCw/brown-1.jpg",
+      "https://i.postimg.cc/CxPyVSpW/brown2.jpg",
+      "https://i.postimg.cc/6p5sSTgr/brown3.jpg",
+      "https://i.postimg.cc/43mDfqJn/brown4.jpg"
+
+
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "Ladies Multicolored Dress",
+    description: "This classy shirt for women gives you a gorgeous look on everyday wear and specially for semi-casual wears.",
+    price: 79,
+    discountPercentage: 16.88,
+    rating: 4.03,
+    stock: 2,
+    brand: "Ghazi Fabric",
+    category: "womens-saaree",
+    thumbnail: "https://i.postimg.cc/bwy3BH0h/graan-saaree-1.jpg",
+    images: [
+      'https://i.postimg.cc/bwy3BH0h/graan-saaree-1.jpg',
+      'https://i.postimg.cc/ZnzLFrYX/green-saaree-2.jpg',
+      'https://i.postimg.cc/jj9c2ppx/green-saaree-3.jpg',
+      'https://i.postimg.cc/wjw08yFs/green-saaree-4.jpg',
+      'https://i.postimg.cc/k4bcbjCx/green-saaree-5.jpg'
+
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "Malai Maxi Dress",
+    description: "Ready to wear, Unique design according to modern standard fashion, Best fitting ,Imported stuff",
+    price: 50,
+    discountPercentage: 5.07,
+    rating: 4.67,
+    stock: 96,
+    brand: "IELGY",
+    category: "womens-saaree",
+    thumbnail: "https://i.postimg.cc/dtQTk8LP/dark2.jpg",
+    images: [
+      'https://i.postimg.cc/MZmQpsZm/dark1.jpg',
+      'https://i.postimg.cc/dtQTk8LP/dark2.jpg',
+      'https://i.postimg.cc/wj7yFgXw/dark3.jpg',
+      'https://i.postimg.cc/L6ygzn1q/dark4.jpg'
+
+
+    ]
+  },
+
+  {
+    _id: uuid(),
+    title: "Sleeve Shirt Womens",
+    description: "Cotton Solid Color Professional Wear Sleeve Shirt Womens Work Blouses Wholesale Clothing Casual Plain Custom Top OEM Customized",
+    price: 90,
+    discountPercentage: 10.89,
+    rating: 3.26,
+    stock: 39,
+    brand: "Professional Wear",
+    category: "tops",
+    thumbnail: "https://i.postimg.cc/rp72Z66X/red-top-1.jpg",
+    images: [
+      "https://i.postimg.cc/3rXQ1bnV/red-top-2.jpg",
+      "https://i.postimg.cc/xT9D4yZC/red-top-3.jpg",
+      "https://i.postimg.cc/L6vKKgdV/red-top-4.jpg",
+      "https://i.postimg.cc/7hnvLf5w/red-top-5.jpg",
+
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "ank Tops for Womens/Girls",
+    description: "PACK OF 3 CAMISOLES ,VERY COMFORTABLE SOFT COTTON STUFF, COMFORTABLE IN ALL FOUR SEASONS",
+    price: 50,
+    discountPercentage: 12.05,
+    rating: 4.52,
+    stock: 107,
+    brand: "Soft Cotton",
+    category: "tops",
+    thumbnail: "https://i.postimg.cc/sgpWgzcK/pink-top-1.jpg",
+    images: [
+      "https://i.postimg.cc/sgpWgzcK/pink-top-1.jpg",
+      "https://i.postimg.cc/s2shBLHz/pink-top-2.jpg",
+      "https://i.postimg.cc/cJh8fcPn/pink-top-3.jpg",
+      "https://i.postimg.cc/LXsgD1M0/pink-top-4.jpg",
+      "https://i.postimg.cc/wvbyGjqx/pink-top-5.jpg"
+
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "sublimation plain kids tank",
+    description: "sublimation plain kids tank tops wholesale",
+    price: 100,
+    discountPercentage: 11.12,
+    rating: 4.8,
+    stock: 20,
+    brand: "Soft Cotton",
+    category: "tops",
+    thumbnail: "https://i.postimg.cc/T3jmQxBF/blue-top-1.jpg",
+    images: [
+      "https://i.postimg.cc/SKy9v5hs/blue-top-2.jpg",
+      "https://i.postimg.cc/GpqDwQLj/blue-top-3.jpg",
+      "https://i.postimg.cc/KzjMZM4h/blue-top-4.jpg",
+
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "Women Sweaters Wool",
+    description: "2021 Custom Winter Fall Zebra Knit Crop Top Women Sweaters Wool Mohair Cos Customize Crew Neck Women' S Crop Top Sweater",
+    price: 600,
+    discountPercentage: 17.2,
+    rating: 4.55,
+    stock: 55,
+    brand: "Top Sweater",
+    category: "tops",
+    thumbnail: "https://i.postimg.cc/jdjtMYC2/orange-top-1.jpg",
+    images: [
+      "https://i.postimg.cc/jdjtMYC2/orange-top-1.jpg",
+      "https://i.postimg.cc/y8MK6Jj3/orange-top-2.jpg",
+      "https://i.postimg.cc/t4ZyHd3H/orange-top-3.jpg",
+      "https://i.postimg.cc/HLbgrpvZ/orange-top-4.jpg",
+      "https://i.postimg.cc/Y9kwgJJp/orange-top-5.jpg",
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "women winter clothes",
+    description: "women winter clothes thick fleece hoodie top with sweat pantjogger women sweatsuit set joggers pants two piece pants set",
+    price: 57,
+    discountPercentage: 13.39,
+    rating: 4.91,
+    stock: 84,
+    brand: "Top Sweater",
+    category: "tops",
+    thumbnail: "https://i.postimg.cc/VNmswrDs/yellow-top-1.jpg",
+    images: [
+      'https://i.postimg.cc/VNmswrDs/yellow-top-1.jpg',
+      'https://i.postimg.cc/3Rb32L7W/yellow-top-2.jpg',
+      'https://i.postimg.cc/sxQsmpDm/yellow-top-3.jpg',
+      'https://i.postimg.cc/W342DBBQ/yellow-top-4.jpg'
+
+    ]
+  },
+
+
+  {
+    _id: uuid(),
+    title: "Leather Straps Wristwatch",
+    description: "Style:Sport ,Clasp:Buckles ,Water Resistance Depth:3Bar",
+    price: 120,
+    discountPercentage: 7.14,
+    rating: 4.63,
+    stock: 91,
+    brand: "Naviforce",
+    category: "mens-watches",
+    thumbnail: "https://i.postimg.cc/9MCY8jRk/black2.jpg",
+    images: [
+      "https://i.postimg.cc/9MCY8jRk/black2.jpg",
+      "https://i.dummyjson.com/data/products/61/2.png",
+      "https://i.dummyjson.com/data/products/61/3.jpg"
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "Waterproof Leather Brand Watch",
+    description: "Watch Crown With Environmental IPS Bronze Electroplating; Display system of 12 hours",
+    price: 46,
+    discountPercentage: 3.15,
+    rating: 4.05,
+    stock: 95,
+    brand: "SKMEI 9117",
+    category: "mens-watches",
+    thumbnail: "https://i.dummyjson.com/data/products/62/thumbnail.jpg",
+    images: [
+      "https://i.dummyjson.com/data/products/62/1.jpg",
+      "https://i.dummyjson.com/data/products/62/2.jpg"
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "Royal Blue Premium Watch",
+    description: "Men Silver Chain Royal Blue Premium Watch Latest Analog Watch",
+    price: 50,
+    discountPercentage: 2.56,
+    rating: 4.89,
+    stock: 142,
+    brand: "SKMEI 9117",
+    category: "mens-watches",
+    thumbnail: "https://i.postimg.cc/25WJWmhL/blue-watch-1.jpg",
+    images: [
+      "https://i.postimg.cc/25WJWmhL/blue-watch-1.jpg",
+      "https://i.dummyjson.com/data/products/63/2.jpg",
+      "https://i.dummyjson.com/data/products/63/3.png",
+      "https://i.dummyjson.com/data/products/63/4.jpeg"
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "Leather Strap Skeleton Watch",
+    description: "Leather Strap Skeleton Watch for Men - Stylish and Latest Design",
+    price: 46,
+    discountPercentage: 10.2,
+    rating: 4.98,
+    stock: 61,
+    brand: "Strap Skeleton",
+    category: "mens-watches",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzKOX3svFY6fPNE1n2kXkBZfmtMhBdcNr0QXij5_tv0WvI5EDB3nnPcAWxKuSpKLhn8ez0YTzp8ho&usqp=CAU&ec=48665699",
+    images: [
+      "https://www.pngitem.com/pimgs/m/490-4909977_cartier-mens-watch-hd-png-download.png",
+      "https://images.squarespace-cdn.com/content/v1/54661df4e4b0c1af99306b69/1521317205943-WPJB1A5469GUFPBG3NNN/Rotary+Rose+Gold+Cambridge+Gents+Chronograph+Quart.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzKOX3svFY6fPNE1n2kXkBZfmtMhBdcNr0QXij5_tv0WvI5EDB3nnPcAWxKuSpKLhn8ez0YTzp8ho&usqp=CAU&ec=48665699",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5LLYhCUQkL15pRDAd4JUerOLgAZjwoQ17OXs0MgNmm3hUQEhiIBDskzcT4tuyofNLFI4e3rrO4Hw&usqp=CAU&ec=48665699"
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "Stainless Steel Wrist Watch",
+    description: "Stylish Watch For Man (Luxury) Classy Men's Stainless Steel Wrist Watch - Box Packed",
+    price: 47,
+    discountPercentage: 17.79,
+    rating: 4.79,
+    stock: 94,
+    brand: "Stainless",
+    category: "mens-watches",
+    thumbnail: "https://i.dummyjson.com/data/products/65/thumbnail.webp",
+    images: [
+      "https://i.dummyjson.com/data/products/65/1.jpg",
+      "https://i.dummyjson.com/data/products/65/2.webp",
+      "https://i.dummyjson.com/data/products/65/3.jpg",
+      "https://i.dummyjson.com/data/products/65/4.webp",
+      "https://i.dummyjson.com/data/products/65/thumbnail.webp"
+    ]
+  },
+
+  {
+    _id: uuid(),
+    title: "women's shoes",
+    description: "Close: Lace, Style with bottom: Increased inside, Sole Material: Rubber",
+    price: 40,
+    discountPercentage: 16.96,
+    rating: 4.14,
+    stock: 72,
+    brand: "IELGY fashion",
+    category: "womens-shoes",
+    thumbnail: "https://i.dummyjson.com/data/products/46/1.webp",
+    images: [
+      "https://i.dummyjson.com/data/products/46/1.webp",
+      "https://i.dummyjson.com/data/products/46/2.jpg",
+      "https://i.dummyjson.com/data/products/46/3.jpg",
+      "https://i.dummyjson.com/data/products/46/4.jpg",
+      "https://i.dummyjson.com/data/products/46/thumbnail.jpg"
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "Sneaker shoes",
+    description: "Synthetic Leather Casual Sneaker shoes for Women/girls Sneakers For Women",
+    price: 120,
+    discountPercentage: 10.37,
+    rating: 4.19,
+    stock: 50,
+    brand: "Synthetic Leather",
+    category: "womens-shoes",
+    thumbnail: "https://i.dummyjson.com/data/products/47/thumbnail.jpeg",
+    images: [
+      "https://i.dummyjson.com/data/products/47/1.jpg",
+      "https://i.dummyjson.com/data/products/47/2.jpg",
+      "https://i.dummyjson.com/data/products/47/3.jpg",
+      "https://i.dummyjson.com/data/products/47/thumbnail.jpeg"
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "Women Strip Heel",
+    description: "Features: Flip-flops, Mid Heel, Comfortable, Striped Heel, Antiskid, Striped",
+    price: 40,
+    discountPercentage: 10.83,
+    rating: 4.02,
+    stock: 25,
+    brand: "Sandals Flip Flops",
+    category: "womens-shoes",
+    thumbnail: "https://m.media-amazon.com/images/I/61GdGz90MhL._UY695_.jpg",
+    images: [
+      "https://i.dummyjson.com/data/products/48/1.jpg",
+      "https://i.dummyjson.com/data/products/48/2.jpg",
+      "https://i.dummyjson.com/data/products/48/3.jpg",
+      "https://i.dummyjson.com/data/products/48/4.jpg",
+      "https://i.dummyjson.com/data/products/48/thumbnail.jpg"
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "Chappals & Shoe Ladies Metallic",
+    description: "Womens Chappals & Shoe Ladies Metallic Tong Thong Sandal Flat Summer 2020 Maasai Sandals",
+    price: 23,
+    discountPercentage: 2.62,
+    rating: 4.72,
+    stock: 107,
+    brand: "Maasai Sandals",
+    category: "womens-shoes",
+    thumbnail: "https://i.dummyjson.com/data/products/49/thumbnail.jpg",
+    images: [
+      "https://i.dummyjson.com/data/products/49/1.jpg",
+      "https://i.dummyjson.com/data/products/49/2.jpg",
+      "https://i.dummyjson.com/data/products/49/3.webp",
+      "https://i.dummyjson.com/data/products/49/thumbnail.jpg"
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "Women Shoes",
+    description: "2020 New Arrivals Genuine Leather Fashion Trend Platform Summer Women Shoes",
+    price: 36,
+    discountPercentage: 16.87,
+    rating: 4.33,
+    stock: 46,
+    brand: "Arrivals Genuine",
+    category: "womens-shoes",
+    thumbnail: "https://m.media-amazon.com/images/I/61Y5dnHCkiL._UY695_.jpg",
+    images: [
+      "https://i.dummyjson.com/data/products/50/1.jpeg",
+      "https://i.dummyjson.com/data/products/50/2.jpg",
+      "https://i.dummyjson.com/data/products/50/3.jpg"
+    ]
+  },
+
+  {
+    _id: uuid(),
+    title: "Sneakers Joggers Shoes",
+    description: "Gender: Men , Colors: Same as DisplayedCondition: 100% Brand New",
+    price: 40,
+    discountPercentage: 12.57,
+    rating: 4.38,
+    stock: 6,
+    brand: "Sneakers",
+    category: "mens-shoes",
+    thumbnail: "https://m.media-amazon.com/images/I/71VgSPTxPnL._UL1500_.jpg",
+    images: [
+      "https://cdn.shopify.com/s/files/1/2575/9828/products/2083ffa20fe76cf9cc4023261c9bddac_1904x.progressive_8a775a60-5ac4-40f9-a003-671c72800c3a_grande.jpg?v=1606494245",
+      "https://i.ebayimg.com/images/g/zmMAAOSwgr9jDM6H/s-l1600.jpg",
+      "https://i.ebayimg.com/images/g/4KQAAOSwT9liusn6/s-l500.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMDPr1hGzyDhDUc_NtNw198bfcg0UDV-5TH5VUrFLAq_63YFwPsGCkoMckp1xjz_L4SQHa6tO94oM&usqp=CAU&ec=48665699",
+      "https://i.dummyjson.com/data/products/56/5.jpg",
+      "https://i.dummyjson.com/data/products/56/thumbnail.jpg"
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "Loafers for men",
+    description: "Men Shoes - Loafers for men - Rubber Shoes - Nylon Shoes - Shoes for men - Moccassion - Pure Nylon (Rubber) Expot Quality.",
+    price: 47,
+    discountPercentage: 10.91,
+    rating: 4.91,
+    stock: 20,
+    brand: "Rubber",
+    category: "mens-shoes",
+    thumbnail: "https://5.imimg.com/data5/CY/QJ/MY-25539252/leather-shoes-for-men-leather-loafer-shoes-lo33-black-1000x1000.png",
+    images: [
+      "https://m.media-amazon.com/images/I/41upWLHyU-L.jpg",
+      "https://m.media-amazon.com/images/I/71adfun8YuL._UY625_.jpg",
+      "https://5.imimg.com/data5/FY/QY/EA/SELLER-51594600/mens-loafers-shoes-1000x1000.jpg",
+      "https://i.dummyjson.com/data/products/57/4.jpg",
+      "https://i.dummyjson.com/data/products/57/thumbnail.jpg"
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "formal offices shoes",
+    description: "Pattern Type: Solid, Material: PU, Toe Shape: Pointed Toe ,Outsole Material: Rubber",
+    price: 57,
+    discountPercentage: 12,
+    rating: 4.41,
+    stock: 68,
+    brand: "The Warehouse",
+    category: "mens-shoes",
+    thumbnail: "https://i.dummyjson.com/data/products/58/thumbnail.jpg",
+    images: [
+      "https://i.dummyjson.com/data/products/58/1.jpg",
+      "https://i.dummyjson.com/data/products/58/2.jpg",
+      "https://i.dummyjson.com/data/products/58/3.jpg",
+      "https://i.dummyjson.com/data/products/58/4.jpg",
+      "https://i.dummyjson.com/data/products/58/thumbnail.jpg"
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "Spring and summershoes",
+    description: "Comfortable stretch cloth, lightweight body; ,rubber sole, anti-skid wear;",
+    price: 20,
+    discountPercentage: 8.71,
+    rating: 4.33,
+    stock: 137,
+    brand: "Sneakers",
+    category: "mens-shoes",
+    thumbnail: "https://i.dummyjson.com/data/products/59/3.jpg",
+    images: [
+      "https://i.dummyjson.com/data/products/59/1.jpg",
+      "https://i.dummyjson.com/data/products/59/2.jpg",
+      "https://i.dummyjson.com/data/products/59/3.jpg",
+      "https://i.dummyjson.com/data/products/59/4.jpg",
+      "https://i.dummyjson.com/data/products/59/thumbnail.jpg"
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "Stylish Casual Jeans Shoes",
+    description: "High Quality ,Stylish design ,Comfortable wear ,FAshion ,Durable",
+    price: 58,
+    discountPercentage: 7.55,
+    rating: 4.55,
+    stock: 129,
+    brand: "Sneakers",
+    category: "mens-shoes",
+    thumbnail: "https://i.dummyjson.com/data/products/60/thumbnail.jpg",
+    images: [
+      "https://i.dummyjson.com/data/products/60/1.jpg",
+      "https://i.dummyjson.com/data/products/60/2.jpg",
+      "https://i.dummyjson.com/data/products/60/3.jpg",
+      "https://i.dummyjson.com/data/products/60/thumbnail.jpg"
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "half sleeves T shirts",
+    description: "Many store is creating new designs and trend every month and every year. Daraz.pk have a beautiful range of men fashion brands",
+    price: 23,
+    discountPercentage: 12.76,
+    rating: 4.26,
+    stock: 132,
+    brand: "Vintage Apparel",
+    category: "mens-shirts",
+    thumbnail: "https://i.dummyjson.com/data/products/51/2.jpg",
+    images: [
+      "https://i.dummyjson.com/data/products/51/1.png",
+      "https://i.dummyjson.com/data/products/51/2.jpg",
+      "https://i.dummyjson.com/data/products/51/3.jpg",
+      "https://i.dummyjson.com/data/products/51/thumbnail.jpg"
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "FREE FIRE T Shirt",
+    description: "quality and professional print - It doesn't just look high quality, it is high quality.",
+    price: 10,
+    discountPercentage: 14.72,
+    rating: 4.52,
+    stock: 128,
+    brand: "FREE FIRE",
+    category: "mens-shirts",
+    thumbnail: "https://i.dummyjson.com/data/products/52/3.jpg",
+    images: [
+      "https://i.dummyjson.com/data/products/52/1.png",
+      "https://i.dummyjson.com/data/products/52/2.png",
+      "https://i.dummyjson.com/data/products/52/3.jpg",
+      "https://i.dummyjson.com/data/products/52/4.jpg",
+      "https://i.dummyjson.com/data/products/52/thumbnail.jpg"
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "printed high quality T shirts",
+    description: "Brand: vintage Apparel ,Export quality",
+    price: 35,
+    discountPercentage: 7.54,
+    rating: 4.89,
+    stock: 6,
+    brand: "Vintage Apparel",
+    category: "mens-shirts",
+    thumbnail: "https://i.dummyjson.com/data/products/53/thumbnail.jpg",
+    images: [
+      "https://i.dummyjson.com/data/products/53/1.webp",
+      "https://i.dummyjson.com/data/products/53/2.jpg",
+      "https://i.dummyjson.com/data/products/53/3.jpg",
+      "https://i.dummyjson.com/data/products/53/4.jpg",
+      "https://i.dummyjson.com/data/products/53/thumbnail.jpg"
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "Pubg Printed Graphic T-Shirt",
+    description: "Product Description Features: 100% Ultra soft Polyester Jersey. Vibrant & colorful printing on front. Feels soft as cotton without ever cracking",
+    price: 46,
+    discountPercentage: 16.44,
+    rating: 4.62,
+    stock: 136,
+    brand: "The Warehouse",
+    category: "mens-shirts",
+    thumbnail: "https://i.dummyjson.com/data/products/54/thumbnail.jpg",
+    images: [
+      "https://i.dummyjson.com/data/products/54/1.jpg",
+      "https://i.dummyjson.com/data/products/54/2.jpg",
+      "https://i.dummyjson.com/data/products/54/3.jpg",
+      "https://i.dummyjson.com/data/products/54/4.jpg",
+      "https://i.dummyjson.com/data/products/54/thumbnail.jpg"
+    ]
+  },
+  {
+    _id: uuid(),
+    title: "Money Heist Printed Summer T Shirts",
+    description: "Fabric Jercy, Size: M & L Wear Stylish Dual Stiched",
+    price: 66,
+    discountPercentage: 15.97,
+    rating: 4.9,
+    stock: 122,
+    brand: "The Warehouse",
+    category: "mens-shirts",
+    thumbnail: "https://i.dummyjson.com/data/products/55/4.jpg",
+    images: [
+      "https://i.dummyjson.com/data/products/55/1.jpg",
+      "https://i.dummyjson.com/data/products/55/2.webp",
+      "https://i.dummyjson.com/data/products/55/3.jpg",
+      "https://i.dummyjson.com/data/products/55/4.jpg",
+      "https://i.dummyjson.com/data/products/55/thumbnail.jpg"
     ]
   },
   {
@@ -201,9 +750,9 @@ export const products = [
     stock: 65,
     brand: "Impression of Acqua Di Gio",
     category: "fragrances",
-    thumbnail: "https://i.dummyjson.com/data/products/11/thumbnail.jpg",
+    thumbnail: "https://i.postimg.cc/jj4R0z2j/fog.jpg",
     images: [
-      "https://i.dummyjson.com/data/products/11/1.jpg",
+      "https://i.postimg.cc/jj4R0z2j/fog.jpg",
       "https://i.dummyjson.com/data/products/11/2.jpg",
       "https://i.dummyjson.com/data/products/11/3.jpg",
       "https://i.dummyjson.com/data/products/11/thumbnail.jpg"
@@ -257,7 +806,7 @@ export const products = [
     stock: 114,
     brand: "Al Munakh",
     category: "fragrances",
-    thumbnail: "https://i.dummyjson.com/data/products/14/thumbnail.jpg",
+    thumbnail: "https://i.dummyjson.com/data/products/14/2.jpg",
     images: [
       "https://i.dummyjson.com/data/products/14/1.jpg",
       "https://i.dummyjson.com/data/products/14/2.jpg",
@@ -313,7 +862,7 @@ export const products = [
     stock: 78,
     brand: "Hemani Tea",
     category: "skincare",
-    thumbnail: "https://i.dummyjson.com/data/products/17/thumbnail.jpg",
+    thumbnail: "https://i.dummyjson.com/data/products/17/3.jpg",
     images: [
       "https://i.dummyjson.com/data/products/17/1.jpg",
       "https://i.dummyjson.com/data/products/17/2.jpg",
@@ -331,7 +880,7 @@ export const products = [
     stock: 88,
     brand: "Dermive",
     category: "skincare",
-    thumbnail: "https://i.dummyjson.com/data/products/18/thumbnail.jpg",
+    thumbnail: "https://i.dummyjson.com/data/products/18/2.jpg",
     images: [
       "https://i.dummyjson.com/data/products/18/1.jpg",
       "https://i.dummyjson.com/data/products/18/2.jpg",
@@ -350,7 +899,7 @@ export const products = [
     stock: 54,
     brand: "ROREC White Rice",
     category: "skincare",
-    thumbnail: "https://i.dummyjson.com/data/products/19/thumbnail.jpg",
+    thumbnail: "https://i.dummyjson.com/data/products/19/1.jpg",
     images: [
       "https://i.dummyjson.com/data/products/19/1.jpg",
       "https://i.dummyjson.com/data/products/19/2.jpg",
@@ -657,567 +1206,10 @@ export const products = [
       "https://i.dummyjson.com/data/products/35/thumbnail.jpg"
     ]
   },
-  {
-    _id: uuid(),
-    title: "Sleeve Shirt Womens",
-    description: "Cotton Solid Color Professional Wear Sleeve Shirt Womens Work Blouses Wholesale Clothing Casual Plain Custom Top OEM Customized",
-    price: 90,
-    discountPercentage: 10.89,
-    rating: 3.26,
-    stock: 39,
-    brand: "Professional Wear",
-    category: "tops",
-    thumbnail: "https://i.postimg.cc/rp72Z66X/red-top-1.jpg",
-    images: [
-      "https://i.postimg.cc/3rXQ1bnV/red-top-2.jpg",
-      "https://i.postimg.cc/xT9D4yZC/red-top-3.jpg",
-      "https://i.postimg.cc/L6vKKgdV/red-top-4.jpg",
-      "https://i.postimg.cc/7hnvLf5w/red-top-5.jpg",
 
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "ank Tops for Womens/Girls",
-    description: "PACK OF 3 CAMISOLES ,VERY COMFORTABLE SOFT COTTON STUFF, COMFORTABLE IN ALL FOUR SEASONS",
-    price: 50,
-    discountPercentage: 12.05,
-    rating: 4.52,
-    stock: 107,
-    brand: "Soft Cotton",
-    category: "tops",
-    thumbnail: "https://i.postimg.cc/sgpWgzcK/pink-top-1.jpg",
-    images: [
-      "https://i.postimg.cc/sgpWgzcK/pink-top-1.jpg",
-      "https://i.postimg.cc/s2shBLHz/pink-top-2.jpg",
-      "https://i.postimg.cc/cJh8fcPn/pink-top-3.jpg",
-      "https://i.postimg.cc/LXsgD1M0/pink-top-4.jpg",
-      "https://i.postimg.cc/wvbyGjqx/pink-top-5.jpg"
 
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "sublimation plain kids tank",
-    description: "sublimation plain kids tank tops wholesale",
-    price: 100,
-    discountPercentage: 11.12,
-    rating: 4.8,
-    stock: 20,
-    brand: "Soft Cotton",
-    category: "tops",
-    thumbnail: "https://i.postimg.cc/T3jmQxBF/blue-top-1.jpg",
-    images: [
-      "https://i.postimg.cc/SKy9v5hs/blue-top-2.jpg",
-      "https://i.postimg.cc/GpqDwQLj/blue-top-3.jpg",
-      "https://i.postimg.cc/KzjMZM4h/blue-top-4.jpg",
 
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "Women Sweaters Wool",
-    description: "2021 Custom Winter Fall Zebra Knit Crop Top Women Sweaters Wool Mohair Cos Customize Crew Neck Women' S Crop Top Sweater",
-    price: 600,
-    discountPercentage: 17.2,
-    rating: 4.55,
-    stock: 55,
-    brand: "Top Sweater",
-    category: "tops",
-    thumbnail: "https://i.postimg.cc/jdjtMYC2/orange-top-1.jpg",
-    images: [
-      "https://i.postimg.cc/jdjtMYC2/orange-top-1.jpg",
-      "https://i.postimg.cc/y8MK6Jj3/orange-top-2.jpg",
-      "https://i.postimg.cc/t4ZyHd3H/orange-top-3.jpg",
-      "https://i.postimg.cc/HLbgrpvZ/orange-top-4.jpg",
-      "https://i.postimg.cc/Y9kwgJJp/orange-top-5.jpg",
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "women winter clothes",
-    description: "women winter clothes thick fleece hoodie top with sweat pantjogger women sweatsuit set joggers pants two piece pants set",
-    price: 57,
-    discountPercentage: 13.39,
-    rating: 4.91,
-    stock: 84,
-    brand: "Top Sweater",
-    category: "tops",
-    thumbnail: "https://i.postimg.cc/VNmswrDs/yellow-top-1.jpg",
-    images: [
-      'https://i.postimg.cc/VNmswrDs/yellow-top-1.jpg',
-      'https://i.postimg.cc/3Rb32L7W/yellow-top-2.jpg',
-      'https://i.postimg.cc/sxQsmpDm/yellow-top-3.jpg',
-      'https://i.postimg.cc/W342DBBQ/yellow-top-4.jpg'
 
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "red saaree",
-    description: "NIGHT SUIT RED MICKY MOUSE..  For Girls. Fantastic Suits.",
-    price: 55,
-    discountPercentage: 15.05,
-    rating: 4.65,
-    stock: 21,
-    brand: "RED MICKY MOUSE..",
-    category: "womens-saaree",
-    thumbnail: "https://i.postimg.cc/Kztd8Jzd/red-saaree-1.jpg",
-    images: [
-      'https://i.postimg.cc/Kztd8Jzd/red-saaree-1.jpg',
-      'https://i.postimg.cc/Hn2RQnbz/red-saaree-2.jpg',
-      'https://i.postimg.cc/vZDkVQT7/red-saaree-3.jpg',
-      'https://i.postimg.cc/J4pS0yr4/red-saaree-4.jpg',
-      'https://i.postimg.cc/rFVvqGLP/red-saaree-5.jpg'
-
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "Stiched Kurta plus trouser",
-    description: "FABRIC: LILEIN CHEST: 21 LENGHT: 37 TROUSER: (38) :ARABIC LILEIN",
-    price: 80,
-    discountPercentage: 15.37,
-    rating: 4.05,
-    stock: 148,
-    brand: "Digital Printed",
-    category: "womens-saaree",
-    thumbnail: "https://i.postimg.cc/wBp5dVCt/black-saaaree-5.jpg",
-    images: [
-      'https://i.postimg.cc/wBp5dVCt/black-saaaree-5.jpg',
-      'https://i.postimg.cc/d1Q8h0tw/black-saaree-1.jpg',
-      'https://i.postimg.cc/Y2s1SMcB/black-saaree-3.jpg',
-      'https://i.postimg.cc/kGBKyhbH/black-saree-2.jpg',
-      'https://i.postimg.cc/qqSnDXcv/blacksaaree-4.jpg'
-
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "frock gold printed",
-    description: "Ghazi fabric long frock gold printed ready to wear stitched collection (G992)",
-    price: 600,
-    discountPercentage: 15.55,
-    rating: 4.31,
-    stock: 150,
-    brand: "Ghazi Fabric",
-    category: "womens-saaree",
-    thumbnail: "https://i.postimg.cc/dtR8vXY8/blue-saaree-1.jpg",
-    images: [
-      'https://i.postimg.cc/dtR8vXY8/blue-saaree-1.jpg',
-      'https://i.postimg.cc/vZ3fxVDT/blue-saaree-2.jpg',
-      'https://i.postimg.cc/N0FT6jr4/blue-saaree-3.jpg',
-      'https://i.postimg.cc/bwz1vTy4/blue-saaree-4.jpg'
-
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "Ladies Multicolored Dress",
-    description: "This classy shirt for women gives you a gorgeous look on everyday wear and specially for semi-casual wears.",
-    price: 79,
-    discountPercentage: 16.88,
-    rating: 4.03,
-    stock: 2,
-    brand: "Ghazi Fabric",
-    category: "womens-saaree",
-    thumbnail: "https://i.postimg.cc/bwy3BH0h/graan-saaree-1.jpg",
-    images: [
-      'https://i.postimg.cc/bwy3BH0h/graan-saaree-1.jpg',
-      'https://i.postimg.cc/ZnzLFrYX/green-saaree-2.jpg',
-      'https://i.postimg.cc/jj9c2ppx/green-saaree-3.jpg',
-      'https://i.postimg.cc/wjw08yFs/green-saaree-4.jpg',
-      'https://i.postimg.cc/k4bcbjCx/green-saaree-5.jpg'
-
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "Malai Maxi Dress",
-    description: "Ready to wear, Unique design according to modern standard fashion, Best fitting ,Imported stuff",
-    price: 50,
-    discountPercentage: 5.07,
-    rating: 4.67,
-    stock: 96,
-    brand: "IELGY",
-    category: "womens-saaree",
-    thumbnail: "https://i.postimg.cc/htS3qTHt/light-blue-saaree-1.jpg",
-    images: [
-      'https://i.postimg.cc/htS3qTHt/light-blue-saaree-1.jpg',
-      'https://i.postimg.cc/LsWyf7hJ/light-blue-saaree-2.jpg',
-      'https://i.postimg.cc/Gpt74r30/light-blue-saaree-3.jpg',
-      'https://i.postimg.cc/tTVBz5V2/light-blue-saaree-4.jpg'
-
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "women's shoes",
-    description: "Close: Lace, Style with bottom: Increased inside, Sole Material: Rubber",
-    price: 40,
-    discountPercentage: 16.96,
-    rating: 4.14,
-    stock: 72,
-    brand: "IELGY fashion",
-    category: "womens-shoes",
-    thumbnail: "https://i.dummyjson.com/data/products/46/1.webp",
-    images: [
-      "https://i.dummyjson.com/data/products/46/1.webp",
-      "https://i.dummyjson.com/data/products/46/2.jpg",
-      "https://i.dummyjson.com/data/products/46/3.jpg",
-      "https://i.dummyjson.com/data/products/46/4.jpg",
-      "https://i.dummyjson.com/data/products/46/thumbnail.jpg"
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "Sneaker shoes",
-    description: "Synthetic Leather Casual Sneaker shoes for Women/girls Sneakers For Women",
-    price: 120,
-    discountPercentage: 10.37,
-    rating: 4.19,
-    stock: 50,
-    brand: "Synthetic Leather",
-    category: "womens-shoes",
-    thumbnail: "https://i.dummyjson.com/data/products/47/thumbnail.jpeg",
-    images: [
-      "https://i.dummyjson.com/data/products/47/1.jpg",
-      "https://i.dummyjson.com/data/products/47/2.jpg",
-      "https://i.dummyjson.com/data/products/47/3.jpg",
-      "https://i.dummyjson.com/data/products/47/thumbnail.jpeg"
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "Women Strip Heel",
-    description: "Features: Flip-flops, Mid Heel, Comfortable, Striped Heel, Antiskid, Striped",
-    price: 40,
-    discountPercentage: 10.83,
-    rating: 4.02,
-    stock: 25,
-    brand: "Sandals Flip Flops",
-    category: "womens-shoes",
-    thumbnail: "https://m.media-amazon.com/images/I/61GdGz90MhL._UY695_.jpg",
-    images: [
-      "https://i.dummyjson.com/data/products/48/1.jpg",
-      "https://i.dummyjson.com/data/products/48/2.jpg",
-      "https://i.dummyjson.com/data/products/48/3.jpg",
-      "https://i.dummyjson.com/data/products/48/4.jpg",
-      "https://i.dummyjson.com/data/products/48/thumbnail.jpg"
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "Chappals & Shoe Ladies Metallic",
-    description: "Womens Chappals & Shoe Ladies Metallic Tong Thong Sandal Flat Summer 2020 Maasai Sandals",
-    price: 23,
-    discountPercentage: 2.62,
-    rating: 4.72,
-    stock: 107,
-    brand: "Maasai Sandals",
-    category: "womens-shoes",
-    thumbnail: "https://i.dummyjson.com/data/products/49/thumbnail.jpg",
-    images: [
-      "https://i.dummyjson.com/data/products/49/1.jpg",
-      "https://i.dummyjson.com/data/products/49/2.jpg",
-      "https://i.dummyjson.com/data/products/49/3.webp",
-      "https://i.dummyjson.com/data/products/49/thumbnail.jpg"
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "Women Shoes",
-    description: "2020 New Arrivals Genuine Leather Fashion Trend Platform Summer Women Shoes",
-    price: 36,
-    discountPercentage: 16.87,
-    rating: 4.33,
-    stock: 46,
-    brand: "Arrivals Genuine",
-    category: "womens-shoes",
-    thumbnail: "https://m.media-amazon.com/images/I/61Y5dnHCkiL._UY695_.jpg",
-    images: [
-      "https://i.dummyjson.com/data/products/50/1.jpeg",
-      "https://i.dummyjson.com/data/products/50/2.jpg",
-      "https://i.dummyjson.com/data/products/50/3.jpg"
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "half sleeves T shirts",
-    description: "Many store is creating new designs and trend every month and every year. Daraz.pk have a beautiful range of men fashion brands",
-    price: 23,
-    discountPercentage: 12.76,
-    rating: 4.26,
-    stock: 132,
-    brand: "Vintage Apparel",
-    category: "mens-shirts",
-    thumbnail: "https://i.dummyjson.com/data/products/51/2.jpg",
-    images: [
-      "https://i.dummyjson.com/data/products/51/1.png",
-      "https://i.dummyjson.com/data/products/51/2.jpg",
-      "https://i.dummyjson.com/data/products/51/3.jpg",
-      "https://i.dummyjson.com/data/products/51/thumbnail.jpg"
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "FREE FIRE T Shirt",
-    description: "quality and professional print - It doesn't just look high quality, it is high quality.",
-    price: 10,
-    discountPercentage: 14.72,
-    rating: 4.52,
-    stock: 128,
-    brand: "FREE FIRE",
-    category: "mens-shirts",
-    thumbnail: "https://i.dummyjson.com/data/products/52/3.jpg",
-    images: [
-      "https://i.dummyjson.com/data/products/52/1.png",
-      "https://i.dummyjson.com/data/products/52/2.png",
-      "https://i.dummyjson.com/data/products/52/3.jpg",
-      "https://i.dummyjson.com/data/products/52/4.jpg",
-      "https://i.dummyjson.com/data/products/52/thumbnail.jpg"
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "printed high quality T shirts",
-    description: "Brand: vintage Apparel ,Export quality",
-    price: 35,
-    discountPercentage: 7.54,
-    rating: 4.89,
-    stock: 6,
-    brand: "Vintage Apparel",
-    category: "mens-shirts",
-    thumbnail: "https://i.dummyjson.com/data/products/53/thumbnail.jpg",
-    images: [
-      "https://i.dummyjson.com/data/products/53/1.webp",
-      "https://i.dummyjson.com/data/products/53/2.jpg",
-      "https://i.dummyjson.com/data/products/53/3.jpg",
-      "https://i.dummyjson.com/data/products/53/4.jpg",
-      "https://i.dummyjson.com/data/products/53/thumbnail.jpg"
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "Pubg Printed Graphic T-Shirt",
-    description: "Product Description Features: 100% Ultra soft Polyester Jersey. Vibrant & colorful printing on front. Feels soft as cotton without ever cracking",
-    price: 46,
-    discountPercentage: 16.44,
-    rating: 4.62,
-    stock: 136,
-    brand: "The Warehouse",
-    category: "mens-shirts",
-    thumbnail: "https://i.dummyjson.com/data/products/54/thumbnail.jpg",
-    images: [
-      "https://i.dummyjson.com/data/products/54/1.jpg",
-      "https://i.dummyjson.com/data/products/54/2.jpg",
-      "https://i.dummyjson.com/data/products/54/3.jpg",
-      "https://i.dummyjson.com/data/products/54/4.jpg",
-      "https://i.dummyjson.com/data/products/54/thumbnail.jpg"
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "Money Heist Printed Summer T Shirts",
-    description: "Fabric Jercy, Size: M & L Wear Stylish Dual Stiched",
-    price: 66,
-    discountPercentage: 15.97,
-    rating: 4.9,
-    stock: 122,
-    brand: "The Warehouse",
-    category: "mens-shirts",
-    thumbnail: "https://i.dummyjson.com/data/products/55/4.jpg",
-    images: [
-      "https://i.dummyjson.com/data/products/55/1.jpg",
-      "https://i.dummyjson.com/data/products/55/2.webp",
-      "https://i.dummyjson.com/data/products/55/3.jpg",
-      "https://i.dummyjson.com/data/products/55/4.jpg",
-      "https://i.dummyjson.com/data/products/55/thumbnail.jpg"
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "Sneakers Joggers Shoes",
-    description: "Gender: Men , Colors: Same as DisplayedCondition: 100% Brand New",
-    price: 40,
-    discountPercentage: 12.57,
-    rating: 4.38,
-    stock: 6,
-    brand: "Sneakers",
-    category: "mens-shoes",
-    thumbnail: "https://m.media-amazon.com/images/I/71VgSPTxPnL._UL1500_.jpg",
-    images: [
-      "https://cdn.shopify.com/s/files/1/2575/9828/products/2083ffa20fe76cf9cc4023261c9bddac_1904x.progressive_8a775a60-5ac4-40f9-a003-671c72800c3a_grande.jpg?v=1606494245",
-      "https://i.ebayimg.com/images/g/zmMAAOSwgr9jDM6H/s-l1600.jpg",
-      "https://i.ebayimg.com/images/g/4KQAAOSwT9liusn6/s-l500.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMDPr1hGzyDhDUc_NtNw198bfcg0UDV-5TH5VUrFLAq_63YFwPsGCkoMckp1xjz_L4SQHa6tO94oM&usqp=CAU&ec=48665699",
-      "https://i.dummyjson.com/data/products/56/5.jpg",
-      "https://i.dummyjson.com/data/products/56/thumbnail.jpg"
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "Loafers for men",
-    description: "Men Shoes - Loafers for men - Rubber Shoes - Nylon Shoes - Shoes for men - Moccassion - Pure Nylon (Rubber) Expot Quality.",
-    price: 47,
-    discountPercentage: 10.91,
-    rating: 4.91,
-    stock: 20,
-    brand: "Rubber",
-    category: "mens-shoes",
-    thumbnail: "https://5.imimg.com/data5/CY/QJ/MY-25539252/leather-shoes-for-men-leather-loafer-shoes-lo33-black-1000x1000.png",
-    images: [
-      "https://m.media-amazon.com/images/I/41upWLHyU-L.jpg",
-      "https://m.media-amazon.com/images/I/71adfun8YuL._UY625_.jpg",
-      "https://5.imimg.com/data5/FY/QY/EA/SELLER-51594600/mens-loafers-shoes-1000x1000.jpg",
-      "https://i.dummyjson.com/data/products/57/4.jpg",
-      "https://i.dummyjson.com/data/products/57/thumbnail.jpg"
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "formal offices shoes",
-    description: "Pattern Type: Solid, Material: PU, Toe Shape: Pointed Toe ,Outsole Material: Rubber",
-    price: 57,
-    discountPercentage: 12,
-    rating: 4.41,
-    stock: 68,
-    brand: "The Warehouse",
-    category: "mens-shoes",
-    thumbnail: "https://i.dummyjson.com/data/products/58/thumbnail.jpg",
-    images: [
-      "https://i.dummyjson.com/data/products/58/1.jpg",
-      "https://i.dummyjson.com/data/products/58/2.jpg",
-      "https://i.dummyjson.com/data/products/58/3.jpg",
-      "https://i.dummyjson.com/data/products/58/4.jpg",
-      "https://i.dummyjson.com/data/products/58/thumbnail.jpg"
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "Spring and summershoes",
-    description: "Comfortable stretch cloth, lightweight body; ,rubber sole, anti-skid wear;",
-    price: 20,
-    discountPercentage: 8.71,
-    rating: 4.33,
-    stock: 137,
-    brand: "Sneakers",
-    category: "mens-shoes",
-    thumbnail: "https://i.dummyjson.com/data/products/59/3.jpg",
-    images: [
-      "https://i.dummyjson.com/data/products/59/1.jpg",
-      "https://i.dummyjson.com/data/products/59/2.jpg",
-      "https://i.dummyjson.com/data/products/59/3.jpg",
-      "https://i.dummyjson.com/data/products/59/4.jpg",
-      "https://i.dummyjson.com/data/products/59/thumbnail.jpg"
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "Stylish Casual Jeans Shoes",
-    description: "High Quality ,Stylish design ,Comfortable wear ,FAshion ,Durable",
-    price: 58,
-    discountPercentage: 7.55,
-    rating: 4.55,
-    stock: 129,
-    brand: "Sneakers",
-    category: "mens-shoes",
-    thumbnail: "https://i.dummyjson.com/data/products/60/thumbnail.jpg",
-    images: [
-      "https://i.dummyjson.com/data/products/60/1.jpg",
-      "https://i.dummyjson.com/data/products/60/2.jpg",
-      "https://i.dummyjson.com/data/products/60/3.jpg",
-      "https://i.dummyjson.com/data/products/60/thumbnail.jpg"
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "Leather Straps Wristwatch",
-    description: "Style:Sport ,Clasp:Buckles ,Water Resistance Depth:3Bar",
-    price: 120,
-    discountPercentage: 7.14,
-    rating: 4.63,
-    stock: 91,
-    brand: "Naviforce",
-    category: "mens-watches",
-    thumbnail: "https://i.dummyjson.com/data/products/61/thumbnail.jpg",
-    images: [
-      "https://i.dummyjson.com/data/products/61/1.jpg",
-      "https://i.dummyjson.com/data/products/61/2.png",
-      "https://i.dummyjson.com/data/products/61/3.jpg"
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "Waterproof Leather Brand Watch",
-    description: "Watch Crown With Environmental IPS Bronze Electroplating; Display system of 12 hours",
-    price: 46,
-    discountPercentage: 3.15,
-    rating: 4.05,
-    stock: 95,
-    brand: "SKMEI 9117",
-    category: "mens-watches",
-    thumbnail: "https://i.dummyjson.com/data/products/62/thumbnail.jpg",
-    images: [
-      "https://i.dummyjson.com/data/products/62/1.jpg",
-      "https://i.dummyjson.com/data/products/62/2.jpg"
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "Royal Blue Premium Watch",
-    description: "Men Silver Chain Royal Blue Premium Watch Latest Analog Watch",
-    price: 50,
-    discountPercentage: 2.56,
-    rating: 4.89,
-    stock: 142,
-    brand: "SKMEI 9117",
-    category: "mens-watches",
-    thumbnail: "https://i.dummyjson.com/data/products/63/thumbnail.webp",
-    images: [
-      "https://i.dummyjson.com/data/products/63/1.jpg",
-      "https://i.dummyjson.com/data/products/63/2.jpg",
-      "https://i.dummyjson.com/data/products/63/3.png",
-      "https://i.dummyjson.com/data/products/63/4.jpeg"
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "Leather Strap Skeleton Watch",
-    description: "Leather Strap Skeleton Watch for Men - Stylish and Latest Design",
-    price: 46,
-    discountPercentage: 10.2,
-    rating: 4.98,
-    stock: 61,
-    brand: "Strap Skeleton",
-    category: "mens-watches",
-    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzKOX3svFY6fPNE1n2kXkBZfmtMhBdcNr0QXij5_tv0WvI5EDB3nnPcAWxKuSpKLhn8ez0YTzp8ho&usqp=CAU&ec=48665699",
-    images: [
-      "https://www.pngitem.com/pimgs/m/490-4909977_cartier-mens-watch-hd-png-download.png",
-      "https://images.squarespace-cdn.com/content/v1/54661df4e4b0c1af99306b69/1521317205943-WPJB1A5469GUFPBG3NNN/Rotary+Rose+Gold+Cambridge+Gents+Chronograph+Quart.png",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzKOX3svFY6fPNE1n2kXkBZfmtMhBdcNr0QXij5_tv0WvI5EDB3nnPcAWxKuSpKLhn8ez0YTzp8ho&usqp=CAU&ec=48665699",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5LLYhCUQkL15pRDAd4JUerOLgAZjwoQ17OXs0MgNmm3hUQEhiIBDskzcT4tuyofNLFI4e3rrO4Hw&usqp=CAU&ec=48665699"
-    ]
-  },
-  {
-    _id: uuid(),
-    title: "Stainless Steel Wrist Watch",
-    description: "Stylish Watch For Man (Luxury) Classy Men's Stainless Steel Wrist Watch - Box Packed",
-    price: 47,
-    discountPercentage: 17.79,
-    rating: 4.79,
-    stock: 94,
-    brand: "Stainless",
-    category: "mens-watches",
-    thumbnail: "https://i.dummyjson.com/data/products/65/thumbnail.webp",
-    images: [
-      "https://i.dummyjson.com/data/products/65/1.jpg",
-      "https://i.dummyjson.com/data/products/65/2.webp",
-      "https://i.dummyjson.com/data/products/65/3.jpg",
-      "https://i.dummyjson.com/data/products/65/4.webp",
-      "https://i.dummyjson.com/data/products/65/thumbnail.webp"
-    ]
-  },
   {
     _id: uuid(),
     title: "Steel Analog Couple Watches",

@@ -54,9 +54,9 @@
     justify-content: space-around;
     gap: 15px;
     align-items: center;
-    position: fixed;
+    position: absolute;
     border-radius: 10px;
-    top: 100px;
+    top: 200px;
     right: 250px;
 
 

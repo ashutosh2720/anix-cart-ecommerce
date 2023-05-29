@@ -1,0 +1,30 @@
+.main-checkout {
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.check-out {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    min-width: 250px;
+    min-height: 50px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+    align-items: center;
+    border-radius: 10px;
+    right: 100px;
+}
+
+.checkout-btn {
+    background-color: #0c2340;
+    width: 70%;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
