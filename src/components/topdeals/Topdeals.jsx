@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../../pages/home/main.css";
 // import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import FiberNewIcon from '@mui/icons-material/FiberNew';
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import Skeleton from "@mui/material/Skeleton";
 import FavoriteIcon from "@mui/icons-material/Favorite";
@@ -41,6 +42,7 @@ const Topdeals = ({ category, title }) => {
                     {Items?.map((val) => {
                         return (
                             <div>
+
                                 <FavoriteIcon
                                     className="fav"
                                     onClick={() => wishlistArray.find(({ _id }) => _id === val._id) ? deleteFromWishlist(val._id) : addToWishlist(val)}
@@ -53,6 +55,7 @@ const Topdeals = ({ category, title }) => {
                                 />
 
                                 <div className="img-details">
+                                    <FiberNewIcon style={{ color: 'red', fontSize: '2rem' }} />
                                     <NavLink to={"/single-product/" + val._id}>
                                         <div className="product-img">
                                             <img src={val.thumbnail} alt="" />
