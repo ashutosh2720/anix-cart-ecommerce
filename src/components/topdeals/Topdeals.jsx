@@ -59,7 +59,7 @@ const Topdeals = ({ category, title }) => {
                                         </div>
                                         <div className="ind-item">
                                             <p>{val.title.slice(0, 25)}...</p>
-                                            <h3>&#8377;{val.price}/-</h3>
+                                            <h3>&#8377;{val.price - 10}/-  <span style={{ color: 'red', fontWeight: 'lighter' }}><s>&#8377;{val.price}</s></span></h3>
                                             <Rating
                                                 name="read-only"
                                                 value={val.rating}
