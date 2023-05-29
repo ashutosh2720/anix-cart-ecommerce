@@ -9,14 +9,13 @@
 
 .cart .cart-item {
     padding: 10px;
-    /* height: 300px; */
-    width: 400px;
+    min-width: 30vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 20px;
     align-items: center;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border-radius: 10px;
 }
 
@@ -34,13 +33,16 @@
     gap: 15px;
 }
 
-button.remove-cart {
+.remove-cart {
+    min-width: 130px;
+    min-height: 5px;
     cursor: pointer;
-    padding: 3px;
-    border-radius: 10px;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: #12345e;
 }
 
-button:hover {
+.remove-cart:hover {
     background-color: red;
     color: white;
 }
