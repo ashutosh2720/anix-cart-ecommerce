@@ -66,7 +66,7 @@ const CategoryProducts = ({ category, title }) => {
                                     }}
                                 />
                                 <div className="img-details">
-                                    <NewReleasesIcon style={{ color: 'red' }} />
+                                    <img src="https://w7.pngwing.com/pngs/67/521/png-transparent-computer-icons-offers-text-logo-discount-thumbnail.png" alt="" style={{ height: '40px' }} />
                                     <NavLink to={"/single-product/" + val._id}>
                                         <div className="product-img">
                                             <img src={val.thumbnail} alt="" />
