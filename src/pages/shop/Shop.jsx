@@ -30,6 +30,7 @@ const Shop = () => {
                         <p><input type="checkbox" name="" id="" /><h5>Men</h5></p>
                         <p><input type="checkbox" name="" id="" /><h5>women</h5></p>
                         <p><input type="checkbox" name="" id="" /><h5>electronics</h5></p>
+                        <p><input type="checkbox" name="" id="" /><h5>fragrances</h5></p>
                     </div>
                     <hr style={{ width: '100%' }} />
 
