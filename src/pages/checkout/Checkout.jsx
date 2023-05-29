@@ -9,8 +9,9 @@ function Checkout() {
     const totalPrice = cartArray.length > 0 ? cartArray.reduce((acc, cur) => acc + cur.price * cur.qty, 0) : null
     return (
         <div className='main-checkout'>
-
-            <Addresses />
+            <div className="address">
+                <h1>address</h1>
+            </div>
             <div className="check-out">
                 <h3>cart price detail</h3>
                 <hr style={{ width: '100%' }} />
