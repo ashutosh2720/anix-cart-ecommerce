@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './Addresses.css'
+import { useGlobalCart } from '../../contexts/cart-context';
 
 const Addresses = () => {
-    const [addresses, setAddresses] = useState([]);
+    const { addresses, setAddresses } = useGlobalCart()
     const [formData, setFormData] = useState({
         name: '',
         mobile: '',

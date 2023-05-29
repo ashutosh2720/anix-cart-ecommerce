@@ -2,15 +2,24 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import './Checkout.css'
 import { useGlobalCart } from '../../contexts/cart-context';
-import Addresses from '../../components/addresses/Addresses';
 
 function Checkout() {
-    const { cartArray, } = useGlobalCart()
+    const { cartArray, addresses } = useGlobalCart()
     const totalPrice = cartArray.length > 0 ? cartArray.reduce((acc, cur) => acc + cur.price * cur.qty, 0) : null
     return (
         <div className='main-checkout'>
             <div className="address">
                 <h1>address</h1>
+                {
+                    addresses.map((address) =>
+                        <div className='addres' >
+                            <p>Name : {address.name}</p>
+                            <p>Mobile : {address.mobile}</p>
+                            <p>Pin Code : {address.pinCode}</p>
+                            <p>City : {address.city}</p>
+                            <p>Address : {address.address}</p>
+                        </div>)
+                }
             </div>
             <div className="check-out">
                 <h3>cart price detail</h3>
