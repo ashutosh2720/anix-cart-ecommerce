@@ -20,7 +20,7 @@ export default function Discription() {
     const [mainImage, setMainImage] = useState(null);
 
     const { cartArray, addToCart } = useGlobalCart();
-    const { wishlistArray, setWishlistArray, addToWishlist } =
+    const { wishlistArray, addToWishlist } =
         useGlobalWishlist();
 
     const navigate = useNavigate();
@@ -147,13 +147,25 @@ export default function Discription() {
                                         <AddShoppingCartIcon fontSize="large" /> <b>Add To Cart</b>
                                     </Button>
                                 )}
-                                <Button
-                                    className="add-to-cart"
-                                    onClick={() => addToWishlist(productDetail)}
-                                >
+                                {wishlistArray.find((item) => item._id === productDetail._id) ? (
+                                    <Button
+                                        className="add-to-cart"
+                                        onClick={() => {
+                                            navigate("/wishlist");
+                                        }}
+                                    >
+                                        <FavoriteIcon fontSize="large" style={{ color: 'red' }} />
+                                        <b>Go To wishlist </b>
+                                    </Button>
+                                ) : (
+                                    <Button
+                                        className="add-to-cart"
+                                        onClick={() => addToWishlist(productDetail)}
+                                    >
 
-                                    <FavoriteBorderIcon fontSize="large" /> <b>Add to wishlist</b>
-                                </Button>
+                                        <FavoriteBorderIcon fontSize="large" /> <b>Add To wishlist</b>
+                                    </Button>
+                                )}
                             </div>
                         </div>
                     </div>

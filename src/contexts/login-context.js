@@ -84,16 +84,39 @@ const LoginProvider = ({ children }) => {
         notifyInfo("Logout Successfull!");
     };
 
+    const signupHandler = async (name, email, password) => {
+        try {
+            const { data } = await axios.post(`/api/auth/signup`, { name, email, password });
+            localStorage.setItem("anixCartUserToken", JSON.stringify(data.encodedToken));
+            localStorage.setItem("createdUser", JSON.stringify(data.createdUser));
+            setUserToken(data.encodedToken);
+            setUserDetail(data.createdUser);
+            notifySuccess("signup Successfully");
+            console.log(data)
+            // saving the encodedToken in the localStorage
+            localStorage.setItem("token", data.encodedToken);
+
+
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
+
+
+
+
     return (
         <loginContext.Provider
             value={{
                 input,
                 setInput,
                 dummyData,
-                loginAction,
-                userToken,
-                logoutUser,
                 userDetail,
+                userToken,
+                loginAction,
+                logoutUser,
+                signupHandler,
                 notifyInfo,
                 notifySuccess,
                 notifyWarn,

@@ -46,7 +46,7 @@ export default function AccountMenu() {
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
           >
-            <Avatar sx={{ width: 28, height: 28, position: 'relative', top: '-5px' }}> <img style={{ height: '30px', width: '30px' }} src='https://avatars.githubusercontent.com/u/109720375?v=4' alt="" /> </Avatar>
+            <Avatar sx={{ width: 28, height: 28, position: 'relative', top: '-5px' }}> <img style={{ height: '30px', width: '30px' }} src='https://www.w3schools.com/w3images/avatar6.png' alt="" /> </Avatar>
           </IconButton>
         </Tooltip>
       </Box>
@@ -90,7 +90,7 @@ export default function AccountMenu() {
 
         <NavLink to='/profile' style={{ color: 'black' }} >
           <MenuItem onClick={handleClose}>
-            <img src="https://avatars.githubusercontent.com/u/109720375?v=4" alt="" style={{ height: '50px', borderRadius: '100%', margin: '10px' }} /> My account
+            <img src="https://www.w3schools.com/w3images/avatar6.png" alt="" style={{ height: '50px', borderRadius: '100%', margin: '10px' }} /> My account
           </MenuItem>
         </NavLink>
         <Divider />

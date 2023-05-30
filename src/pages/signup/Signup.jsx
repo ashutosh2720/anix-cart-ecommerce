@@ -1,8 +1,20 @@
 import React, { useState } from 'react';
 import './Signup.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, Navigate } from 'react-router-dom';
+import { useGlobalLogin } from '../../contexts/login-context';
+import { useEffect } from 'react';
 
 const Signup = () => {
+
+    const { input, setInput, dummyData, loginAction, userToken, signupHandler } = useGlobalLogin()
+
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        if (userToken) {
+            navigate('/');
+        }
+    }, [userToken])
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -57,7 +69,7 @@ const Signup = () => {
                             required
                         />
                     </div>
-                    <button type="submit"><h3>Sign Up</h3></button>
+                    <button type="submit" onClick={() => signupHandler(formData.name, formData.email, formData.password)}><h3>Sign Up</h3></button>
                 </form>
 
                 <p >  Already have an account ➡️<Link to={'/sign'}>
