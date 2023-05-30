@@ -200,6 +200,109 @@ export const products = [
       "https://i.postimg.cc/W342DBBQ/yellow-top-4.jpg",
     ],
   },
+  {
+    _id: uuid(),
+    title: "women winter clothes",
+    description:
+      "women winter clothes thick fleece hoodie top with sweat pantjogger women sweatsuit set joggers pants two piece pants set",
+    price: 57,
+    discountPercentage: 13.39,
+    rating: 4.91,
+    stock: 84,
+    brand: "Top Sweater",
+    category: "frock",
+    thumbnail: "https://i.postimg.cc/gj51zmTs/frock1.jpg",
+    images: [
+      " https://i.postimg.cc/gj51zmTs/frock1.jpg",
+      "https://i.postimg.cc/FFnMgVHS/frock2.jpg",
+      "https://i.postimg.cc/9Qys23tP/frock3.jpg",
+      "https://i.postimg.cc/xTwBBjHT/frock4.jpg",
+      "https://i.postimg.cc/Gh8ZMT45/frock5.jpg",
+    ],
+  },
+  {
+    _id: uuid(),
+    title: "women winter clothes",
+    description:
+      "women winter clothes thick fleece hoodie top with sweat pantjogger women sweatsuit set joggers pants two piece pants set",
+    price: 57,
+    discountPercentage: 13.39,
+    rating: 4.91,
+    stock: 84,
+    brand: "Top Sweater",
+    category: "frock",
+    thumbnail: "https://i.postimg.cc/wxsC2syb/blue-frock-1.jpg",
+    images: [
+      "https://i.postimg.cc/wxsC2syb/blue-frock-1.jpg",
+      "https://i.postimg.cc/RV5jDVwC/blue-frock-2.jpg",
+      "https://i.postimg.cc/8zTxTKyq/blue-frock-3.jpg",
+      "https://i.postimg.cc/yYmw44Tm/blue-frock-4.jpg",
+      "https://i.postimg.cc/YC8Z06Zj/blue-frock-5.jpg",
+    ],
+  },
+  {
+    _id: uuid(),
+    title: "women winter clothes",
+    description:
+      "women winter clothes thick fleece hoodie top with sweat pantjogger women sweatsuit set joggers pants two piece pants set",
+    price: 57,
+    discountPercentage: 13.39,
+    rating: 4.91,
+    stock: 84,
+    brand: "Top Sweater",
+    category: "frock",
+    thumbnail: "https://i.postimg.cc/qMBgNq5d/dased-1.jpg",
+    images: [
+      ' https://i.postimg.cc/qMBgNq5d/dased-1.jpg',
+      'https://i.postimg.cc/GhMtGRWT/dased-2.jpg',
+      'https://i.postimg.cc/cL2Jkm4s/dased-3.jpg',
+      'https://i.postimg.cc/7Zf6Nc4s/dased-4.jpg',
+      'https://i.postimg.cc/W4Z1Bkh0/dased-5.jpg'
+    ],
+  },
+  {
+    _id: uuid(),
+    title: "women winter clothes",
+    description:
+      "women winter clothes thick fleece hoodie top with sweat pantjogger women sweatsuit set joggers pants two piece pants set",
+    price: 57,
+    discountPercentage: 13.39,
+    rating: 4.91,
+    stock: 84,
+    brand: "Top Sweater",
+    category: "frock",
+    thumbnail: "https://i.postimg.cc/XqqS0RQt/b1.jpg",
+    images: [
+      ' https://i.postimg.cc/XqqS0RQt/b1.jpg',
+      ' https://i.postimg.cc/RV35pz3H/b2.jpg',
+      'https://i.postimg.cc/VL3y3HMH/b3.jpg',
+      ' https://i.postimg.cc/Kcph5YYb/b4.jpg',
+      ' https://i.postimg.cc/fyP4W8Py/b5.jpg'
+
+    ],
+  },
+  {
+    _id: uuid(),
+    title: "women winter clothes",
+    description:
+      "women winter clothes thick fleece hoodie top with sweat pantjogger women sweatsuit set joggers pants two piece pants set",
+    price: 57,
+    discountPercentage: 13.39,
+    rating: 4.91,
+    stock: 84,
+    brand: "Top Sweater",
+    category: "frock",
+    thumbnail: "https://i.postimg.cc/wjQpLQyf/g1.jpg",
+    images: [
+      'https://i.postimg.cc/wjQpLQyf/g1.jpg',
+      'https://i.postimg.cc/0N5qfK78/g2.jpg',
+      ' https://i.postimg.cc/d0WcSQ9G/g3.jpg',
+      ' https://i.postimg.cc/ZR2t4f2R/g4.jpg',
+      ' https://i.postimg.cc/MTvJkksN/g5.jpg'
+
+
+    ],
+  },
 
   {
     _id: uuid(),
@@ -289,12 +392,11 @@ export const products = [
     category: "smart-tv",
     thumbnail: "https://i.postimg.cc/RV4SxPt3/samsung-tv-1.jpg",
     images: [
-      ' https://i.postimg.cc/WpZnCp13/toshiba-1.jpg',
-      ' https://i.postimg.cc/CLVNgyR4/toshiba-2.jpg',
-      ' https://i.postimg.cc/JzpcZGPT/toshiba-3.jpg',
-      'https://i.postimg.cc/DydcfCs3/toshiba-4.jpg',
-      'https://i.postimg.cc/y81yDFXg/toshiba-5.jpg'
-
+      " https://i.postimg.cc/WpZnCp13/toshiba-1.jpg",
+      " https://i.postimg.cc/CLVNgyR4/toshiba-2.jpg",
+      " https://i.postimg.cc/JzpcZGPT/toshiba-3.jpg",
+      "https://i.postimg.cc/DydcfCs3/toshiba-4.jpg",
+      "https://i.postimg.cc/y81yDFXg/toshiba-5.jpg",
     ],
   },
 
@@ -882,7 +984,6 @@ export const products = [
     ],
   },
 
-
   {
     _id: uuid(),
     title: "perfume Oil",
@@ -1370,22 +1471,4 @@ export const products = [
       "https://i.dummyjson.com/data/products/35/thumbnail.jpg",
     ],
   },
-  {
-    _id: uuid(),
-    title: "Stylish Luxury Digital Watch",
-    description:
-      "Stylish Luxury Digital Watch For Girls / Women - Led Smart Ladies Watches For Girls",
-    price: 57,
-    discountPercentage: 9.03,
-    rating: 4.55,
-    stock: 77,
-    brand: "Luxury Digital",
-    category: "womens-watches",
-    thumbnail: "https://i.dummyjson.com/data/products/68/thumbnail.webp",
-    images: [
-      "https://i.dummyjson.com/data/products/68/1.jpg",
-      "https://i.dummyjson.com/data/products/68/2.jpg",
-    ],
-  },
-
 ];

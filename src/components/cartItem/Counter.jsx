@@ -10,7 +10,7 @@ const Counter = ({ qty, id }) => {
     return (
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '5px' }}>
             <p>quantity:</p>
-            <RemoveCircleOutlineIcon disab style={{ cursor: 'pointer' }} onClick={() => qty <= 1 ? deleteFromCart(id) : updateQuantity('decrement', id)} />
+            <RemoveCircleOutlineIcon style={{ cursor: 'pointer' }} onClick={() => qty <= 1 ? deleteFromCart(id) : updateQuantity('decrement', id)} />
 
             <p>{qty}</p>
             <ControlPointIcon style={{ cursor: 'pointer' }} onClick={() => updateQuantity('increment', id)} />

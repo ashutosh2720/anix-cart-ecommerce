@@ -16,9 +16,9 @@ function Profile() {
                     />
                     <p>Name : {userDetail?.name}</p>
                     <p>Email : {userDetail?.email}</p>
-                    {/* <p>address : {userDetail.address}</p> */}
+                    <p>address : {userDetail.address}</p>
                     {/* <p>pincode : {userDetail.pincode}</p> */}
-                    {/* <p>contact Number : {userDetail.contactNumber}</p> */}
+                    <p>contact Number : {userDetail.contact}</p>
                 </div>
             ) : (
                 <h1>You loged out please login to se the detail</h1>
