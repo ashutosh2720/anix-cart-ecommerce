@@ -1,68 +1,9 @@
-import React, { useState } from 'react';
+
 import './Addresses.css'
 import { useGlobalCart } from '../../contexts/cart-context';
 
 const Addresses = () => {
-    const { addresses, setAddresses } = useGlobalCart()
-    const [formData, setFormData] = useState({
-        name: '',
-        mobile: '',
-        pinCode: '',
-        city: '',
-        address: '',
-    });
-    const [editIndex, setEditIndex] = useState(-1);
-
-    const handleInputChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
-    };
-
-    const addAddress = (e) => {
-        e.preventDefault();
-        setAddresses([...addresses, formData]);
-        setFormData({
-            name: '',
-            mobile: '',
-            pinCode: '',
-            city: '',
-            address: '',
-        });
-    };
-
-    const editAddress = (index) => {
-        setEditIndex(index);
-        const addressToEdit = addresses[index];
-        setFormData({
-            name: addressToEdit.name,
-            mobile: addressToEdit.mobile,
-            pinCode: addressToEdit.pinCode,
-            city: addressToEdit.city,
-            address: addressToEdit.address,
-        });
-    };
-
-    const deleteAddress = (index) => {
-        const updatedAddresses = [...addresses];
-        updatedAddresses.splice(index, 1);
-        setAddresses(updatedAddresses);
-    };
-
-    const saveAddress = (e) => {
-        e.preventDefault();
-        const updatedAddresses = [...addresses];
-        updatedAddresses[editIndex] = formData;
-        setAddresses(updatedAddresses);
-        setFormData({
-            name: '',
-            mobile: '',
-            pinCode: '',
-            city: '',
-            address: '',
-        });
-        setEditIndex(-1);
-    };
-
+    const { addresses, editAddress, deleteAddress, formData, saveAddress, handleInputChange, editIndex, addAddress } = useGlobalCart()
     return (
         <div className='address-container' >
             {/* <h2>Add or Edit Address</h2> */}
