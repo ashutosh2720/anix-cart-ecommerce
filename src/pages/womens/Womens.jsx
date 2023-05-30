@@ -7,12 +7,16 @@ const Womens = () => {
     return (
         <>
             <CategoryProducts
+                category='womens-saaree'
+                title='womens-saaree'
+            />
+            <CategoryProducts
                 category='tops'
                 title='girls tops'
             />
             <CategoryProducts
-                category='womens-saaree'
-                title='womens-saaree'
+                category='frock'
+                title='girls-frock'
             />
             <CategoryProducts
                 category='womens-shoes'

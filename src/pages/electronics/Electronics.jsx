@@ -15,8 +15,8 @@ const Electronics = () => {
                 title='smartphones'
             />
             <CategoryProducts
-                category='lighting'
-                title='lighting'
+                category="smart-tv"
+                title="smart-tv"
             />
 
         </>

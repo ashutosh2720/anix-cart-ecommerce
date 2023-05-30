@@ -94,12 +94,6 @@ export default function AccountMenu() {
           </MenuItem>
         </NavLink>
         <Divider />
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon style={{ color: '#0C2340' }} >
-            <PersonAdd fontSize="small" />
-          </ListItemIcon>
-          Add another account
-        </MenuItem>
         <NavLink to='/addresses' style={{ color: 'black' }}   >
           <MenuItem onClick={handleClose}>
             <ListItemIcon style={{ color: '#0C2340' }}  >

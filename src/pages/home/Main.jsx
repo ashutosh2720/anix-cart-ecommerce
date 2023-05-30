@@ -10,7 +10,6 @@ import { useGlobalWishlist } from "../../contexts/wishlist-context";
 // import Mens from "./Mens";
 
 export default function Main() {
-
     return (
         <>
             <Carousel
@@ -47,11 +46,12 @@ export default function Main() {
             </Carousel>
             <br />
 
-            <Topdeals category="tops" title="Tops" />
             <Topdeals category="womens-saaree" title="womens-saaree" />
-            <Topdeals category="mens-shoes" title="mens Shoes" />
-            <Topdeals category="mens-watches" title="Mens Watches" />
+            <Topdeals category="tops" title="Tops" />
+            <Topdeals category="smart-tv" title="smart-tv" />
             <Topdeals category="laptops" title="laptops" />
+            <Topdeals category="smartphones" title="smartphones" />
+            <Topdeals category="mens-watches" title="Mens Watches" />
 
             <div className="cole">
                 {" "}
