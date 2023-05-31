@@ -5,6 +5,7 @@ import FiberNewIcon from '@mui/icons-material/FiberNew';
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import Skeleton from "@mui/material/Skeleton";
 import NewReleasesIcon from '@mui/icons-material/NewReleases';
+import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import Rating from "@mui/material/Rating";
 import { NavLink } from "react-router-dom";
@@ -36,9 +37,7 @@ const Topdeals = ({ category, title }) => {
 
     return (
         <>
-            <h4 style={{ backgroundColor: 'red', display: 'flex', justifyContent: 'space-around', alignItems: 'center', width: '200px', borderRadius: '0px 50px 0px 0px', color: 'white' }}>top deals
-
-                <NewReleasesIcon /> </h4>
+            <h4 style={{ backgroundColor: 'red', display: 'flex', justifyContent: 'space-around', alignItems: 'center', width: '200px', borderRadius: '0px 50px 50px 0px', color: 'white' }}>top deals</h4>
 
 
             {loading ? (
@@ -63,7 +62,9 @@ const Topdeals = ({ category, title }) => {
                                 />
 
                                 <div className="img-details">
-                                    <img src="https://w7.pngwing.com/pngs/67/521/png-transparent-computer-icons-offers-text-logo-discount-thumbnail.png" alt="" style={{ height: '40px' }} />
+                                    {/* <img src="https://png.pngtree.com/png-vector/20200221/ourlarge/pngtree-flash-sale-badge-png-image_2151329.jpg" alt="" style={{ height: '40px' }} /> */}
+
+                                    <LocalOfferIcon fontSize="large" style={{ color: 'red', borderRadius: '10px' }} />
                                     <NavLink to={"/single-product/" + val._id}>
                                         <div className="product-img">
                                             <img src={val.thumbnail} alt="" />
