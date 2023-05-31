@@ -33,6 +33,7 @@ const CartProvider = ({ children }) => {
             setCartArray(data.cart);
             notifySuccess("Item added to cart");
         } catch (err) {
+
             console.log(err);
         }
     };

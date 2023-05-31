@@ -33,7 +33,8 @@ const LoginProvider = ({ children }) => {
         let token = localStorage.getItem("anixCartUserToken");
         if (token) {
             setUserToken(token);
-            let userId = localStorage.getItem("userId");
+            setUserDetail(JSON.parse(localStorage.getItem("foundUser")));
+
         }
     }, [userToken]);
 
@@ -79,6 +80,7 @@ const LoginProvider = ({ children }) => {
     const logoutUser = () => {
         localStorage.removeItem("anixCartUserToken");
         localStorage.removeItem("userId");
+        localStorage.removeItem("foundUser");
         setUserToken("");
         setUserDetail("");
         notifyInfo("Logout Successfull!");
@@ -88,13 +90,13 @@ const LoginProvider = ({ children }) => {
         try {
             const { data } = await axios.post(`/api/auth/signup`, { name, email, password });
             localStorage.setItem("anixCartUserToken", JSON.stringify(data.encodedToken));
-            localStorage.setItem("createdUser", JSON.stringify(data.createdUser));
+            localStorage.setItem("foundUser", JSON.stringify(data.createdUser));
             setUserToken(data.encodedToken);
             setUserDetail(data.createdUser);
             notifySuccess("signup Successfully");
             console.log(data)
             // saving the encodedToken in the localStorage
-            localStorage.setItem("token", data.encodedToken);
+            // localStorage.setItem("token", data.encodedToken);
 
 
         } catch (error) {

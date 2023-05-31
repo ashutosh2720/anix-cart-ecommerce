@@ -14,7 +14,7 @@ const Shop = () => {
         fragrances: false,
     });
 
-    const [priceRange, setPriceRange] = useState([0, 1700]);
+    const [priceRange, setPriceRange] = useState([0, 2000]);
     const [selectedRating, setSelectedRating] = useState("");
     const [sortBy, setSortBy] = useState("");
 
@@ -102,11 +102,11 @@ const Shop = () => {
                             type="range"
                             name="min"
                             id=""
+                            min='0'
                             max="2000"
-                            min="0"
                             value={priceRange[0]}
                             onChange={handlePriceRangeChange}
-                            style={{ width: "100%", height: '10px' }} />
+                            style={{ width: "100%", height: '1px', padding: '2px' }} />
                     </div>
                     <hr style={{ width: '100%' }} />
 

@@ -40,7 +40,7 @@ function Checkout() {
                 <hr style={{ width: '100%' }} />
                 <h3>total price : {totalPrice}</h3>
                 <Link to={'/checkout'}>
-                    <button className="checkout-btn"><h4>checkout</h4></button>
+                    <button className="checkout-btn"><h4>Procced to payment</h4></button>
                 </Link>
             </div>
         </div>
