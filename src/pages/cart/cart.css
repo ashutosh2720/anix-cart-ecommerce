@@ -37,10 +37,11 @@
 .main-cart-item {
     display: flex;
     width: 100%;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
+    position: relative;
     justify-content: center;
+    align-items: start;
 
 }
 
@@ -54,7 +55,7 @@
     justify-content: space-around;
     gap: 15px;
     align-items: center;
-    position: fixed;
+    position: sticky;
     border-radius: 10px;
     top: 200px;
     right: 250px;
