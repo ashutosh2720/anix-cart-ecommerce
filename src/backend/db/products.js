@@ -17,6 +17,7 @@ export const products = [
     stock: 148,
     brand: "Digital Printed",
     category: "womens-saaree",
+    categ: 'womens',
     thumbnail: "https://i.postimg.cc/wBp5dVCt/black-saaaree-5.jpg",
     images: [
       "https://i.postimg.cc/wBp5dVCt/black-saaaree-5.jpg",
@@ -37,6 +38,7 @@ export const products = [
     stock: 148,
     brand: "Digital Printed",
     category: "womens-saaree",
+    categ: 'womens',
     thumbnail: "https://i.postimg.cc/zDHGQ7tt/b1.jpg",
     images: [
       "https://i.postimg.cc/zDHGQ7tt/b1.jpg",
@@ -57,6 +59,7 @@ export const products = [
     stock: 150,
     brand: "Ghazi Fabric",
     category: "womens-saaree",
+    categ: 'womens',
     thumbnail: "https://i.postimg.cc/BQ3fTmCw/brown-1.jpg",
     images: [
       "https://i.postimg.cc/BQ3fTmCw/brown-1.jpg",
@@ -76,6 +79,7 @@ export const products = [
     stock: 2,
     brand: "Ghazi Fabric",
     category: "womens-saaree",
+    categ: 'womens',
     thumbnail: "https://i.postimg.cc/bwy3BH0h/graan-saaree-1.jpg",
     images: [
       "https://i.postimg.cc/bwy3BH0h/graan-saaree-1.jpg",
@@ -96,6 +100,7 @@ export const products = [
     stock: 96,
     brand: "IELGY",
     category: "womens-saaree",
+    categ: 'womens',
     thumbnail: "https://i.postimg.cc/dtQTk8LP/dark2.jpg",
     images: [
       "https://i.postimg.cc/MZmQpsZm/dark1.jpg",
@@ -116,6 +121,7 @@ export const products = [
     stock: 39,
     brand: "Professional Wear",
     category: "tops",
+    categ: 'womens',
     thumbnail: "https://i.postimg.cc/rp72Z66X/red-top-1.jpg",
     images: [
       "https://i.postimg.cc/3rXQ1bnV/red-top-2.jpg",
@@ -135,6 +141,7 @@ export const products = [
     stock: 107,
     brand: "Soft Cotton",
     category: "tops",
+    categ: 'womens',
     thumbnail: "https://i.postimg.cc/sgpWgzcK/pink-top-1.jpg",
     images: [
       "https://i.postimg.cc/sgpWgzcK/pink-top-1.jpg",
@@ -154,6 +161,7 @@ export const products = [
     stock: 20,
     brand: "Soft Cotton",
     category: "tops",
+    categ: 'womens',
     thumbnail: "https://i.postimg.cc/T3jmQxBF/blue-top-1.jpg",
     images: [
       "https://i.postimg.cc/SKy9v5hs/blue-top-2.jpg",
@@ -172,6 +180,7 @@ export const products = [
     stock: 55,
     brand: "Top Sweater",
     category: "tops",
+    categ: 'womens',
     thumbnail: "https://i.postimg.cc/jdjtMYC2/orange-top-1.jpg",
     images: [
       "https://i.postimg.cc/jdjtMYC2/orange-top-1.jpg",
@@ -192,6 +201,7 @@ export const products = [
     stock: 84,
     brand: "Top Sweater",
     category: "tops",
+    categ: 'womens',
     thumbnail: "https://i.postimg.cc/VNmswrDs/yellow-top-1.jpg",
     images: [
       "https://i.postimg.cc/VNmswrDs/yellow-top-1.jpg",
@@ -211,6 +221,7 @@ export const products = [
     stock: 84,
     brand: "Top Sweater",
     category: "frock",
+    categ: 'womens',
     thumbnail: "https://i.postimg.cc/gj51zmTs/frock1.jpg",
     images: [
       " https://i.postimg.cc/gj51zmTs/frock1.jpg",
@@ -231,6 +242,7 @@ export const products = [
     stock: 84,
     brand: "Top Sweater",
     category: "frock",
+    categ: 'womens',
     thumbnail: "https://i.postimg.cc/wxsC2syb/blue-frock-1.jpg",
     images: [
       "https://i.postimg.cc/wxsC2syb/blue-frock-1.jpg",
@@ -251,6 +263,7 @@ export const products = [
     stock: 84,
     brand: "Top Sweater",
     category: "frock",
+    categ: 'womens',
     thumbnail: "https://i.postimg.cc/qMBgNq5d/dased-1.jpg",
     images: [
       ' https://i.postimg.cc/qMBgNq5d/dased-1.jpg',
@@ -271,6 +284,7 @@ export const products = [
     stock: 84,
     brand: "Top Sweater",
     category: "frock",
+    categ: 'womens',
     thumbnail: "https://i.postimg.cc/XqqS0RQt/b1.jpg",
     images: [
       ' https://i.postimg.cc/XqqS0RQt/b1.jpg',
@@ -292,6 +306,7 @@ export const products = [
     stock: 84,
     brand: "Top Sweater",
     category: "frock",
+    categ: 'womens',
     thumbnail: "https://i.postimg.cc/wjQpLQyf/g1.jpg",
     images: [
       'https://i.postimg.cc/wjQpLQyf/g1.jpg',
@@ -314,6 +329,7 @@ export const products = [
     stock: 77,
     brand: "Luxury Digital",
     category: "smart-tv",
+    categ: 'electronics',
     thumbnail: "https://i.postimg.cc/Kz66fYPk/lg-tv-1.jpg",
     images: [
       "https://i.postimg.cc/Kz66fYPk/lg-tv-1.jpg",
@@ -333,6 +349,7 @@ export const products = [
     stock: 77,
     brand: "Luxury Digital",
     category: "smart-tv",
+    categ: 'electronics',
     thumbnail: "https://i.postimg.cc/3RYpvX6d/mi-1.jpg",
     images: [
       " https://i.postimg.cc/3RYpvX6d/mi-1.jpg",
@@ -352,6 +369,7 @@ export const products = [
     stock: 77,
     brand: "Luxury Digital",
     category: "smart-tv",
+    categ: 'electronics',
     thumbnail: "https://i.postimg.cc/g0Dj1fS2/tv1.jpg",
     images: [
       " https://i.postimg.cc/g0Dj1fS2/tv1.jpg",
@@ -371,6 +389,7 @@ export const products = [
     stock: 77,
     brand: "Luxury Digital",
     category: "smart-tv",
+    categ: 'electronics',
     thumbnail: "https://i.postimg.cc/KjtbKKhj/sam1.jpg",
     images: [
       "https://i.postimg.cc/KjtbKKhj/sam1.jpg",
@@ -390,6 +409,7 @@ export const products = [
     stock: 77,
     brand: "Luxury Digital",
     category: "smart-tv",
+    categ: 'electronics',
     thumbnail: "https://i.postimg.cc/RV4SxPt3/samsung-tv-1.jpg",
     images: [
       " https://i.postimg.cc/WpZnCp13/toshiba-1.jpg",
@@ -411,6 +431,7 @@ export const products = [
     stock: 83,
     brand: "Apple",
     category: "laptops",
+    categ: 'electronics',
     thumbnail: "https://i.postimg.cc/yddH62tW/mac-1.jpg",
     images: [
       "https://i.postimg.cc/yddH62tW/mac-1.jpg",
@@ -431,6 +452,7 @@ export const products = [
     stock: 50,
     brand: "Samsung",
     category: "laptops",
+    categ: 'electronics',
     thumbnail: "https://i.postimg.cc/T3z03bsb/asus-1.jpg",
     images: [
       "https://i.postimg.cc/T3z03bsb/asus-1.jpg",
@@ -451,6 +473,7 @@ export const products = [
     stock: 68,
     brand: "Microsoft Surface",
     category: "laptops",
+    categ: 'electronics',
     thumbnail: "https://i.postimg.cc/8k73jM6M/mac6.jpg",
     images: [
       "https://i.postimg.cc/6QThc0GF/dell-1.webp",
@@ -471,6 +494,7 @@ export const products = [
     stock: 96,
     brand: "Infinix",
     category: "laptops",
+    categ: 'electronics',
     thumbnail: "https://m.media-amazon.com/images/I/51DlM6OUjiL._SX679_.jpg",
     images: [
       "https://i.dummyjson.com/data/products/9/1.jpg",
@@ -491,6 +515,7 @@ export const products = [
     stock: 89,
     brand: "HP Pavilion",
     category: "laptops",
+    categ: 'electronics',
     thumbnail: "https://i.postimg.cc/X7CYcrTy/asus6.jpg",
     images: [
       "https://i.postimg.cc/X7CYcrTy/asus6.jpg",
@@ -510,6 +535,7 @@ export const products = [
     stock: 34,
     brand: "Apple",
     category: "smartphones",
+    categ: 'electronics',
     thumbnail: "https://i.dummyjson.com/data/products/2/1.jpg",
     images: [
       "https://i.dummyjson.com/data/products/2/1.jpg",
@@ -529,6 +555,7 @@ export const products = [
     stock: 34,
     brand: "Apple",
     category: "smartphones",
+    categ: 'electronics',
     thumbnail: "https://i.postimg.cc/hGk13z2Q/iphone1.jpg",
     images: [
       "https://i.postimg.cc/hGk13z2Q/iphone1.jpg",
@@ -548,6 +575,7 @@ export const products = [
     stock: 36,
     brand: "Realme",
     category: "smartphones",
+    categ: 'electronics',
     thumbnail: "https://i.postimg.cc/446mrLfx/realme1.jpg",
     images: [
       "https://i.postimg.cc/446mrLfx/realme1.jpg",
@@ -566,6 +594,7 @@ export const products = [
     stock: 123,
     brand: "OPPO",
     category: "smartphones",
+    categ: 'electronics',
     thumbnail: "https://i.postimg.cc/k5SbDnmx/oppo1.jpg",
     images: [
       "https://i.postimg.cc/k5SbDnmx/oppo1.jpg",
@@ -586,6 +615,7 @@ export const products = [
     stock: 32,
     brand: "Xiaomi",
     category: "smartphones",
+    categ: 'electronics',
     thumbnail: "https://i.postimg.cc/sDdtqmnK/xiaomi1.jpg",
     images: [
       " https://i.postimg.cc/sDdtqmnK/xiaomi1.jpg",
@@ -604,6 +634,7 @@ export const products = [
     stock: 91,
     brand: "Naviforce",
     category: "mens-watches",
+    categ: 'mens',
     thumbnail: "https://i.postimg.cc/9MCY8jRk/black2.jpg",
     images: [
       "https://i.postimg.cc/9MCY8jRk/black2.jpg",
@@ -622,6 +653,7 @@ export const products = [
     stock: 95,
     brand: "SKMEI 9117",
     category: "mens-watches",
+    categ: 'mens',
     thumbnail: "https://i.dummyjson.com/data/products/62/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/62/1.jpg",
@@ -639,6 +671,7 @@ export const products = [
     stock: 142,
     brand: "SKMEI 9117",
     category: "mens-watches",
+    categ: 'mens',
     thumbnail: "https://i.postimg.cc/25WJWmhL/blue-watch-1.jpg",
     images: [
       "https://i.postimg.cc/25WJWmhL/blue-watch-1.jpg",
@@ -658,6 +691,7 @@ export const products = [
     stock: 61,
     brand: "Strap Skeleton",
     category: "mens-watches",
+    categ: 'mens',
     thumbnail:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzKOX3svFY6fPNE1n2kXkBZfmtMhBdcNr0QXij5_tv0WvI5EDB3nnPcAWxKuSpKLhn8ez0YTzp8ho&usqp=CAU&ec=48665699",
     images: [
@@ -678,6 +712,7 @@ export const products = [
     stock: 94,
     brand: "Stainless",
     category: "mens-watches",
+    categ: 'mens',
     thumbnail: "https://i.dummyjson.com/data/products/65/thumbnail.webp",
     images: [
       "https://i.dummyjson.com/data/products/65/1.jpg",
@@ -699,6 +734,7 @@ export const products = [
     stock: 72,
     brand: "IELGY fashion",
     category: "womens-shoes",
+    categ: 'womens',
     thumbnail: "https://i.dummyjson.com/data/products/46/1.webp",
     images: [
       "https://i.dummyjson.com/data/products/46/1.webp",
@@ -719,6 +755,7 @@ export const products = [
     stock: 50,
     brand: "Synthetic Leather",
     category: "womens-shoes",
+    categ: 'womens',
     thumbnail: "https://i.dummyjson.com/data/products/47/thumbnail.jpeg",
     images: [
       "https://i.dummyjson.com/data/products/47/1.jpg",
@@ -738,6 +775,7 @@ export const products = [
     stock: 25,
     brand: "Sandals Flip Flops",
     category: "womens-shoes",
+    categ: 'womens',
     thumbnail: "https://m.media-amazon.com/images/I/61GdGz90MhL._UY695_.jpg",
     images: [
       "https://i.dummyjson.com/data/products/48/1.jpg",
@@ -758,6 +796,7 @@ export const products = [
     stock: 107,
     brand: "Maasai Sandals",
     category: "womens-shoes",
+    categ: 'womens',
     thumbnail: "https://i.dummyjson.com/data/products/49/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/49/1.jpg",
@@ -777,6 +816,7 @@ export const products = [
     stock: 46,
     brand: "Arrivals Genuine",
     category: "womens-shoes",
+    categ: 'womens',
     thumbnail: "https://m.media-amazon.com/images/I/61Y5dnHCkiL._UY695_.jpg",
     images: [
       "https://i.dummyjson.com/data/products/50/1.jpeg",
@@ -897,6 +937,7 @@ export const products = [
     stock: 132,
     brand: "Vintage Apparel",
     category: "mens-shirts",
+    categ: 'mens',
     thumbnail: "https://i.dummyjson.com/data/products/51/2.jpg",
     images: [
       "https://i.dummyjson.com/data/products/51/1.png",
@@ -916,6 +957,7 @@ export const products = [
     stock: 128,
     brand: "FREE FIRE",
     category: "mens-shirts",
+    categ: 'mens',
     thumbnail: "https://i.dummyjson.com/data/products/52/3.jpg",
     images: [
       "https://i.dummyjson.com/data/products/52/1.png",
@@ -935,6 +977,7 @@ export const products = [
     stock: 6,
     brand: "Vintage Apparel",
     category: "mens-shirts",
+    categ: 'mens',
     thumbnail: "https://i.dummyjson.com/data/products/53/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/53/1.webp",
@@ -955,6 +998,7 @@ export const products = [
     stock: 136,
     brand: "The Warehouse",
     category: "mens-shirts",
+    categ: 'mens',
     thumbnail: "https://i.dummyjson.com/data/products/54/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/54/1.jpg",
@@ -974,6 +1018,7 @@ export const products = [
     stock: 122,
     brand: "The Warehouse",
     category: "mens-shirts",
+    categ: 'mens',
     thumbnail: "https://i.dummyjson.com/data/products/55/4.jpg",
     images: [
       "https://i.dummyjson.com/data/products/55/1.jpg",
@@ -994,7 +1039,8 @@ export const products = [
     rating: 4.26,
     stock: 65,
     brand: "Impression of Acqua Di Gio",
-    category: "fragrances",
+    categ: "fragrances",
+    category: 'fragrances',
     thumbnail: "https://i.postimg.cc/jj4R0z2j/fog.jpg",
     images: [
       "https://i.postimg.cc/jj4R0z2j/fog.jpg",
@@ -1012,7 +1058,8 @@ export const products = [
     rating: 4,
     stock: 52,
     brand: "Royal_Mirage",
-    category: "fragrances",
+    categ: "fragrances",
+    category: 'fragrances',
     thumbnail: "https://i.dummyjson.com/data/products/12/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/12/1.jpg",
@@ -1032,7 +1079,8 @@ export const products = [
     rating: 4.59,
     stock: 61,
     brand: "Fog Scent Xpressio",
-    category: "fragrances",
+    categ: "fragrances",
+    category: 'fragrances',
     thumbnail: "https://i.dummyjson.com/data/products/13/thumbnail.webp",
     images: [
       "https://i.dummyjson.com/data/products/13/1.jpg",
@@ -1052,7 +1100,8 @@ export const products = [
     rating: 4.21,
     stock: 114,
     brand: "Al Munakh",
-    category: "fragrances",
+    categ: "fragrances",
+    category: 'fragrances',
     thumbnail: "https://i.dummyjson.com/data/products/14/2.jpg",
     images: [
       "https://i.dummyjson.com/data/products/14/1.jpg",
@@ -1071,7 +1120,8 @@ export const products = [
     rating: 4.7,
     stock: 105,
     brand: "Lord - Al-Rehab",
-    category: "fragrances",
+    categ: "fragrances",
+    category: 'fragrances',
     thumbnail: "https://i.dummyjson.com/data/products/15/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/15/1.jpg",
