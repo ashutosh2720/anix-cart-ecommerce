@@ -35,7 +35,7 @@ export default function Menu({ menuFunction }) {
                         <HighlightOffIcon />
                     </div>
                     <div className="welcome">
-                        <h1><AccountCircleIcon className="user" />hello👋{userDetail ? userDetail.name : "user"}</h1>
+                        <h1><AccountCircleIcon className="user" />👋{userDetail ? userDetail.name : "user"}</h1>
                     </div>
                     <div className="order">
                         <ul>

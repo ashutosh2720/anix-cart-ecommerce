@@ -16,6 +16,7 @@ const CartProvider = ({ children }) => {
         pinCode: '',
         city: '',
         address: '',
+        isAddressSelected: false
     });
 
     const navigate = useNavigate();
@@ -98,6 +99,8 @@ const CartProvider = ({ children }) => {
             pinCode: '',
             city: '',
             address: '',
+            isAddressSelected: false
+
         });
         { cartArray.length !== 0 && navigate('checkout') }
 
@@ -120,10 +123,21 @@ const CartProvider = ({ children }) => {
             pinCode: '',
             city: '',
             address: '',
+            isAddressSelected: false
         });
         setEditIndex(-1);
         { cartArray.length !== 0 && navigate('checkout') }
 
+    };
+
+    const selectAddress = (ind) => {
+        setAddresses((Adresses) =>
+            Adresses.map((address, index) =>
+                index === ind
+                    ? { ...address, isAddressSelected: true }
+                    : { ...address, isAddressSelected: false }
+            )
+        );
     };
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -145,6 +159,7 @@ const CartProvider = ({ children }) => {
                 addAddress,
                 setEditIndex,
                 setFormData,
+                selectAddress,
                 handleInputChange,
                 updateQuantity,
                 setCartArray,

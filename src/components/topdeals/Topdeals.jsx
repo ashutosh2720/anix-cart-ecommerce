@@ -37,7 +37,7 @@ const Topdeals = ({ category, title }) => {
 
     return (
         <>
-            <h4 style={{ backgroundColor: 'red', display: 'flex', justifyContent: 'space-around', alignItems: 'center', width: '200px', borderRadius: '0px 50px 50px 0px', color: 'white' }}>top deals</h4>
+            <h4 style={{ backgroundColor: 'red', display: 'flex', justifyContent: 'space-around', alignItems: 'center', width: '200px', borderRadius: '0px 50px 50px 0px', color: 'white' }}>Best deals</h4>
 
 
             {loading ? (
@@ -64,7 +64,7 @@ const Topdeals = ({ category, title }) => {
                                 <div className="img-details">
                                     {/* <img src="https://png.pngtree.com/png-vector/20200221/ourlarge/pngtree-flash-sale-badge-png-image_2151329.jpg" alt="" style={{ height: '40px' }} /> */}
 
-                                    <LocalOfferIcon fontSize="large" style={{ color: 'red', borderRadius: '10px' }} />
+                                    <LocalOfferIcon fontSize="small" style={{ color: 'red', borderRadius: '10px' }} />
                                     <NavLink to={"/single-product/" + val._id}>
                                         <div className="product-img">
                                             <img src={val.thumbnail} alt="" />
