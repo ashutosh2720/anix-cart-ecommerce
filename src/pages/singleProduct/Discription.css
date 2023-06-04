@@ -7,6 +7,7 @@
 
 .main-dis {
     display: flex;
+    min-height: 10vh;
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
@@ -134,6 +135,35 @@ Button.add-to-cart:hover {
     margin-left: 32px;
     background-color: rgb(240, 201, 5);
     color: rgb(12, 35, 64);
+}
+
+.loading {
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.loading-left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.left-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.loading-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 @media (max-width: 768px) {
