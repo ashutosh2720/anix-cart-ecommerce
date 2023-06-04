@@ -3,9 +3,10 @@ import { Link, Navigate, useNavigate } from "react-router-dom";
 import './Checkout.css'
 import { useGlobalCart } from '../../contexts/cart-context';
 import Addresses from '../../components/addresses/Addresses';
+import { useGlobalLogin } from '../../contexts/login-context';
 
 function Checkout() {
-
+    const { notifySuccess } = useGlobalLogin()
     const { cartArray, addresses, editAddress, deleteAddress, formData, saveAddress, handleInputChange, editIndex, addAddress, add, setAdd, selectAddress, setCartArray } = useGlobalCart()
 
 
@@ -26,7 +27,8 @@ function Checkout() {
 
     const handlePaymentSuccess = (payment) => {
         console.log("Payment Successful:", payment);
-        // Perform necessary actions after successful payment  
+        // Perform necessary actions after successful payment  \
+        notifySuccess('order successfully placed')
         navigate('/')
         setCartArray([])
     };

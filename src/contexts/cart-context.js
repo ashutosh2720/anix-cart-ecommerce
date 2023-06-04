@@ -6,7 +6,8 @@ const cartContext = createContext();
 
 const CartProvider = ({ children }) => {
     const [cartArray, setCartArray] = useState([]);
-    const { notifySuccess } = useGlobalLogin();
+    const [myOrders, setMyOrders] = useState([])
+    const { notifySuccess, notifyWarn } = useGlobalLogin();
     const [add, setAdd] = useState(false)
     const [addresses, setAddresses] = useState([]);
     const [editIndex, setEditIndex] = useState(-1);
@@ -23,19 +24,22 @@ const CartProvider = ({ children }) => {
     // const [count, setCount] = useState(0);
 
     const addToCart = async (product) => {
-        const encodedToken = localStorage.getItem("anixCartUserToken");
-        try {
-            const { data } = await axios.post(
-                `/api/user/cart`,
-                { product },
-                { headers: { authorization: encodedToken } }
-            );
 
-            setCartArray(data.cart);
-            notifySuccess("Item added to cart");
-        } catch (err) {
+        {
+            const encodedToken = localStorage.getItem("anixCartUserToken");
+            try {
+                const { data } = await axios.post(
+                    `/api/user/cart`,
+                    { product },
+                    { headers: { authorization: encodedToken } }
+                );
 
-            console.log(err);
+                setCartArray(data.cart);
+                notifySuccess("Item added to cart");
+            } catch (err) {
+                navigate('/sign')
+                notifyWarn('please login to add items')
+            }
         }
     };
 

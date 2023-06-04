@@ -14,13 +14,15 @@ import Rating from "@mui/material/Rating";
 import DiscountIcon from "@mui/icons-material/Discount";
 import { useGlobalCart } from "../../contexts/cart-context";
 import { useGlobalWishlist } from "../../contexts/wishlist-context";
+import Skeleton from '@mui/material/Skeleton';
+import Stack from '@mui/material/Stack';
 
 export default function Discription() {
     const [productDetail, setProductDetail] = useState();
     const [mainImage, setMainImage] = useState(null);
 
     const { cartArray, addToCart } = useGlobalCart();
-    const { wishlistArray, addToWishlist } =
+    const { wishlistArray, addToWishlist, deleteFromWishlist } =
         useGlobalWishlist();
 
     const navigate = useNavigate();
@@ -39,7 +41,8 @@ export default function Discription() {
     }, [id]);
 
     return (
-        productDetail && (
+
+        productDetail ? (
             <>
                 <div className="header">
                     <div className="heading"></div>
@@ -47,7 +50,15 @@ export default function Discription() {
 
                 <div className="main-dis">
                     <div className="left-dis">
-                        <FavoriteIcon className="des-fav" />
+                        <FavoriteIcon className="des-fav"
+                            onClick={() => wishlistArray.find(({ _id }) => _id === productDetail._id) ? deleteFromWishlist(productDetail._id) : addToWishlist(productDetail._id)}
+                            style={{
+                                color: wishlistArray.find(({ _id }) => _id === productDetail._id)
+                                    ? "red"
+                                    : "rgba(0,0,0,0.3)",
+                            }}
+
+                        />
                         <div className="left">
                             {productDetail.images.map((img) => {
                                 return (
@@ -173,6 +184,33 @@ export default function Discription() {
 
                 <hr />
             </>
-        )
+        ) : <div className="loading">
+            <div className="loading-left">
+                <div className="left-img">
+                    <Skeleton variant="rectangular" width={100} height={100} />
+                    <Skeleton variant="rectangular" width={100} height={100} />
+                    <Skeleton variant="rectangular" width={100} height={100} />
+                    <Skeleton variant="rectangular" width={100} height={100} />
+                </div>
+                <div className="main-img">
+                    <Skeleton variant="rectangular" width={500} height={400} />
+                </div>
+            </div>
+            <div className="loading-right">
+                <Skeleton variant="rounded" width={300} height={40} />
+                <Skeleton variant="rounded" width={300} height={20} />
+                <Skeleton variant="rounded" width={800} height={20} />
+                <Skeleton variant="rounded" width={200} height={20} />
+                <Skeleton variant="rounded" width={200} height={20} />
+                <Skeleton variant="rounded" width={300} height={20} />
+                <Skeleton variant="rounded" width={200} height={20} />
+                <Skeleton variant="rounded" width={700} height={20} />
+                <Skeleton variant="rounded" width={600} height={20} />
+                <Skeleton variant="rounded" width={500} height={20} />
+                <Skeleton variant="rounded" width={700} height={20} />
+                <Skeleton variant="rounded" width={600} height={20} />
+            </div>
+
+        </div>
     );
 }

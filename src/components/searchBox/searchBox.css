@@ -40,8 +40,10 @@
 
 .search-model .search-data .ind-search-product .seacrh-item {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
 
 }
 

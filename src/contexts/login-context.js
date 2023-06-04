@@ -15,7 +15,7 @@ const LoginProvider = ({ children }) => {
 
     const toastify = {
         position: "top-right",
-        autoClose: 600,
+        autoClose: 800,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,

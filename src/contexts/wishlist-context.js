@@ -1,12 +1,15 @@
 import React, { createContext, useContext, useState } from "react";
 import axios from "axios";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { useGlobalLogin } from "./login-context";
 
 const wishlistContext = createContext();
 
 const WishlistProvider = ({ children }) => {
     const [wishlistArray, setWishlistArray] = useState([]);
-    const { notifySuccess } = useGlobalLogin()
+    const { notifyWarn, notifySuccess } = useGlobalLogin()
+
+    const navigate = useNavigate();
 
     const addToWishlist = async (product) => {
         const encodedToken = localStorage.getItem("anixCartUserToken");
@@ -19,7 +22,8 @@ const WishlistProvider = ({ children }) => {
             setWishlistArray(data.wishlist);
             notifySuccess('Added to Wishlist')
         } catch (err) {
-            console.log(err);
+            navigate('/sign')
+            notifyWarn('please login to add items')
         }
     };
 

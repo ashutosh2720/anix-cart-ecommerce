@@ -9,11 +9,14 @@ import Skeleton from "@mui/material/Skeleton";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import Rating from "@mui/material/Rating";
 import { NavLink } from "react-router-dom";
+import { useGlobalLogin } from "../../contexts/login-context";
+
 
 const ProductCard = ({ product }) => {
     const { addToCart, cartArray } = useGlobalCart();
     const { addToWishlist, wishlistArray, deleteFromWishlist } =
         useGlobalWishlist();
+
 
     const navigate = useNavigate();
 
