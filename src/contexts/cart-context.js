@@ -19,6 +19,7 @@ const CartProvider = ({ children }) => {
         address: '',
         isAddressSelected: false
     });
+    console.log(myOrders)
 
     const navigate = useNavigate();
     // const [count, setCount] = useState(0);
@@ -169,6 +170,8 @@ const CartProvider = ({ children }) => {
                 setCartArray,
                 addToCart,
                 deleteFromCart,
+                myOrders,
+                setMyOrders
             }}
         >
             {children}

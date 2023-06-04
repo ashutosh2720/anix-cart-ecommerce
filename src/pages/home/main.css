@@ -117,7 +117,9 @@ Button.add-to-cart:hover {
 }
 
 .collection {
-    background-color: rgb(12, 35, 64);
+    /* background-color: rgb(12, 35, 64); */
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
     display: flex;
     padding: 20px;
     flex-wrap: wrap;
@@ -128,18 +130,21 @@ Button.add-to-cart:hover {
 }
 
 .col {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1px;
-    width: 130px;
-    height: 90px;
-    border-radius: 10%;
-    background-color: white;
+    width: 180px;
+    height: 110px;
+    border-radius: 70%;
+    background-color: #0c2340;
+    color: white;
 }
 
 .collection img {
-    width: 70px;
+    width: 80px;
     display: flex;
     justify-content: center;
     align-items: center;

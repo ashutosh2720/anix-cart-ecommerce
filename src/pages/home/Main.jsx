@@ -6,6 +6,10 @@ import { Carousel } from "react-responsive-carousel";
 import { useState } from "react";
 import Product from "../../components/product/Product";
 import Topdeals from "../../components/topdeals/Topdeals";
+import ManIcon from '@mui/icons-material/Man';
+import WomanIcon from '@mui/icons-material/Woman';
+import DevicesIcon from '@mui/icons-material/Devices';
+import SoupKitchenIcon from '@mui/icons-material/SoupKitchen';
 import { useGlobalWishlist } from "../../contexts/wishlist-context";
 // import Mens from "./Mens";
 
@@ -46,6 +50,24 @@ export default function Main() {
             </Carousel>
             <br />
 
+            <div className="collection">
+                <div className="Mens-jacket col">
+                    <ManIcon fontSize="large" />Mens
+                    <div className="txt"></div>
+                </div>
+                <div className="Womens-saree col">
+                    <WomanIcon fontSize="large" /> Womens
+                </div>
+                <div className="Mens-shoes col">
+                    <DevicesIcon fontSize="large" /> Electronics
+                </div>
+                <div className="girls-lahenga col">
+                    <SoupKitchenIcon fontSize="large" /> Fragnances
+                </div>
+
+            </div>
+            <br /><br />
+
             <Topdeals category="womens-saaree" title="womens-saaree" />
             <Topdeals category="tops" title="Tops" />
             <Topdeals category="smart-tv" title="smart-tv" />
@@ -55,39 +77,10 @@ export default function Main() {
 
             <div className="cole">
                 {" "}
-                <h2>Our Collections</h2>
+
             </div>
 
-            <div className="collection">
-                <div className="Mens-jacket col">
-                    <img src="https://i.postimg.cc/rp72Z66X/red-top-1.jpg" alt="" />
-                    <div className="txt"></div>
-                </div>
-                <div className="Womens-saree col">
-                    <img src="https://i.postimg.cc/bwy3BH0h/graan-saaree-1.jpg" alt="" />
-                </div>
-                <div className="Mens-shoes col">
-                    <img
-                        src="https://pluspng.com/img-png/mens-shoes-hd-png-download-clothes-mens-shoes-2000.png"
-                        alt=""
-                    />
-                </div>
-                <div className="girls-lahenga col">
-                    <img
-                        src="https://cdn.shopify.com/s/files/1/1768/0827/products/MG_9675_grande.png?v=1509561488"
-                        alt=""
-                    />
-                </div>
-                <div className="Mens-shoes col">
-                    <img
-                        src="https://i.dummyjson.com/data/products/61/thumbnail.jpg"
-                        alt=""
-                    />
-                </div>
-                <div className="girls-lahenga col">
-                    <img src="https://i.postimg.cc/T3z03bsb/asus-1.jpg" alt="" />
-                </div>
-            </div>
+
         </>
     );
 }

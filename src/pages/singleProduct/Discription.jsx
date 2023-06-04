@@ -38,6 +38,7 @@ export default function Discription() {
 
     useEffect(() => {
         getProductDetail(id);
+        window.scrollTo({ top: 0, left: 0 });
     }, [id]);
 
     return (

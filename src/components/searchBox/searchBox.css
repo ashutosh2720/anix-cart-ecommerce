@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,600;1,600;1,700&family=Playfair+Display:wght@400;800&display=swap');
+
+
 .search-model {
     position: absolute;
     top: 50px;
@@ -7,6 +10,9 @@
     border-radius: 5px;
     z-index: 300;
     overflow-y: auto;
+    font-weight: lighter;
+    font-family: 'Crimson Text', serif;
+    font-size: 1rem;
 }
 
 .search-model .search-data::-webkit-scrollbar {

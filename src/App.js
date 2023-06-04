@@ -20,6 +20,9 @@ import Profile from "./pages/profile/Profile";
 import Addresses from "./components/addresses/Addresses";
 import Signup from "./pages/signup/Signup";
 import Checkout from "./pages/checkout/Checkout";
+import Orders from "./pages/orders/Orders";
+import Order from "./pages/orders/Orders";
+import PaymentHistory from "./pages/payment/PaymentHistory";
 
 
 function App() {
@@ -41,6 +44,8 @@ function App() {
         <Route path="/addresses" element={<Addresses />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/orders" element={<Order />} />
+        <Route path="/payment" element={<PaymentHistory />} />
 
       </Routes>
       <Footer />
