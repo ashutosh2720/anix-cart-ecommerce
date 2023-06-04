@@ -197,7 +197,7 @@ export default function Discription() {
                 </div>
             </div>
             <div className="loading-right">
-                <Skeleton variant="rounded" width={300} height={20} />
+                <Skeleton variant="rounded" width={300} height={40} />
                 <Skeleton variant="rounded" width={300} height={20} />
                 <Skeleton variant="rounded" width={800} height={20} />
                 <Skeleton variant="rounded" width={200} height={20} />
