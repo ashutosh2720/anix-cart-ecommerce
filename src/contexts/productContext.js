@@ -7,6 +7,7 @@ const ProductProvider = ({ children }) => {
 
     const [productLoading, setProductLoading] = useState(true);
     const [products, setProducts] = useState([])
+    const [myOrders, setMyOrders] = useState([])
 
     const getApiData = async () => {
         try {
@@ -27,7 +28,7 @@ const ProductProvider = ({ children }) => {
 
 
     return (
-        <productContext.Provider value={{ productLoading, products }}>
+        <productContext.Provider value={{ productLoading, myOrders, setMyOrders, products }}>
             {children}
         </productContext.Provider>
     )

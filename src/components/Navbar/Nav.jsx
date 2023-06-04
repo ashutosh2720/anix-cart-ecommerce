@@ -63,7 +63,7 @@ function Navbar() {
                 </div>
 
                 <div className="search">
-                    <input type="search" name="" className="search" placeholder="search here..." onChange={(e) => setSearchInput(e.target.value)} value={searchInput} />
+                    <input type="search" name="" className="search" placeholder="Search Anixcart.in..." onChange={(e) => setSearchInput(e.target.value)} value={searchInput} />
                     <SearchBox searchInput={searchInput} setSearchInput={setSearchInput} />
                 </div>
 

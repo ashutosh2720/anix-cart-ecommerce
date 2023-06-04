@@ -6,8 +6,10 @@ import Addresses from '../../components/addresses/Addresses';
 import { useGlobalLogin } from '../../contexts/login-context';
 
 function Checkout() {
-    const { notifySuccess } = useGlobalLogin()
-    const { cartArray, addresses, editAddress, deleteAddress, formData, saveAddress, handleInputChange, editIndex, addAddress, add, setAdd, selectAddress, setCartArray } = useGlobalCart()
+
+    const { notifySuccess, notifyWarn } = useGlobalLogin()
+    const { cartArray, addresses, editAddress, deleteAddress, formData, saveAddress, handleInputChange, editIndex, addAddress, add, setAdd, selectAddress, setCartArray, setMyOrders } = useGlobalCart()
+    const selectedAddress = addresses.find((address) => address.isAddressSelected)
 
 
     const totalPrice = cartArray.length > 0 ? cartArray.reduce((acc, cur) => acc + cur.price * cur.qty, 0) : null
@@ -29,7 +31,8 @@ function Checkout() {
         console.log("Payment Successful:", payment);
         // Perform necessary actions after successful payment  \
         notifySuccess('order successfully placed')
-        navigate('/')
+        cartArray.map((product) => setMyOrders((prev) => [...prev, { id: product._id, title: product.title, quantity: product.qty, price: product.price * product.qty, address: selectedAddress, txNum: payment.razorpay_payment_id }]))
+        navigate('/orders')
         setCartArray([])
     };
 
@@ -39,10 +42,10 @@ function Checkout() {
     };
 
     const makePayment = async () => {
-        // if (!selectedAddress) {
-        //     notifyWarn('Choose an Address')
-        //     return;
-        // }
+        if (!selectedAddress) {
+            notifyWarn('Choose an Address')
+            return;
+        }
         const options = {
             key: "rzp_test_XrHX89PF7nW09C",
             amount: totalPrice * 100,
@@ -68,7 +71,9 @@ function Checkout() {
         razorpayInstance.on('payment.failed', handlePaymentError);
         razorpayInstance.open();
     };
+
     return (
+
         <div className='main-checkout'>
             <div className="address">
                 <h1>address</h1>
