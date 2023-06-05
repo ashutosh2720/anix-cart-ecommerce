@@ -8,6 +8,7 @@ function Order() {
     const { myOrders } = useGlobalCart();
     return (
         <div className="my-orders-main">
+            <h1>my orders   </h1>
 
             {myOrders.length ?
                 (myOrders.map((order) =>

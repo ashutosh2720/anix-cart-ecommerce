@@ -51,15 +51,7 @@ export default function Discription() {
 
                 <div className="main-dis">
                     <div className="left-dis">
-                        <FavoriteIcon className="des-fav"
-                            onClick={() => wishlistArray.find(({ _id }) => _id === productDetail._id) ? deleteFromWishlist(productDetail._id) : addToWishlist(productDetail._id)}
-                            style={{
-                                color: wishlistArray.find(({ _id }) => _id === productDetail._id)
-                                    ? "red"
-                                    : "rgba(0,0,0,0.3)",
-                            }}
-
-                        />
+                        {/*  */}
                         <div className="left">
                             {productDetail.images.map((img) => {
                                 return (

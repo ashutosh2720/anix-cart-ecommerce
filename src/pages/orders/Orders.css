@@ -2,7 +2,8 @@
     min-height: 70vh;
     flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     padding: 20px;
 }

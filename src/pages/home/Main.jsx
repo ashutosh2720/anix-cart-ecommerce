@@ -40,7 +40,7 @@ export default function Main() {
                     <p className="legend">Legend 3</p>
                 </div>
                 <div>
-                    <img src="https://g3fashion.cdn.imgeng.in/upload/new_home/sub_banner/1668498287_girl-sub-banner-choli-suit.jpg" />
+                    <img src="https://www.ilovecarousel.com/blog/wp-content/uploads/2020/10/MG_4201-820x312.jpg" />
                     <p className="legend">Legend 3</p>
                 </div>
                 <div>
