@@ -150,6 +150,7 @@ Button.add-to-cart:hover {
     align-items: center;
 }
 
+
 .cole {
     display: flex;
     justify-content: center;
@@ -221,6 +222,15 @@ Button.add-to-cart:hover {
     .slider img {
         width: 100vw;
         height: 30vh;
+    }
+
+    .fav {
+        color: rgba(128, 128, 128, 0.397);
+        position: relative;
+        top: 5px;
+        left: 110px;
+        cursor: pointer;
+        z-index: 1;
     }
 
     .product-img {
