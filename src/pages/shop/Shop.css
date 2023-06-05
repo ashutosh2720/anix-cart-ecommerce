@@ -1,7 +1,7 @@
 .product {
     width: 100vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-around;
     align-items: flex-start;
 
@@ -12,12 +12,12 @@
 .product .filter {
     padding: 15px;
     width: 15%;
-    min-height: 92vh;
+    min-height: 98vh;
     display: flex;
     position: sticky;
     top: 27px;
     flex-direction: column;
-    border-right: 3px solid black;
+    border-left: 3px solid black;
     justify-content: space-around;
     align-items: flex-start;
     z-index: 5;
@@ -80,14 +80,6 @@
 
 }
 
-.ficon {
-    display: none;
-}
-
-
-
-
-
 .product .filter .filter-by-category p {
     display: flex;
     justify-content: center;
@@ -147,12 +139,18 @@
         top: 0px;
         background-color: white;
         z-index: 12;
-        transform: translateX(0%);
+        transform: translateX(100%);
         transition: 1s ease-in-out;
     }
 
     .ficon {
         display: block;
+        position: "sticky";
+        top: '40px';
+        left: '340px';
+        z-index: 2;
+        margin-top: '10px';
+        cursor: 'pointer'
     }
 
 
