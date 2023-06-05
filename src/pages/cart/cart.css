@@ -15,6 +15,10 @@
     align-items: center;
 }
 
+.empty-cart img {
+    max-width: 100%;
+}
+
 .empty-cart button {
     padding: 10px;
     cursor: pointer;

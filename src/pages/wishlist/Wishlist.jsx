@@ -21,7 +21,7 @@ function WishlistPage() {
                         return <ProductCard product={product} />;
                     })}
                 </div> : <div className="empty-wishlist">
-                    <img src="https://www.divinestuff.co.in/images/wishlist-empty.png" alt="" style={{ height: '500px', width: '600px' }} />
+                    <img src="https://www.divinestuff.co.in/images/wishlist-empty.png" alt="" style={{ maxHeight: '500px', maxWidth: '100%' }} />
                 </div>}
             </div>
         </>
