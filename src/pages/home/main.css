@@ -225,15 +225,15 @@ Button.add-to-cart:hover {
 
     .product-img {
         height: 100%;
-        width: 170px;
+        max-width: 140px;
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
 
     .product-img img {
-        height: 200px;
-        width: 200px;
+        height: 180px;
+        width: 180px;
         display: flex;
         justify-content: space-around;
         align-items: center;
