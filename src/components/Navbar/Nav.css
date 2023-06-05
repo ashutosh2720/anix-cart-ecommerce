@@ -81,6 +81,7 @@ nav {
 
 .search input {
   margin-top: 10px;
+  margin-bottom: 10px;
   min-width: 300px;
   height: 40px;
   padding: 10px;
@@ -103,7 +104,7 @@ nav {
   position: sticky;
   padding: 5px;
   background-color: #0c2340;
-  z-index: 10;
+  z-index: 1;
   top: -1px;
 }
 
