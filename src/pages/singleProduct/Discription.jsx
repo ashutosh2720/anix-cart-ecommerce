@@ -180,29 +180,30 @@ export default function Discription() {
         ) : <div className="loading">
             <div className="loading-left">
                 <div className="left-img">
-                    <Skeleton variant="rectangular" width={100} height={100} />
-                    <Skeleton variant="rectangular" width={100} height={100} />
-                    <Skeleton variant="rectangular" width={100} height={100} />
-                    <Skeleton variant="rectangular" width={100} height={100} />
+                    <Skeleton className="ske-left" variant="rectangular" width={100} height={100} />
+                    <Skeleton className="ske-left" variant="rectangular" width={100} height={100} />
+                    <Skeleton className="ske-left" variant="rectangular" width={100} height={100} />
+                    <Skeleton className="ske-left" variant="rectangular" width={100} height={100} />
                 </div>
                 <div className="main-img">
-                    <Skeleton variant="rectangular" width={500} height={400} />
+                    <Skeleton className="ske" variant="rectangular" width={500} height={400} />
                 </div>
             </div>
             <div className="loading-right">
-                <Skeleton variant="rounded" width={300} height={40} />
-                <Skeleton variant="rounded" width={300} height={20} />
-                <Skeleton variant="rounded" width={800} height={20} />
-                <Skeleton variant="rounded" width={200} height={20} />
-                <Skeleton variant="rounded" width={200} height={20} />
-                <Skeleton variant="rounded" width={300} height={20} />
-                <Skeleton variant="rounded" width={200} height={20} />
-                <Skeleton variant="rounded" width={700} height={20} />
-                <Skeleton variant="rounded" width={600} height={20} />
-                <Skeleton variant="rounded" width={500} height={20} />
-                <Skeleton variant="rounded" width={700} height={20} />
-                <Skeleton variant="rounded" width={600} height={20} />
+                <Skeleton className="ske-right" variant="rounded" width={300} height={40} />
+                <Skeleton className="ske-right" variant="rounded" width={300} height={20} />
+                <Skeleton className="ske-right" variant="rounded" width={800} height={20} />
+                <Skeleton className="ske-right" variant="rounded" width={200} height={20} />
+                <Skeleton className="ske-right" variant="rounded" width={200} height={20} />
+                <Skeleton className="ske-right" variant="rounded" width={300} height={20} />
+                <Skeleton className="ske-right" variant="rounded" width={200} height={20} />
+                <Skeleton className="ske-right" variant="rounded" width={700} height={20} />
+                <Skeleton className="ske-right" variant="rounded" width={600} height={20} />
+                <Skeleton className="ske-right" variant="rounded" width={500} height={20} />
+                <Skeleton className="ske-right" variant="rounded" width={700} height={20} />
+                <Skeleton className="ske-right" variant="rounded" width={600} height={20} />
             </div>
+
 
         </div>
     );

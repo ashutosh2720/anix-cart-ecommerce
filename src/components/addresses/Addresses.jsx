@@ -7,7 +7,7 @@ const Addresses = () => {
     return (
         <div className='address-container' >
             {/* <h2>Add or Edit Address</h2> */}
-            <div className="form">
+            <div className="form-data">
                 <form onSubmit={editIndex === -1 ? addAddress : saveAddress}>
                     <input
                         type="text"

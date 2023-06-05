@@ -7,6 +7,7 @@ import { useState } from "react";
 import Product from "../../components/product/Product";
 import Topdeals from "../../components/topdeals/Topdeals";
 import ManIcon from '@mui/icons-material/Man';
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 import WomanIcon from '@mui/icons-material/Woman';
 import DevicesIcon from '@mui/icons-material/Devices';
 import SoupKitchenIcon from '@mui/icons-material/SoupKitchen';
@@ -14,6 +15,7 @@ import { useGlobalWishlist } from "../../contexts/wishlist-context";
 // import Mens from "./Mens";
 
 export default function Main() {
+    const navigate = useNavigate()
     return (
         <>
             <Carousel
@@ -49,23 +51,6 @@ export default function Main() {
                 </div>
             </Carousel>
             <br />
-
-            <div className="collection">
-                <div className="Mens-jacket col">
-                    <ManIcon fontSize="large" />Mens
-                    <div className="txt"></div>
-                </div>
-                <div className="Womens-saree col">
-                    <WomanIcon fontSize="large" /> Womens
-                </div>
-                <div className="Mens-shoes col">
-                    <DevicesIcon fontSize="large" /> Electronics
-                </div>
-                <div className="girls-lahenga col">
-                    <SoupKitchenIcon fontSize="large" /> Fragnances
-                </div>
-
-            </div>
             <br /><br />
 
             <Topdeals category="womens-saaree" title="womens-saaree" />

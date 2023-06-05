@@ -5,14 +5,14 @@ import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import Button from "@mui/material/Button";
 import NewReleasesIcon from '@mui/icons-material/NewReleases';
 import Skeleton from "@mui/material/Skeleton";
+import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import Rating from "@mui/material/Rating";
-import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
 import { NavLink } from "react-router-dom";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 import Loading from "../skelton/Loading";
 import { useGlobalCart } from "../../contexts/cart-context";
 import { useGlobalWishlist } from "../../contexts/wishlist-context";
-import { Navigate, useNavigate, useParams } from "react-router-dom";
 
 const CategoryProducts = ({ category, title }) => {
     const [Items, setItems] = useState([]);
@@ -21,8 +21,6 @@ const CategoryProducts = ({ category, title }) => {
     const { addToWishlist, deleteFromWishlist, wishlistArray } = useGlobalWishlist();
 
     const navigate = useNavigate();
-
-
     const getApiData = async () => {
         try {
             let response = await fetch(`/api/category/${category}`);
@@ -46,7 +44,7 @@ const CategoryProducts = ({ category, title }) => {
                 ""
             ) : (
                 <div className="product-title">
-                    <p>
+                    <p style={{ backgroundColor: '#0c2340' }}>
                         <b>{title}</b>
                     </p>
                 </div>

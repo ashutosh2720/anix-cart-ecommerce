@@ -7,16 +7,16 @@ const Electronics = () => {
     return (
         <>
             <CategoryProducts
-                category='laptops'
-                title='laptops'
-            />
-            <CategoryProducts
                 category='smartphones'
                 title='smartphones'
             />
             <CategoryProducts
                 category="smart-tv"
                 title="smart-tv"
+            />
+            <CategoryProducts
+                category='laptops'
+                title='laptops'
             />
 
         </>
