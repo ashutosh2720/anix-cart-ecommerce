@@ -87,10 +87,9 @@ const Shop = () => {
     const filteredProducts = filterProducts();
 
     return (
-        <>   <FilterListIcon onClick={() => setOpen((prev) => !prev)} fontSize="large" style={{
-            position: "sticky", top: '40px', left: '340px', zIndex: '2', marginTop: '10px'
-            , cursor: 'pointer'
-        }} />
+        <>   <FilterListIcon className="ficon" onClick={() => setOpen((prev) => !prev)} fontSize="large"
+            style={{ position: 'relative', top: '20px', left: '20px', cursor: 'pointer' }}
+        />
             <div className="product">
                 {open && (<div className="filter">
                     <div className="filter-header">
