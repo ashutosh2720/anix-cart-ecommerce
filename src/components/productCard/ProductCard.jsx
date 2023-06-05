@@ -7,6 +7,7 @@ import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import Skeleton from "@mui/material/Skeleton";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import Rating from "@mui/material/Rating";
 import { NavLink } from "react-router-dom";
 import { useGlobalLogin } from "../../contexts/login-context";
@@ -23,6 +24,7 @@ const ProductCard = ({ product }) => {
     return (
 
         <div className="product-card">
+
             <FavoriteIcon
                 className="fav"
                 onClick={() =>
