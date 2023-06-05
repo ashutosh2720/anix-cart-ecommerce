@@ -118,8 +118,8 @@ function Navbar() {
             <div className="navigation">
                 <ul>
                     <div className="img-name" onClick={menuFunction}>
+
                         <MenuIcon />
-                        Menu
                     </div>
                     <div className="home">
                         <li>
@@ -131,7 +131,7 @@ function Navbar() {
                     <div className="Shop">
                         <li>
                             <NavLink to="/shop" style={active}>
-                                <ShoppingBagIcon />
+
                                 Shop
                             </NavLink>
                         </li>
@@ -139,7 +139,7 @@ function Navbar() {
                     <div className="ments-wear">
                         <li>
                             <NavLink to="/Mens" style={active}>
-                                <Man2Icon />
+
                                 Mens
                             </NavLink>
                         </li>
@@ -151,7 +151,7 @@ function Navbar() {
                                 to="/Womens "
                                 style={active}
                             >
-                                <Woman2Icon fontSize="medium" />
+
                                 Womens
                             </NavLink>
                         </li>
@@ -160,7 +160,7 @@ function Navbar() {
                         {" "}
                         <li>
                             <NavLink to="/electronics" style={active}>
-                                <LaptopMacIcon fontSize="medium" />
+
                                 Electronics
                             </NavLink>
                         </li>

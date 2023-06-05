@@ -5,6 +5,7 @@ import LoginIcon from '@mui/icons-material/Login';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
+import BusinessIcon from '@mui/icons-material/Business';
 import PaymentIcon from '@mui/icons-material/Payment';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import ViewListIcon from '@mui/icons-material/ViewList';
@@ -73,6 +74,9 @@ export default function Menu({ menuFunction }) {
                                 <li onClick={menuFunction}><ManageAccountsIcon />My Account</li>
                             </Link>
                             <li onClick={menuFunction}><SupportAgentIcon />Costumer Support</li>
+                            <Link to={'/addresses'}>
+                                <li onClick={menuFunction}><BusinessIcon />My Address</li>
+                            </Link>
                             {
                                 userToken ?
                                     <li onClick={logoutAction}><LogoutIcon /> Log Out</li> :

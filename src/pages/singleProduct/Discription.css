@@ -63,8 +63,8 @@
 }
 
 .main-img img {
-    max-height: 500px;
-    max-width: 500px;
+    height: 500px;
+    width: 500px;
 
 }
 
@@ -152,6 +152,11 @@ Button.add-to-cart:hover {
     gap: 20px;
 }
 
+.loading-left .ske-left {
+    height: 100px;
+    width: 100px;
+}
+
 .left-img {
     display: flex;
     flex-direction: column;
@@ -166,6 +171,11 @@ Button.add-to-cart:hover {
     justify-content: space-around;
     align-items: flex-start;
     gap: 20px;
+}
+
+.loading-right .ske-right {
+    height: 10px;
+    width: 100px;
 }
 
 @media (max-width: 768px) {
@@ -187,6 +197,7 @@ Button.add-to-cart:hover {
 
     .main-img img {
         max-width: 300px;
+        height: 300px;
     }
 
     .left-dis .left {
@@ -195,7 +206,7 @@ Button.add-to-cart:hover {
         justify-content: center;
         align-items: center;
         max-width: 50px;
-        gap: 10px;
+        gap: 2px;
     }
 
     .left-dis {
@@ -225,6 +236,10 @@ Button.add-to-cart:hover {
         margin-top: 1px;
     }
 
+    .loading2 {
+        display: none;
+    }
+
 
 
 }
@@ -233,4 +248,23 @@ Button.add-to-cart:hover {
     .main-img img {
         width: 300px;
     }
+
+    .loading-left {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .loading-left .ske-left {
+        height: 100px;
+        width: 100px;
+    }
+
+    .loading-left .ske-left {
+        height: 40px;
+        width: 100px;
+    }
+
+
 }

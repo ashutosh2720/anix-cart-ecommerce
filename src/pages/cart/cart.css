@@ -84,3 +84,11 @@
     background-color: gold;
     color: #0c2340;
 }
+
+@media screen and (max-width: 600px) {
+    .checkout {
+
+        width: 100%;
+    }
+
+}
