@@ -136,7 +136,7 @@ Button.add-to-cart:hover {
     justify-content: center;
     align-items: center;
     padding: 1px;
-    width: 180px;
+    width: 130px;
     height: 110px;
     border-radius: 70%;
     background-color: #0c2340;
@@ -228,7 +228,7 @@ Button.add-to-cart:hover {
         color: rgba(128, 128, 128, 0.397);
         position: relative;
         top: 5px;
-        left: 110px;
+        left: 111px;
         cursor: pointer;
         z-index: 1;
     }
