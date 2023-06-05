@@ -72,7 +72,7 @@ export default function Discription() {
 
                     <div className="right-dis">
                         <div className="dis">
-                            <div className="title">
+                            <div className="title2">
                                 <h1>{productDetail.title}</h1>
                                 <p>
                                     <b>Brand </b>: {productDetail.brand}

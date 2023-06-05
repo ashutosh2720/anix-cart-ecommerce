@@ -80,6 +80,11 @@
 
 }
 
+.ficon {
+    display: none;
+}
+
+
 
 
 
@@ -129,5 +134,26 @@
 .product .filter .filter-header button.clear {
     background-color: rgb(10, 15, 69);
     border-radius: 10px;
+
+}
+
+
+@media (max-width: 768px) {
+    .product .filter {
+        min-height: 100vh;
+        width: 50vw;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        background-color: white;
+        z-index: 12;
+        transform: translateX(0%);
+        transition: 1s ease-in-out;
+    }
+
+    .ficon {
+        display: block;
+    }
+
 
 }

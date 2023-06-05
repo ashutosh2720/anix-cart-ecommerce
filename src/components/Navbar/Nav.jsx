@@ -4,7 +4,7 @@ import Menu from "../../components/menu/Menu";
 import Sign from "../../pages/signin/Sign";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import Button from "@mui/material/Button";
-import Tooltip from '@mui/material/Tooltip';
+import Tooltip from "@mui/material/Tooltip";
 
 import Avatar from "@mui/material/Avatar";
 import PersonAddAltSharpIcon from "@mui/icons-material/PersonAddAltSharp";
@@ -32,11 +32,11 @@ function Navbar() {
     const { userToken } = useGlobalLogin();
     const [showMenu, setShowMenu] = useState(false);
     const [showLog, setLog] = useState(false);
-    const [searchInput, setSearchInput] = useState('')
+    const [searchInput, setSearchInput] = useState("");
 
     const active = ({ isActive }) => ({
         fontWeight: isActive ? "800" : "200",
-        color: isActive ? "gold" : ""
+        color: isActive ? "gold" : "",
     });
 
     const menuFunction = () => {
@@ -63,8 +63,18 @@ function Navbar() {
                 </div>
 
                 <div className="search">
-                    <input type="search" name="" className="search" placeholder="Search Anixcart.in..." onChange={(e) => setSearchInput(e.target.value)} value={searchInput} />
-                    <SearchBox searchInput={searchInput} setSearchInput={setSearchInput} />
+                    <input
+                        type="search"
+                        name=""
+                        className="search"
+                        placeholder="Search Anixcart.in..."
+                        onChange={(e) => setSearchInput(e.target.value)}
+                        value={searchInput}
+                    />
+                    <SearchBox
+                        searchInput={searchInput}
+                        setSearchInput={setSearchInput}
+                    />
                 </div>
 
                 <div className="nav-right">
@@ -83,7 +93,7 @@ function Navbar() {
                                             padding: "2px",
                                         }}
                                     >
-                                        <p>login</p>
+                                        <b>login</b>
                                     </Button>
                                 </NavLink>
                             )}
@@ -92,10 +102,7 @@ function Navbar() {
                         <div className="img4">
                             <NavLink to="/wishlist" style={active}>
                                 <Tooltip title="Wishlist">
-
-
                                     <Badge badgeContent={wishlistArray.length} color="success">
-
                                         <FavoriteSharpIcon className="cart-icon" />
                                     </Badge>
                                 </Tooltip>
@@ -104,7 +111,7 @@ function Navbar() {
 
                         <div className="img3">
                             <NavLink to="/Cart" style={active}>
-                                <Tooltip title='Cart'>
+                                <Tooltip title="Cart">
                                     <Badge badgeContent={cartArray.length} color="success">
                                         <ShoppingCartIcon className="cart-icon" />
                                     </Badge>
@@ -118,7 +125,6 @@ function Navbar() {
             <div className="navigation">
                 <ul>
                     <div className="img-name" onClick={menuFunction}>
-
                         <MenuIcon />
                     </div>
                     <div className="home">
@@ -131,7 +137,6 @@ function Navbar() {
                     <div className="Shop">
                         <li>
                             <NavLink to="/shop" style={active}>
-
                                 Shop
                             </NavLink>
                         </li>
@@ -139,7 +144,6 @@ function Navbar() {
                     <div className="ments-wear">
                         <li>
                             <NavLink to="/Mens" style={active}>
-
                                 Mens
                             </NavLink>
                         </li>
@@ -147,11 +151,7 @@ function Navbar() {
 
                     <div className="womens-saare">
                         <li>
-                            <NavLink
-                                to="/Womens "
-                                style={active}
-                            >
-
+                            <NavLink to="/Womens " style={active}>
                                 Womens
                             </NavLink>
                         </li>
@@ -160,7 +160,6 @@ function Navbar() {
                         {" "}
                         <li>
                             <NavLink to="/electronics" style={active}>
-
                                 Electronics
                             </NavLink>
                         </li>

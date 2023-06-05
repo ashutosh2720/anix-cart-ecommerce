@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import Product from "../../components/product/Product";
 import "../home/main.css";
 import "./Shop.css";
+import FilterListIcon from '@mui/icons-material/FilterList';
 import { useEffect } from "react";
 import { useGlobalProducts } from "../../contexts/productContext";
 
 const Shop = () => {
     const { productLoading, products } = useGlobalProducts();
+    const [open, setOpen] = useState(false)
     const [categoryFilters, setCategoryFilters] = useState({
         mens: false,
         womens: false,
@@ -14,7 +16,7 @@ const Shop = () => {
         fragrances: false,
     });
 
-    const [priceRange, setPriceRange] = useState([0, 2000]);
+    const [priceRange, setPriceRange] = useState([2000, 2000]);
     const [selectedRating, setSelectedRating] = useState("");
     const [sortBy, setSortBy] = useState("");
 
@@ -64,7 +66,7 @@ const Shop = () => {
 
         filteredProducts = filteredProducts.filter(
             (product) =>
-                product.price >= priceRange[0] && product.price <= priceRange[1]
+                product.price <= priceRange[0] && product.price <= priceRange[1]
         );
 
         if (selectedRating !== "") {
@@ -85,18 +87,27 @@ const Shop = () => {
     const filteredProducts = filterProducts();
 
     return (
-        <>
+        <>   <FilterListIcon onClick={() => setOpen((prev) => !prev)} fontSize="large" style={{
+            position: "sticky", top: '40px', left: '340px', zIndex: '2', marginTop: '10px'
+            , cursor: 'pointer'
+        }} />
             <div className="product">
-                <div className="filter">
+                {open && (<div className="filter">
                     <div className="filter-header">
-                        <h3>filter</h3>
                         <button className="clear" onClick={handleClearFilters} >clear</button>
-
+                        <h3>filter</h3>
                     </div>
+
                     <hr style={{ width: '100%' }} />
 
                     <div className="filter-by-price">
                         <h3>price</h3>
+                        <br />
+                        <div className="range" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '20px', fontSize: '10px' }}>
+                            <p>0</p>
+                            <p>1000</p>
+                            <p>2000</p>
+                        </div>
                         <input
 
                             type="range"
@@ -106,8 +117,9 @@ const Shop = () => {
                             max="2000"
                             value={priceRange[0]}
                             onChange={handlePriceRangeChange}
-                            style={{ width: "100%", height: '1px', padding: '2px' }} />
+                            style={{ width: "100%", height: '1px', padding: '2px', cursor: 'pointer' }} />
                     </div>
+
                     <hr style={{ width: '100%' }} />
 
                     <div className="filter-by-category">
@@ -194,7 +206,7 @@ const Shop = () => {
 
 
                     </div>
-                </div>
+                </div>)}
                 <div className="product-container">
                     <Product
                         category={""}
@@ -203,7 +215,7 @@ const Shop = () => {
                         productLoading={productLoading}
                     />
                 </div>
-            </div>
+            </div >
         </>
     );
 };
