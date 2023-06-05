@@ -7,16 +7,21 @@ import NewReleasesIcon from '@mui/icons-material/NewReleases';
 import Skeleton from "@mui/material/Skeleton";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import Rating from "@mui/material/Rating";
+import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
 import { NavLink } from "react-router-dom";
 import Loading from "../skelton/Loading";
 import { useGlobalCart } from "../../contexts/cart-context";
 import { useGlobalWishlist } from "../../contexts/wishlist-context";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 
 const CategoryProducts = ({ category, title }) => {
     const [Items, setItems] = useState([]);
     const [loading, setLoading] = useState(true);
-    const { addToCart } = useGlobalCart();
+    const { addToCart, cartArray } = useGlobalCart();
     const { addToWishlist, deleteFromWishlist, wishlistArray } = useGlobalWishlist();
+
+    const navigate = useNavigate();
+
 
     const getApiData = async () => {
         try {
@@ -83,15 +88,21 @@ const CategoryProducts = ({ category, title }) => {
                                             />
                                         </div>
                                     </NavLink>
-                                    <Button
-                                        variant="contained"
-                                        className="add-to-cart"
-                                        onClick={() => addToCart(val)}
-                                    >
-                                        {" "}
-                                        <AddShoppingCartIcon />
-                                        <p> add to cart</p>
-                                    </Button>
+                                    {cartArray.find((item) => item._id === val._id) ? (
+                                        <Button
+                                            className="add-to-cart"
+                                            onClick={() => {
+                                                navigate("/Cart");
+                                            }}
+                                        >
+                                            <ShoppingCartCheckoutIcon fontSize="small" />
+                                            <b>Go To Cart</b>
+                                        </Button>
+                                    ) : (
+                                        <Button className="add-to-cart" onClick={() => addToCart(val)}>
+                                            <AddShoppingCartIcon fontSize="small" /> <b>Add To Cart</b>
+                                        </Button>
+                                    )}
                                 </div>
                             </div>
                         );
