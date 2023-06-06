@@ -4,6 +4,7 @@ import { useGlobalCart } from '../../contexts/cart-context';
 import { Link } from 'react-router-dom';
 
 
+
 function Order() {
     const { myOrders } = useGlobalCart();
     return (
@@ -12,15 +13,17 @@ function Order() {
 
             {myOrders.length ?
                 (myOrders.map((order) =>
-                    <div className="orders">
-                        <b><h2>purchaser : {order.address.name}</h2></b>
-                        <b> <p>{order.title}</p></b>
-                        <p>price: Rs/-{order.price}</p>
-                        <p>Quantity : {order.quantity}</p>
-                        <p>Address: {order.address.address}</p>
-                        <p>mobile num : {order.address.address}</p>
+                    <Link to={"/single-product/" + order.id}>
+                        <div className="orders" style={{ cursor: 'pointer' }} >
+                            <b><h2>purchaser : {order.address.name}</h2></b>
+                            <b> <p>{order.title}</p></b>
+                            <p>price: Rs/-{order.price}</p>
+                            <p>Quantity : {order.quantity}</p>
+                            <p>Address: {order.address.address}</p>
+                            <p>mobile num : {order.address.address}</p>
 
-                    </div>)) : <div className="no-order-found">
+                        </div>
+                    </Link>)) : <div className="no-order-found">
                     <h1>No order Found </h1>
                     <Link to={'/shop'}>
                         <button className='go-to-shop' >Go to shop</button>

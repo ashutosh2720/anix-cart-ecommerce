@@ -39,3 +39,7 @@ button.go-to-shop:hover {
     background-color: gold;
     color: black;
 }
+
+.my-orders-main a {
+    color: black;
+}
