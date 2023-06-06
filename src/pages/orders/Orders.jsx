@@ -13,10 +13,12 @@ function Order() {
             {myOrders.length ?
                 (myOrders.map((order) =>
                     <div className="orders">
+                        <b><h2>purchaser : {order.address.name}</h2></b>
                         <b> <p>{order.title}</p></b>
                         <p>price: Rs/-{order.price}</p>
                         <p>Quantity : {order.quantity}</p>
-                        <p>Address: {order.address.city}</p>
+                        <p>Address: {order.address.address}</p>
+                        <p>mobile num : {order.address.address}</p>
 
                     </div>)) : <div className="no-order-found">
                     <h1>No order Found </h1>
