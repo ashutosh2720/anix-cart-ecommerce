@@ -53,6 +53,20 @@ export default function Main() {
             <br />
             <br /><br />
 
+            <div className="collection">
+                <div className="Mens-jacket col" onClick={() => navigate('/mens')} >
+
+                    <p>Mens</p>
+                </div>
+                <div className="Womens-saree col" onClick={() => navigate('/womens')} >
+                    <p>Womens</p>
+                </div>
+                <div className="Mens-shoes col" onClick={() => navigate('/electronics')} >
+                    <p>Electronics</p>
+                </div>
+
+            </div>
+
             <Topdeals category="womens-saaree" title="womens-saaree" />
             <Topdeals category="tops" title="Tops" />
             <Topdeals category="smart-tv" title="smart-tv" />
