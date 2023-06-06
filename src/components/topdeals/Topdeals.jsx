@@ -64,7 +64,7 @@ const Topdeals = ({ category, title }) => {
                                 <div className="img-details">
                                     {/* <img src="https://png.pngtree.com/png-vector/20200221/ourlarge/pngtree-flash-sale-badge-png-image_2151329.jpg" alt="" style={{ height: '40px' }} /> */}
 
-                                    <LocalOfferIcon fontSize="small" style={{ color: 'red', borderRadius: '10px' }} />
+
                                     <NavLink to={"/single-product/" + val._id}>
                                         <div className="product-img">
                                             <img src={val.thumbnail} alt="" />
