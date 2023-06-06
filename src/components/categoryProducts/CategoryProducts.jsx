@@ -98,7 +98,7 @@ const CategoryProducts = ({ category, title }) => {
                                             <b>Go To Cart</b>
                                         </Button>
                                     ) : (
-                                        <Button disabled={isCartDisable} className="add-to-cart" onClick={() => {
+                                        <Button className="add-to-cart" onClick={() => {
 
                                             addToCart(val)
                                             setIsCartDisable(true)
