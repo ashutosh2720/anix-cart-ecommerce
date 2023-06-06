@@ -18,6 +18,7 @@ const CategoryProducts = ({ category, title }) => {
     const [Items, setItems] = useState([]);
     const [loading, setLoading] = useState(true);
     const { addToCart, cartArray } = useGlobalCart();
+    const [isCartDisable, setIsCartDisable] = useState(false)
     const { addToWishlist, deleteFromWishlist, wishlistArray } = useGlobalWishlist();
 
     const navigate = useNavigate();
@@ -97,7 +98,14 @@ const CategoryProducts = ({ category, title }) => {
                                             <b>Go To Cart</b>
                                         </Button>
                                     ) : (
-                                        <Button className="add-to-cart" onClick={() => addToCart(val)}>
+                                        <Button disabled={isCartDisable} className="add-to-cart" onClick={() => {
+
+                                            addToCart(val)
+                                            setIsCartDisable(true)
+
+                                        }}
+
+                                        >
                                             <AddShoppingCartIcon fontSize="small" /> <b>Add To Cart</b>
                                         </Button>
                                     )}

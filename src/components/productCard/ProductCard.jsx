@@ -11,10 +11,12 @@ import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import Rating from "@mui/material/Rating";
 import { NavLink } from "react-router-dom";
 import { useGlobalLogin } from "../../contexts/login-context";
+import { useState } from "react";
 
 
 const ProductCard = ({ product }) => {
     const { addToCart, cartArray } = useGlobalCart();
+    const [isCartDisable, setIsCartDisable] = useState(false)
     const { addToWishlist, wishlistArray, deleteFromWishlist } =
         useGlobalWishlist();
 
@@ -65,7 +67,12 @@ const ProductCard = ({ product }) => {
                         <b>Go To Cart</b>
                     </Button>
                 ) : (
-                    <Button className="add-to-cart" onClick={() => addToCart(product)}>
+                    <Button disabled={isCartDisable} className="add-to-cart" onClick={() => {
+                        addToCart(product)
+                        setIsCartDisable(true)
+
+
+                    }}>
                         <AddShoppingCartIcon fontSize="small" /> <b>Add To Cart</b>
                     </Button>
                 )}
