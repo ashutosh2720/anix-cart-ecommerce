@@ -20,6 +20,7 @@ import Stack from '@mui/material/Stack';
 export default function Discription() {
     const [productDetail, setProductDetail] = useState();
     const [mainImage, setMainImage] = useState(null);
+    const [isCartDisable, setIsCartDisable] = useState(false)
 
     const { cartArray, addToCart } = useGlobalCart();
     const { wishlistArray, addToWishlist, deleteFromWishlist } =
@@ -143,9 +144,14 @@ export default function Discription() {
                                         <b>Go To Cart</b>
                                     </Button>
                                 ) : (
-                                    <Button
+                                    <Button disabled={isCartDisable}
                                         className="add-to-cart"
-                                        onClick={() => addToCart(productDetail)}
+                                        onClick={() => {
+                                            addToCart(productDetail)
+                                            setIsCartDisable(true)
+
+
+                                        }}
                                     >
 
                                         <AddShoppingCartIcon fontSize="large" /> <b>Add To Cart</b>
