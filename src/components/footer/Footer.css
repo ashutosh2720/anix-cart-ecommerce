@@ -24,8 +24,8 @@
 
 .footer ul li {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 5px;
     cursor: pointer;
     text-decoration: none;

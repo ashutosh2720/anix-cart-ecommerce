@@ -74,6 +74,7 @@ const Shop = () => {
                 (product) => product.rating >= parseFloat(selectedRating)
             );
         }
+        
 
         if (sortBy === "lowToHigh") {
             filteredProducts.sort((a, b) => a.price - b.price);
@@ -83,6 +84,7 @@ const Shop = () => {
 
         return filteredProducts;
     };
+
 
     const filteredProducts = filterProducts();
 

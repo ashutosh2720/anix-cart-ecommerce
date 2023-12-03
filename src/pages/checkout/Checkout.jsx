@@ -8,10 +8,8 @@ import { useGlobalLogin } from '../../contexts/login-context';
 function Checkout() {
 
     const { notifySuccess, notifyWarn } = useGlobalLogin()
-    const { cartArray, addresses, editAddress, deleteAddress, formData, saveAddress, handleInputChange, editIndex, addAddress, add, setAdd, selectAddress, setCartArray, setMyOrders } = useGlobalCart()
+    const { cartArray, addresses, editAddress, deleteAddress,formData, saveAddress, handleInputChange, editIndex, addAddress, add, setAdd, selectAddress, setCartArray,setMyOrders } = useGlobalCart()
     const selectedAddress = addresses.find((address) => address.isAddressSelected)
-
-
     const totalPrice = cartArray.length > 0 ? cartArray.reduce((acc, cur) => acc + cur.price * cur.qty, 0) : null
     const navigate = useNavigate();
 
@@ -30,7 +28,7 @@ function Checkout() {
     const handlePaymentSuccess = (payment) => {
         console.log("Payment Successful:", payment);
         // Perform necessary actions after successful payment  \
-        notifySuccess('order successfully placed')
+        // notifySuccess('order successfully placed')
         cartArray.map((product) => setMyOrders((prev) => [...prev, { id: product._id, title: product.title, quantity: product.qty, price: product.price * product.qty, address: selectedAddress, txNum: payment.razorpay_payment_id }]))
         navigate('/orders')
         setCartArray([])

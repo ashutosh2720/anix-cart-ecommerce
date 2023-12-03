@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState } from "react";
 import axios from "axios";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { useGlobalLogin } from "./login-context";
+
 const cartContext = createContext();
 
 const CartProvider = ({ children }) => {

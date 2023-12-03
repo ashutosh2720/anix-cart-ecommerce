@@ -54,14 +54,14 @@ export default function Main() {
             <br /><br />
 
             <div className="collection">
-                <div className="Mens-jacket col" onClick={() => navigate('/mens')} >
+                <div className="Mens-jacket col" onClick={() => navigate('/shop')} >
 
                     <p>Mens</p>
                 </div>
-                <div className="Womens-saree col" onClick={() => navigate('/womens')} >
+                <div className="Womens-saree col" onClick={() => navigate('/shop')} >
                     <p>Womens</p>
                 </div>
-                <div className="Mens-shoes col" onClick={() => navigate('/electronics')} >
+                <div className="Mens-shoes col" onClick={() => navigate('/shop')} >
                     <p>Electronics</p>
                 </div>
 
